@@ -1,20 +1,22 @@
 # Mantoz
 
-Test a product on a generated crowd before real people see it.
+Test your idea on five hundred people who do not exist.
 
 [Русский](README.ru.md) · [中文](README.zh.md)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Stars](https://img.shields.io/github/stars/zarubinvibe/mantoz?style=flat&color=C9A87A)](https://github.com/zarubinvibe/mantoz/stargazers) [![Status](https://img.shields.io/badge/status-working-brightgreen.svg)](https://github.com/zarubinvibe/mantoz) [![Olympuz](https://img.shields.io/badge/olympuz-family-B8D6EA.svg)](https://github.com/zarubinvibe/athena#olympuz-family)
 
-<p align="center"><img src="docs/assets/pantheon/hero.png" alt="Manto in white marble holds an oracular bowl beside a small marble crowd; blue threads run in along the ground and three gold bands leave for a tablet, next to the classical column" width="100%"></p>
+<p align="center"><img src="docs/assets/pantheon/hero.png" alt="Manto in white marble holds an oracular bowl, a small row of marble figures stands beside her, blue threads run in along the ground and three gold bands leave for a carved tablet, next to the classical column" width="100%"></p>
 
 <!-- owner-welcome:start -->
 
-> Hello. I am a lawyer with two daughters and a coffee business, so I build in the evening and I cannot run a research round for every idea I have.
+> Hello. My name is Filipp Zarubin. I am a lawyer, and I build software the vibe-coding way: I have far more ideas than time, and every one of them looks convincing right up to the moment somebody other than me touches it.
 >
-> Mantoz came out of that. It gives me a first read from a crowd before I spend anybody's time, my own included. It will not tell you what your customers think. It will tell you which of your ideas falls apart the moment a hundred different people touch it.
+> Checking them properly is expensive. I am not a researcher and not a marketer, so if I order a survey I overpay and still ask the wrong question. So I built myself a focus group of people who do not exist, and I run every new idea past it before I spend a month on it.
 >
-> It sits in the Olympuz family of tools: https://github.com/zarubinvibe/athena#olympuz-family
+> This does not replace real users, and I will not pretend otherwise. It cuts the ideas that fall apart on first contact. And watching five hundred invented people argue with your wording turns out to be a genuinely good time.
+>
+> Mantoz is one of the [Olympuz tools](https://github.com/zarubinvibe/athena#olympuz-family), and they all follow the same rules.
 >
 > — Filipp Zarubin
 
@@ -37,21 +39,21 @@ Test a product on a generated crowd before real people see it.
 
 ## What This Is
 
-Mantoz builds a crowd of made-up people, sends every one of them through the same task, and shows how each group answered. The people are generated: age, income, city, habits, what they care about. The task is real work. A survey form, a support chat, a web page, a desktop app. Nothing leaves your machine until you switch on a paid model yourself.
+Mantoz builds you a focus group of people who are not real. Each one has an age, an income, a city, habits and things they care about, and those traits are wired to each other, so no nineteen-year-old turns up with thirty years of management behind him. Then every one of them goes through your task: fills in the form, writes to support, clicks through the page, works inside the app.
 
 ## Why It Helps
 
-You can ship a form and learn a month later that nobody over fifty finished it. Asking real users first costs weeks and a budget you may not have yet. A generated crowd does not replace them. It catches the loud breakages early: the question nobody understood, the button one group never reached, the wording that reads fine to you and to no one else.
+You had an idea. Testing it on real people costs weeks and money, and if you are not a researcher you will also do it badly: wrong question, wrong sample, wrong conclusion. Mantoz gives you the first pass. It will not tell you what your customers think. It shows you which sentence falls apart, which button one group never reaches, and where the forty-year-olds from a small town answer nothing like you expected.
 
 ## The Main Advantage
 
-**Main advantage:** the verdict comes from a checker that belongs to the task, and it is written many times over, not once.
+**Main advantage:** the answer is graded by a checker that lives inside the task, and it grades as many times as you ask.
 
-**Why this is better:** One run of one agent says nothing about a population. Mantoz puts every persona through the task several times, each task carries its own verifier, and free-form answers go to two judges whose disagreement is measured and kept next to the raw text. You read the spread instead of one lucky answer.
+**Why this is better:** Ask a model once and you get one answer and no spread at all. Here every person goes through the task several times, free-form answers are read by two judges, the gap between them is measured, and the raw text stays in the verdict. You look at the spread instead of one lucky reply.
 
 ## How It Works
 
-Five steps. Each one leaves a file on disk, so a run you interrupt continues from what is already written.
+Five steps. Each one leaves a file behind, so a run you interrupt picks up where it stopped.
 
 <!-- workflow-diagram:start -->
 
@@ -61,75 +63,75 @@ Five steps. Each one leaves a file on disk, so a run you interrupt continues fro
 
 | Stage | What happens |
 |---|---|
-| 1. Crowd | A crowd of personas is generated from a schema |
-| 2. Ground | Real statistics pull the crowd toward reality |
-| 3. Run | Everyone goes through the same task |
+| 1. People | Five hundred invented people are generated from a schema |
+| 2. Statistics | Real statistics make them look like a country |
+| 3. Run | Every one of them goes through your task |
 | 4. Verify | The task decides for itself whether an answer passed |
-| 5. Report | The runs are aggregated and split by subgroup |
+| 5. Report | The answers are counted up and split by group |
 
-### Step 1: Build the crowd
+### Step 1: Build the people
 
-You say how many people you want and with which seed. Mantoz builds them from a schema of forty dimensions in four groups: background, psychology, capability, behaviour. A dependency graph keeps them coherent, so a nineteen-year-old does not come out with thirty years of management behind him.
+You say how many people you want and with which seed. Mantoz builds them out of forty traits in four groups: background, psychology, capability, behaviour. A dependency graph keeps them coherent, so nobody comes out nineteen years old with thirty years of management behind him.
 
-**You get:** a reproducible crowd on disk: the same seed always gives the same people.
+**You get:** a reproducible set of people on disk: the same seed always gives you the same five hundred.
 
-### Step 2: Pull it toward real statistics
+### Step 2: Make them look real
 
-A crowd sampled out of thin air is smooth in a way real populations never are. Import marginals from an open statistical source and the sampler follows those shares instead of its own defaults. Only sources that allow commercial use ship with the project.
+People sampled out of thin air are too smooth: a real country never is. Import the shares from an open statistical source and the sampler follows those instead of its own defaults. Only sources that permit commercial use ship with the project.
 
-**You get:** a crowd whose shares match published statistics, with the source and its license written next to it.
+**You get:** people whose shares match published statistics, with the source and its license written next to them.
 
-### Step 3: Send everyone through the task
+### Step 3: Send them through the task
 
-The task lives in one of four environments: a survey form, a support chat, a web page, a desktop app. Every persona goes through it several times, because one run of one agent is an anecdote. Execution goes through Harbor, and the sandbox backend is a config switch: Docker by default, Modal if you pay for it.
+The task lives in one of four environments: a survey form, a support chat, a web page, an app window. Every person goes through it several times, because one run of one agent is an anecdote. Execution goes through Harbor, and the sandbox is a config switch: Docker by default, Modal if you pay for it.
 
 **You get:** one trace per run, kept whole, including the answers that failed.
 
-### Step 4: Let the task judge itself
+### Step 4: Let the task grade it
 
-Each task carries its own verifier, so nothing is judged by a general-purpose reviewer that never saw the rubric. Free-form answers go to two judges. Their disagreement is measured, and the raw text of both is written into the verdict, so a strange score can be read rather than guessed at.
+Each task carries its own checker, so nothing is graded by a general-purpose reviewer that never saw the rubric. Free-form answers go to two judges. The gap between them is measured, and the raw text of both is written into the verdict, so a strange score can be read instead of guessed at.
 
 **You get:** a verdict per run with the raw judge output kept, not summarised away.
 
-### Step 5: Read it by subgroup
+### Step 5: Read it by group
 
-Single runs are counted up to the level of the whole population and of each subgroup, with the aggregation method written into the report rather than left implicit. The thin viewer turns that report into one HTML page. No second frontend, no build step, no server.
+Single runs are counted up to the level of everyone and of each group, with the aggregation method written into the report rather than left implicit. The thin viewer turns that report into one HTML page. No second frontend, no build step, no server.
 
-**You get:** one page showing how each group answered and where the groups disagree.
+**You get:** one page showing how each group answered and where the groups split.
 
 ## Quickstart
 
-You need macOS or Linux, Python 3.12 and `uv`. Docker as well if you want the sandboxed environments. Three doors below, any of them works.
+You need macOS or Linux, Python 3.12 and `uv`. Docker too, if you want the task environments themselves. Three doors below, any of them works.
 
 ```bash
 git clone https://github.com/zarubinvibe/mantoz.git ~/mantoz
 cd ~/mantoz
-python3 --version          # 3.12 or newer; the installer says so if yours is older
+python3 --version          # 3.12 или новее; установщик скажет, если у тебя старее
 bash install.sh
 
-claude                     # in Claude Code, then type /mantoz-setup
-code .                     # or just open the project in your editor
+claude                     # в Claude Code дальше набери /mantoz-setup
+code .                     # или просто открой проект в редакторе
 
 uv run python -m mantoz.population run --n-runs 3 --seed 7 --task survey --out runs/first.json
 uv run python -m mantoz.viewer render --report runs/first.json --out runs/first.html
 ```
 
-No Git? Download [the ZIP](https://github.com/zarubinvibe/mantoz/archive/refs/heads/main.zip), unpack it, and run the same `bash install.sh` inside. Want the package without a clone? `uv pip install git+https://github.com/zarubinvibe/mantoz.git` installs it straight from the repository. First time here? Open the project in Claude Code and run `/mantoz-setup`: the install goes as a conversation, one question at a time, and nothing is installed without your yes. Already have it? `/mantoz-update` brings it to the current version and shows the changes before touching anything.
+No Git? Download [the ZIP](https://github.com/zarubinvibe/mantoz/archive/refs/heads/main.zip), unpack it and run the same `bash install.sh` inside. Want the package without a clone? `uv pip install git+https://github.com/zarubinvibe/mantoz.git` installs it straight from the repository. First time here? Open the project in Claude Code and run `/mantoz-setup`: the install goes as a conversation, one question at a time, and nothing lands on your disk without your yes. Already installed? `/mantoz-update` brings you to the current version and shows the changes before it touches anything.
 
 Never done this before? [The onboarding](docs/ONBOARDING.md) walks the whole first run step by step and says what you see after every command.
 
-**You get:** a population report on disk and one HTML page you open in a browser, with the split by subgroup already counted.
+**You get:** a report on disk and one HTML page: how each group answered, and where the groups split.
 
 ## Simple Comparison
 
-| Choice | Best when | What you get | What it costs | Where it runs | Trade-off |
+| Way to check | Best when | What you get | What it costs | Where it runs | Trade-off |
 |---|---|---|---|---|---|
-| **Mantoz** | A whole population has to answer and you do not have one | A generated crowd, task-owned verifiers, a subgroup split | Free; only a live LLM judge costs money | Your own machine | Generated people are not people: loud problems show, quiet ones may not |
-| Real user research | The decision is expensive and needs actual humans | What real customers do, with all the surprises | Weeks of work and an agency or panel budget | Out in the world | Too slow and too costly to run on every idea |
-| An A/B test in production | The feature already exists and traffic is large | Real behaviour at real scale | Engineering time, plus the cost of shipping a bad variant | Your production servers | You learn after users have already met the mistake |
-| Asking one chatbot | You want a quick read on the wording | An answer in ten seconds | Free or a few cents | Somebody else's servers | One voice, no distribution, nobody to disagree |
-| MatrAIx-Persona-8B | You want the published research setup itself | The original method and a very large released corpus | Free to read; the corpus is research-licensed | Your machine or a cluster | The persona corpus is research-only, so commercial use is not granted |
-| Asking friends and colleagues by hand | You need a sanity check today and nothing more | Honest reactions from people who know you | An hour of somebody's goodwill | A chat window or a kitchen | Five people who all resemble each other are not a population |
+| **Mantoz** | The idea is still an idea and you need a first read | Five hundred answers with the split by age, income and city | Free, unless you switch on a live judge yourself | Your own machine | These people are invented: the loud problems surface, the quiet ones may not |
+| Hiring a research agency | The decision is expensive and has to hold up in front of investors | Real behaviour of real customers, gathered by people who know how | Weeks, and a budget per wave | Out in the world | Too slow and too costly to spend on an idea you may drop on Friday |
+| An A/B test in production | The feature is already built and the traffic is there | Real behaviour at real scale, no guessing | Engineering time, plus whatever a bad variant costs you | Your production servers | You find out after your users have already met the mistake |
+| Asking a model once | You want a gut check on one sentence | An answer in ten seconds | Free or a few cents | Somebody else's servers | One voice, no spread, and nobody in the room who disagrees |
+| MatrAIx-Persona-8B | You want the published research rig itself | The original method and a very large released corpus | Free to read, research-licensed to use | Your machine or a cluster | The persona corpus is research-only, so commercial use is not granted |
+| Asking friends and colleagues | You need a sanity check today and nothing more | Honest reactions from people who know you | An hour of somebody's goodwill | A chat window or a kitchen | Five people who all resemble each other cannot disagree with each other |
 
 ## Simple Words
 
@@ -140,32 +142,32 @@ Never done this before? [The onboarding](docs/ONBOARDING.md) walks the whole fir
 | Command | One instruction you give the computer |
 | Branch | A separate line of changes that does not touch `main` |
 | Pull Request | A request to review your change and accept it |
-| Persona | One generated person: age, income, city, habits, values |
-| Population run | The same task handed to many personas, several times each |
+| Persona | One invented person: age, income, city, habits, values, wired together so they hold up |
+| Population run | The same task handed to hundreds of those people, several times each |
 | Verifier | A small program that belongs to the task and decides whether an answer passed |
-| Marginals | The share of each answer in real statistics, used to pull the crowd toward reality |
+| Marginals | The share of each answer in real statistics, used to make the invented people look like a country |
 
 ## Safety And Privacy
 
 - Everything runs on your machine. There is no Mantoz server and no account to create.
-- `data/` never enters git. A license gate refuses any commit carrying survey data, derived marginals or model weights.
-- Grounding ships with one source: Rosstat through tochno.st, CC BY 4.0, commercial use granted in writing.
-- A source that forbids redistribution stays marked `local_only`, and nothing derived from it leaves the machine.
-- LLM judges are off by default. A free deterministic judge runs unless you pass `--live-provider` yourself.
+- `data/` never enters git. A license gate refuses any commit carrying survey data, derived numbers or model weights.
+- One statistical source ships with the project: Rosstat through tochno.st, CC BY 4.0, commercial use granted in writing.
+- A source that forbids passing data on is marked `local_only`, and nothing derived from it leaves your machine.
+- Live LLM judges are off. Until you pass `--live-provider` yourself, a free deterministic judge does the grading.
 - Task environments run in Docker. The Modal backend is opt-in and it costs money.
 
 Before any push, read `git diff` and run `sh evals/licence_boundary_gate.sh`.
 
 ## Limits
 
-Status: the MVP is closed. Seventeen tickets, all four environments running, the parity checklist green.
+Status: the MVP is closed. Seventeen tickets, four environments running, the parity checklist green.
 
-- Generated people are not real users. A result is a hypothesis worth checking, not evidence.
-- Grounding covers Russian statistics today. Another country needs a source with the same written permission.
-- The four environments are deliberately plain: a form, a chat, a page, a desktop window. They are not your product.
+- These people are invented. A result is a hypothesis worth checking, not evidence you can quote.
+- The statistics behind them are Russian. Another country needs a source with the same written permission.
+- The four environments are deliberately plain: a form, a chat, a page, an app window. They are not your product.
 - Command output and error messages are in Russian. The documentation is not.
 
-Deeper: [the parity checklist](docs/PARITY.md) compares Mantoz line by line against the published research setup, and [the glossary](docs/CONTEXT.md) explains the words the project uses. The persona method is borrowed as research and cited: [arXiv:2608.04205](https://arxiv.org/abs/2608.04205). Agent execution goes through [Harbor](https://github.com/harbor-framework/harbor), Apache-2.0, as a dependency, see [NOTICE](NOTICE).
+Deeper: [the parity checklist](docs/PARITY.md) compares Mantoz line by line against the published research rig, and [the glossary](docs/CONTEXT.md) explains the words the project uses. The persona method is borrowed as research and cited: [arXiv:2608.04205](https://arxiv.org/abs/2608.04205). Agent execution goes through [Harbor](https://github.com/harbor-framework/harbor), Apache-2.0, as a dependency, see [NOTICE](NOTICE).
 
 ## Star And Contribute
 
@@ -191,7 +193,7 @@ This is one of the public [Olympuz projects](https://github.com/zarubinvibe/athe
 | project | Zeuz | Factory that turns an idea into a governed multi-agent workflow with gates, observability, and replay. | [Repository](https://github.com/zarubinvibe/zeuz) · [ZIP](https://github.com/zarubinvibe/zeuz/archive/refs/heads/main.zip) |
 | project | Lynceuz | Collects public web evidence at zero cost and stops with an honest reason when the safe routes end. | [Repository](https://github.com/zarubinvibe/lynceuz) · [ZIP](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip) |
 | project | Iriz | macOS menu-bar dictation that decodes speech on your own Mac, fixes wrong keyboard layouts, and turns dictation into a ready task for an agent. | [Repository](https://github.com/zarubinvibe/iriz) · [ZIP](https://github.com/zarubinvibe/iriz/archive/refs/heads/main.zip) |
-| project | Mantoz | Runs a product past thousands of generated people before real ones see it, and reports how each group answered. | [Repository](https://github.com/zarubinvibe/mantoz) · [ZIP](https://github.com/zarubinvibe/mantoz/archive/refs/heads/main.zip) |
+| project | Mantoz | Puts an idea in front of five hundred people who do not exist, then shows how each group answered. | [Repository](https://github.com/zarubinvibe/mantoz) · [ZIP](https://github.com/zarubinvibe/mantoz/archive/refs/heads/main.zip) |
 | project | Koiz | A single lesson base for every project. Each failure is taken down to its cause, and the cause stays open until a hook, a gate or a test closes it. | [Repository](https://github.com/zarubinvibe/koiz) · [ZIP](https://github.com/zarubinvibe/koiz/archive/refs/heads/main.zip) |
 <!-- pantheon-family:end -->
 

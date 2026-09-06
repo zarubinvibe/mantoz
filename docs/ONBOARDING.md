@@ -5,7 +5,7 @@
 Written for someone who has never done this before. Every step says what to type and what shows up
 on screen afterwards. Fifteen minutes end to end, most of it waiting for downloads.
 
-You will finish with a report about a crowd of a few hundred generated people who all filled in the
+You will finish with a report about a few hundred invented people who all filled in the
 same survey, and one HTML page that shows how each group answered.
 
 ---
@@ -63,7 +63,7 @@ a list of checks, each starting with `ok`, and finally `all 21 checks passed`.
 If a line starts with `!!`, read it: the installer names exactly what is missing and the command
 that finishes the job. A missing Docker is fine for now.
 
-## Step 6. Generate a crowd and look at it
+## Step 6. Build the people and look at them
 
 ```bash
 uv run python -m mantoz.persona sample --n 200 --seed 7 --dag --out runs/people.json
@@ -79,9 +79,9 @@ python3 -c "import json;print(len(json.load(open('runs/people.json'))))"
 **On screen:** `200`.
 
 The `--seed 7` part matters: run the same command again and you get exactly the same two hundred
-people. Change the seed and you get a different crowd.
+people. Change the seed and you get a different set.
 
-## Step 7. Send the crowd through a survey
+## Step 7. Send them through a survey
 
 ```bash
 uv run python -m mantoz.population run --n-runs 3 --seed 7 --task survey --out runs/first.json
@@ -119,7 +119,7 @@ source of your own.
 
 ## Step 10. Try another environment
 
-The survey is one of four. Swap the task and the same crowd goes through a support chat, a web
+The survey is one of four. Swap the task and the same people go through a support chat, a web
 page, or a desktop app:
 
 ```bash

@@ -49,17 +49,17 @@
       "languages": {
         "en": {
           "published_path": "docs/assets/pantheon/takt-en.png",
-          "published_sha256": "7ee7a97117cdc3998f7fd8ebc5db0011743e1dae1dba255f14a88ae8820a2112",
+          "published_sha256": "053d0dbd6b5825a69ee4db8748db24db5121b963e56653f136e1e097976f4eb9",
           "alt": "Five marble plates in a row, each carved with one step of the work, a single gold band running behind them from the left edge"
         },
         "ru": {
           "published_path": "docs/assets/pantheon/takt-ru.png",
-          "published_sha256": "439b4bab1be9166258705f46641e544f99ab44136602bd5e76dfa9ff7ba9be66",
+          "published_sha256": "495bb4328b2a6621d4e297792a0417460c2933090d1dba22f33f4b6b8f70b840",
           "alt": "Пять мраморных плит в ряд, на каждой высечен один шаг работы, за ними идет одна золотая лента от левой кромки"
         },
         "zh": {
           "published_path": "docs/assets/pantheon/takt-zh.png",
-          "published_sha256": "cdeda1186495e5b8af5a4dc3ccab41797d460e2de88972eb973ac7b94a6d1e5e",
+          "published_sha256": "a329208462b427d905e8b34a51509aab6b7185683d17ff14a3e1b70780b0b6b6",
           "alt": "五块大理石板排成一行，每块刻着一个步骤，一条金色带子从左边穿过它们的后面"
         }
       }
@@ -67,35 +67,35 @@
     "stages": [
       {
         "id": "population",
-        "title_en": "Build the crowd",
-        "title_ru": "Соберите толпу",
-        "title_zh": "生成人群",
-        "diagram_en": "Crowd",
-        "diagram_ru": "Толпа",
-        "diagram_zh": "人群"
+        "title_en": "Build the people",
+        "title_ru": "Собери людей",
+        "title_zh": "生成这些人",
+        "diagram_en": "People",
+        "diagram_ru": "Люди",
+        "diagram_zh": "造人"
       },
       {
         "id": "ground",
-        "title_en": "Pull it toward real statistics",
-        "title_ru": "Притяните к реальной статистике",
+        "title_en": "Make them look real",
+        "title_ru": "Сделай их похожими",
         "title_zh": "对齐真实统计",
-        "diagram_en": "Ground",
+        "diagram_en": "Statistics",
         "diagram_ru": "Статистика",
-        "diagram_zh": "统计"
+        "diagram_zh": "对齐"
       },
       {
         "id": "run",
-        "title_en": "Send everyone through the task",
-        "title_ru": "Прогоните всех через задачу",
-        "title_zh": "让所有人跑任务",
+        "title_en": "Send them through the task",
+        "title_ru": "Отправь их в задачу",
+        "title_zh": "让他们跑任务",
         "diagram_en": "Run",
         "diagram_ru": "Прогон",
         "diagram_zh": "跑任务"
       },
       {
         "id": "verify",
-        "title_en": "Let the task judge itself",
-        "title_ru": "Пусть задача судит сама",
+        "title_en": "Let the task grade it",
+        "title_ru": "Пусть задача сама засчитает",
         "title_zh": "任务自己判分",
         "diagram_en": "Verify",
         "diagram_ru": "Проверка",
@@ -103,8 +103,8 @@
       },
       {
         "id": "report",
-        "title_en": "Read it by subgroup",
-        "title_ru": "Читайте по подгруппам",
+        "title_en": "Read it by group",
+        "title_ru": "Читай по группам",
         "title_zh": "按群体读结果",
         "diagram_en": "Report",
         "diagram_ru": "Отчет",

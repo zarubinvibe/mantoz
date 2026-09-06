@@ -7,14 +7,15 @@ your disk changes without your yes.
 
 <!-- owner-greeting:start -->
 
-> Hello. I am Filipp Zarubin, and I built Mantoz.
+> Hello. My name is Filipp Zarubin. I am a lawyer, and I build products the vibe-coding way.
 >
-> I am a lawyer with two daughters and a coffee business, so I write code in the evening and I
-> cannot order a research round for every idea I have. That is where this came from: it gives me a
-> first read from a crowd before I spend anybody's time, my own included.
+> I have more ideas than time. Every one of them looks convincing right up to the moment somebody
+> other than me touches it, and checking properly is expensive: I am not a researcher, so I would
+> pay an agency to ask the wrong question for me.
 >
-> It will not tell you what your customers think, and I do not want you to read it that way. It
-> will tell you which of your ideas falls apart the moment a hundred different people touch it.
+> That is where Mantoz came from. It puts together a focus group of people who do not exist and runs
+> an idea past them before I spend a month on it. It will not replace real users, and I am not going
+> to pretend it will. It cuts the ideas that fall apart on first contact.
 >
 > Everything is counted on your own machine. Until you switch on a paid model yourself, nothing
 > leaves it. Manto takes it from here, and she will not move a step without your consent.
@@ -73,13 +74,13 @@ folder, a few hundred megabytes. The install does not reach outside that folder.
 **What you get:** the line `all 21 checks passed`. With no network the installer says so plainly,
 names the command that finishes the job later, and still runs every check of the tree.
 
-## Step 4: I build the first crowd
+## Step 4: I build the people
 
-**What I do:** ask for the size of the crowd and the seed, then generate the people from a schema of
-forty dimensions with a dependency graph behind it.
+**What I do:** ask how many people you want and which seed, then build them from a schema of forty
+traits with a dependency graph behind it.
 
 **Why:** the seed makes a run repeatable. Without it a second run gives different people and any
-conversation about the result becomes pointless. The size of the crowd multiplies straight into time.
+conversation about the result becomes pointless. The number of people multiplies straight into time.
 
 **What changes on disk:** one JSON file appears under `runs/`, usually under a megabyte.
 
@@ -87,14 +88,14 @@ conversation about the result becomes pointless. The size of the crowd multiplie
 one of them in full, then repeat the command with the same seed so you watch the same people come
 back.
 
-**Fork:** two hundred people or fifty. Two hundred make the subgroups visible; fifty finish faster
-and are enough to see the mechanics.
+**Fork:** five hundred people or fifty. Five hundred make the groups visible; fifty finish fast and
+are enough to see the mechanics.
 ➡️ I recommend two hundred and seed 7 for the first time.
 
 ## Step 5: I run your task, not mine
 
-**What I do:** ask what you would want to test on a crowd first, pick one of the four environments
-for it, and run it several times per person.
+**What I do:** ask what you would want to check first, pick one of the four environments for it, and
+run it several times per person.
 
 **Why:** an example out of the documentation tells you nothing about your product. The install has to
 end on your own material, or you never learn whether this thing is any use to you.
