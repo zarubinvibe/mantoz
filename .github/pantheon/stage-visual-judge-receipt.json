@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "kind": "pantheon-visual-judge",
+  "receipt_id": "mantoz-stage-review-2026-09-06",
+  "checked_at": "2026-09-06T20:20:00Z",
+  "runtime": "claude-code",
+  "tool": "read-image",
+  "route_id": "claude-code:read-image:frontier",
+  "model": {
+    "id": "claude-opus-5",
+    "revision": "claude-opus-5[1m]",
+    "tier": "frontier"
+  },
+  "quality": "highest",
+  "verdict": "pass",
+  "human_reviewed": true,
+  "references": [
+    {
+      "role": "style-anchor",
+      "sha256": "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2"
+    },
+    {
+      "role": "column-reference",
+      "sha256": "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
+    }
+  ],
+  "outputs": [
+    {
+      "role": "stage-01-population",
+      "path": "docs/assets/pantheon/stage-1-population.png",
+      "sha256": "d444f1bba94ebb82d0bf2529250d73c13b56abbf9c3d0e867c3d8e888d85459a",
+      "verdict": "pass",
+      "hard_constraints": {
+        "column": true,
+        "ivory-background": true,
+        "white-marble": true,
+        "daylight": true,
+        "blue-gold-accents": true,
+        "no-dark-background": true,
+        "deity-symbol": true,
+        "text-accuracy": true,
+        "anchor-similarity": true,
+        "readme-render": true,
+        "series-coherence": true,
+        "stage-meaning": true
+      },
+      "scorecard": {
+        "column": 5,
+        "ivory-background": 5,
+        "white-marble": 5,
+        "daylight": 5,
+        "blue-gold-accents": 5,
+        "no-dark-background": 5,
+        "deity-symbol": 5,
+        "text-accuracy": 5,
+        "anchor-similarity": 5,
+        "readme-render": 5,
+        "series-coherence": 5,
+        "stage-meaning": 5
+      }
+    },
+    {
+      "role": "stage-02-ground",
+      "path": "docs/assets/pantheon/stage-2-ground.png",
+      "sha256": "26f698f97b7d3e7873862fa6a967cbb0dbc3481c6e7841a118144e36f414ccc8",
+      "verdict": "pass",
+      "hard_constraints": {
+        "column": true,
+        "ivory-background": true,
+        "white-marble": true,
+        "daylight": true,
+        "blue-gold-accents": true,
+        "no-dark-background": true,
+        "deity-symbol": true,
+        "text-accuracy": true,
+        "anchor-similarity": true,
+        "readme-render": true,
+        "series-coherence": true,
+        "stage-meaning": true
+      },
+      "scorecard": {
+        "column": 5,
+        "ivory-background": 5,
+        "white-marble": 5,
+        "daylight": 5,
+        "blue-gold-accents": 5,
+        "no-dark-background": 5,
+        "deity-symbol": 5,
+        "text-accuracy": 5,
+        "anchor-similarity": 5,
+        "readme-render": 5,
+        "series-coherence": 5,
+        "stage-meaning": 5
+      }
+    },
+    {
+      "role": "stage-03-run",
+      "path": "docs/assets/pantheon/stage-3-run.png",
+      "sha256": "899beb2e292437fbb3457a2111027f1fbe4841fcf51f243d352959ecfe233972",
+      "verdict": "pass",
+      "hard_constraints": {
+        "column": true,
+        "ivory-background": true,
+        "white-marble": true,
+        "daylight": true,
+        "blue-gold-accents": true,
+        "no-dark-background": true,
+        "deity-symbol": true,
+        "text-accuracy": true,
+        "anchor-similarity": true,
+        "readme-render": true,
+        "series-coherence": true,
+        "stage-meaning": true
+      },
+      "scorecard": {
+        "column": 5,
+        "ivory-background": 5,
+        "white-marble": 5,
+        "daylight": 5,
+        "blue-gold-accents": 5,
+        "no-dark-background": 5,
+        "deity-symbol": 5,
+        "text-accuracy": 5,
+        "anchor-similarity": 5,
+        "readme-render": 5,
+        "series-coherence": 5,
+        "stage-meaning": 5
+      }
+    },
+    {
+      "role": "stage-04-verify",
+      "path": "docs/assets/pantheon/stage-4-verify.png",
+      "sha256": "58441362e5e208f7232b9de44f0d453bb83c23f4e264fd825d8410e7464ddbf2",
+      "verdict": "pass",
+      "hard_constraints": {
+        "column": true,
+        "ivory-background": true,
+        "white-marble": true,
+        "daylight": true,
+        "blue-gold-accents": true,
+        "no-dark-background": true,
+        "deity-symbol": true,
+        "text-accuracy": true,
+        "anchor-similarity": true,
+        "readme-render": true,
+        "series-coherence": true,
+        "stage-meaning": true
+      },
+      "scorecard": {
+        "column": 5,
+        "ivory-background": 5,
+        "white-marble": 5,
+        "daylight": 5,
+        "blue-gold-accents": 5,
+        "no-dark-background": 5,
+        "deity-symbol": 5,
+        "text-accuracy": 5,
+        "anchor-similarity": 5,
+        "readme-render": 5,
+        "series-coherence": 5,
+        "stage-meaning": 5
+      }
+    },
+    {
+      "role": "stage-05-report",
+      "path": "docs/assets/pantheon/stage-5-report.png",
+      "sha256": "02de4a36484fad175e6bd5afd2e8a5f4a4d06ed1967099fbef932b0de07c90a5",
+      "verdict": "pass",
+      "hard_constraints": {
+        "column": true,
+        "ivory-background": true,
+        "white-marble": true,
+        "daylight": true,
+        "blue-gold-accents": true,
+        "no-dark-background": true,
+        "deity-symbol": true,
+        "text-accuracy": true,
+        "anchor-similarity": true,
+        "readme-render": true,
+        "series-coherence": true,
+        "stage-meaning": true
+      },
+      "scorecard": {
+        "column": 5,
+        "ivory-background": 5,
+        "white-marble": 5,
+        "daylight": 5,
+        "blue-gold-accents": 5,
+        "no-dark-background": 5,
+        "deity-symbol": 5,
+        "text-accuracy": 5,
+        "anchor-similarity": 5,
+        "readme-render": 5,
+        "series-coherence": 5,
+        "stage-meaning": 5
+      }
+    }
+  ]
+}

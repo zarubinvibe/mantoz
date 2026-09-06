@@ -25,5 +25,8 @@ __pycache__/
 # Внешние данные граунда (CC BY 4.0, качаются отдельно, в git не идут)
 data/
 
-# Knowledge graph output (regenerated, not published)
-graphify-out/
+# Граф знаний едет вместе с домом: сам граф и отчёт в индексе, машинный кэш и
+# пути конкретной машины мимо.
+graphify-out/*
+!graphify-out/graph.json
+!graphify-out/GRAPH_REPORT.md

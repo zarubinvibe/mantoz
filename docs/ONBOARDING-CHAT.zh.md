@@ -1,5 +1,7 @@
 # 用对话安装 Mantoz
 
+<p align="center"><img src="assets/pantheon/doc-chat.png" alt="两张大理石凳隔着一张矮桌相对，桌上一排六块石片，第一块上放着一条金色带子" width="100%"></p>
+
 这不是一页命令，而是一次对话。在你的智能体 CLI 里打开这个项目，说 `/mantoz-setup`。之后由我来讲：每一步在做之前先说清楚，一次只问一个问题，并且给出我的建议，让你用一个词就能同意。没有你的同意，磁盘上不会有任何改变。
 
 <!-- owner-greeting:start -->

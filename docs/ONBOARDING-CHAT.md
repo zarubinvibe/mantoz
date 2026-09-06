@@ -1,5 +1,7 @@
 # Installing Mantoz as a conversation
 
+<p align="center"><img src="assets/pantheon/doc-chat.png" alt="Two marble stools facing each other across a low table, six tiles in a row on it and one gold band resting on the first" width="100%"></p>
+
 This is not a page of commands, it is a conversation. Open the project in your agent CLI and say
 `/mantoz-setup`. From there I do the talking: I name every step before I take it, ask one question
 at a time, and attach my own recommendation to each one so agreeing takes a single word. Nothing on

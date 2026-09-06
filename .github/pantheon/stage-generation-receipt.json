@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "kind": "pantheon-generation",
+  "selection_mode": "managed-frontier",
+  "runtime": "codex",
+  "tool": "image_gen",
+  "route_id": "codex:image_gen:managed-frontier",
+  "model": {
+    "id": "provider-managed",
+    "revision": "provider-managed",
+    "tier": "frontier"
+  },
+  "quality": "highest",
+  "generation_id": "mantoz-stages-2026-09-06-codex-image-gen",
+  "generated_at": "2026-09-06T20:10:00Z",
+  "capability_snapshot": {
+    "checked_at": "2026-09-06T20:10:00Z",
+    "routes": [
+      {
+        "id": "codex:image_gen:managed-frontier",
+        "rank": 1,
+        "available": true,
+        "tier": "frontier",
+        "quality": "highest",
+        "model": {
+          "id": "provider-managed",
+          "revision": "provider-managed",
+          "tier": "frontier"
+        }
+      }
+    ]
+  },
+  "prompt": {
+    "path": ".github/pantheon/stage-population-prompt.txt",
+    "sha256": "97b3434dbd17bfd0509758b07dac50f424d3948c7a1bfd7121e1cb167899babe"
+  },
+  "references": [
+    {
+      "role": "style-anchor",
+      "sha256": "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2"
+    },
+    {
+      "role": "column-reference",
+      "sha256": "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "codex-managed",
+      "route_id": "codex:image_gen:managed-frontier",
+      "generation_id": "mantoz-stages-2026-09-06-codex-image-gen",
+      "prompt_sha256": "97b3434dbd17bfd0509758b07dac50f424d3948c7a1bfd7121e1cb167899babe",
+      "reference_sha256": [
+        "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2",
+        "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
+      ],
+      "outputs": [
+        {
+          "role": "stage-01-population",
+          "source_sha256": "d444f1bba94ebb82d0bf2529250d73c13b56abbf9c3d0e867c3d8e888d85459a",
+          "published_sha256": "d444f1bba94ebb82d0bf2529250d73c13b56abbf9c3d0e867c3d8e888d85459a"
+        },
+        {
+          "role": "stage-02-ground",
+          "source_sha256": "26f698f97b7d3e7873862fa6a967cbb0dbc3481c6e7841a118144e36f414ccc8",
+          "published_sha256": "26f698f97b7d3e7873862fa6a967cbb0dbc3481c6e7841a118144e36f414ccc8"
+        },
+        {
+          "role": "stage-03-run",
+          "source_sha256": "899beb2e292437fbb3457a2111027f1fbe4841fcf51f243d352959ecfe233972",
+          "published_sha256": "899beb2e292437fbb3457a2111027f1fbe4841fcf51f243d352959ecfe233972"
+        },
+        {
+          "role": "stage-04-verify",
+          "source_sha256": "58441362e5e208f7232b9de44f0d453bb83c23f4e264fd825d8410e7464ddbf2",
+          "published_sha256": "58441362e5e208f7232b9de44f0d453bb83c23f4e264fd825d8410e7464ddbf2"
+        },
+        {
+          "role": "stage-05-report",
+          "source_sha256": "02de4a36484fad175e6bd5afd2e8a5f4a4d06ed1967099fbef932b0de07c90a5",
+          "published_sha256": "02de4a36484fad175e6bd5afd2e8a5f4a4d06ed1967099fbef932b0de07c90a5"
+        }
+      ]
+    }
+  ],
+  "winner_id": "codex-managed",
+  "notes": {
+    "per_stage_prompts": {
+      "stage-01-population": ".github/pantheon/stage-population-prompt.txt",
+      "stage-02-ground": ".github/pantheon/stage-ground-prompt.txt",
+      "stage-03-run": ".github/pantheon/stage-run-prompt.txt",
+      "stage-04-verify": ".github/pantheon/stage-verify-prompt.txt",
+      "stage-05-report": ".github/pantheon/stage-report-prompt.txt"
+    },
+    "why_one_receipt": "Один прогон одной моделью с одними референсами: пять кадров серии сняты подряд, и разводить им пять квитанций значило бы записать пять разных событий вместо одного."
+  }
+}

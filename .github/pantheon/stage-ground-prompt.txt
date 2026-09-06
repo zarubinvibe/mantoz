@@ -1,0 +1,15 @@
+Use case: stylized-concept
+Asset type: wide workflow-stage image for a project of the Olympuz family
+Primary request: the stage where the made people are pulled toward reality: a marble bar chart of real proportions stands behind them and the rows rearrange to match it.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column.
+Subject: on a plain ivory floor stand five upright marble slabs of clearly different heights in a row, like a carved measure of proportions, each with a thin muted-gold line along its top edge. In front of them twelve identical small white-marble figures stand in five uneven groups, and the number of figures in each group visibly matches the height of the slab behind it. Thin sky-blue threads lie flat on the floor from each slab to its own group. A classical white-marble column stands at the right as the family signature.
+Composition/framing: 16:9 landscape, slabs and groups centred, generous empty ivory space above, nothing cropped.
+Style/medium: premium restrained 3D marble render, monumental carving with real weight, physically plausible materials, warm ivory Apple-like presentation
+Lighting/mood: soft daylight from upper left, long gentle shadows, calm and welcoming. Gold glows softly FROM WITHIN, never lit by a lamp or a hard rim light.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for bands and rims only, sky blue #B8D6EA for the ground threads only, charcoal #3E3A36
+Constraints:
+- Everything rests on the ground and casts its own shadow. Nothing hovers.
+- The small figures are plain and identical, without faces and without attributes.
+- Preserve the reference style of Image 1 exactly; highest final quality; maximum resolution.
+Avoid: any deity with a helmet, owl, shield or spear, rainbow of many colors, flames, smoke, screens, keyboards, charts, bar graphs, pie charts, cables, brand marks, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, callout labels
+Text (verbatim): No readable text, no letters, no digits anywhere in the image.

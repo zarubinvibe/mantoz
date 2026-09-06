@@ -73,11 +73,15 @@ Five steps. Each one leaves a file behind, so a run you interrupt picks up where
 
 You say how many people you want and with which seed. Mantoz builds them out of forty traits in four groups: background, psychology, capability, behaviour. A dependency graph keeps them coherent, so nobody comes out nineteen years old with thirty years of management behind him.
 
+<p align="center"><img src="docs/assets/pantheon/stage-1-population.png" alt="A marble mould on a long table, twelve identical small marble figures already standing in rows beside it" width="100%"></p>
+
 **You get:** a reproducible set of people on disk: the same seed always gives you the same five hundred.
 
 ### Step 2: Make them look real
 
 People sampled out of thin air are too smooth: a real country never is. Import the shares from an open statistical source and the sampler follows those instead of its own defaults. Only sources that permit commercial use ship with the project.
+
+<p align="center"><img src="docs/assets/pantheon/stage-2-ground.png" alt="Five marble slabs of different heights, and in front of each a group of figures whose count matches its height" width="100%"></p>
 
 **You get:** people whose shares match published statistics, with the source and its license written next to them.
 
@@ -85,17 +89,23 @@ People sampled out of thin air are too smooth: a real country never is. Import t
 
 The task lives in one of four environments: a survey form, a support chat, a web page, an app window. Every person goes through it several times, because one run of one agent is an anecdote. Execution goes through Harbor, and the sandbox is a config switch: Docker by default, Modal if you pay for it.
 
+<p align="center"><img src="docs/assets/pantheon/stage-3-run.png" alt="A single marble doorway with a queue of identical figures walking through it, left to right along one blue thread" width="100%"></p>
+
 **You get:** one trace per run, kept whole, including the answers that failed.
 
 ### Step 4: Let the task grade it
 
 Each task carries its own checker, so nothing is graded by a general-purpose reviewer that never saw the rubric. Free-form answers go to two judges. The gap between them is measured, and the raw text of both is written into the verdict, so a strange score can be read instead of guessed at.
 
+<p align="center"><img src="docs/assets/pantheon/stage-4-verify.png" alt="A marble balance weighing a carved tablet against a plain weight, with two marble seals standing guard" width="100%"></p>
+
 **You get:** a verdict per run with the raw judge output kept, not summarised away.
 
 ### Step 5: Read it by group
 
 Single runs are counted up to the level of everyone and of each group, with the aggregation method written into the report rather than left implicit. The thin viewer turns that report into one HTML page. No second frontend, no build step, no server.
+
+<p align="center"><img src="docs/assets/pantheon/stage-5-report.png" alt="Nine blue threads gathering at a marble block and leaving as three gold bands that land as grooves of different length" width="100%"></p>
 
 **You get:** one page showing how each group answered and where the groups split.
 

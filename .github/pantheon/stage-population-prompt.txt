@@ -1,0 +1,15 @@
+Use case: stylized-concept
+Asset type: wide workflow-stage image for a project of the Olympuz family
+Primary request: the stage where the people are made: identical small marble figures rise out of a marble mould and take their places in ordered rows.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column.
+Subject: a long low marble table on a plain ivory floor. On its left end stands an open marble mould shaped like a small standing figure. Out of it, along the table, twelve identical small white-marble figures stand in three even rows, each the height of a hand, all facing right. The rows are complete and evenly spaced. A classical white-marble column stands at the far right as the family signature.
+Composition/framing: 16:9 landscape, the table filling the lower two thirds, generous empty ivory space above, nothing cropped.
+Style/medium: premium restrained 3D marble render, monumental carving with real weight, physically plausible materials, warm ivory Apple-like presentation
+Lighting/mood: soft daylight from upper left, long gentle shadows, calm and welcoming. Gold glows softly FROM WITHIN, never lit by a lamp or a hard rim light.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for bands and rims only, sky blue #B8D6EA for the ground threads only, charcoal #3E3A36
+Constraints:
+- Everything rests on the ground and casts its own shadow. Nothing hovers.
+- The small figures are plain and identical, without faces and without attributes.
+- Preserve the reference style of Image 1 exactly; highest final quality; maximum resolution.
+Avoid: any deity with a helmet, owl, shield or spear, rainbow of many colors, flames, smoke, screens, keyboards, charts, bar graphs, pie charts, cables, brand marks, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, callout labels
+Text (verbatim): No readable text, no letters, no digits anywhere in the image.

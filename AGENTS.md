@@ -14,6 +14,10 @@ the outcome to the population and subgroup level.
 
 A newcomer starts in chat, not on a page: send them to [docs/ONBOARDING-CHAT.md](docs/ONBOARDING-CHAT.md) (`docs/ONBOARDING-CHAT.ru.md`, `docs/ONBOARDING-CHAT.zh.md`) and walk it with them, one question at a time, taking no step without their yes.
 
+## The knowledge graph answers first
+
+The knowledge graph of this repository is free to walk: `graphify-out/graph.json` and `graphify-out/GRAPH_REPORT.md`. Ask it before grepping the tree.
+
 ## Build, run, test
 
 ```bash

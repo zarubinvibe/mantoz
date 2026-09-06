@@ -345,19 +345,19 @@
         "short": "Five hundred invented people are generated from a schema",
         "body": "You say how many people you want and with which seed. Mantoz builds them out of forty traits in four groups: background, psychology, capability, behaviour. A dependency graph keeps them coherent, so nobody comes out nineteen years old with thirty years of management behind him.",
         "result": "a reproducible set of people on disk: the same seed always gives you the same five hundred.",
-        "alt": "Mantoz stage 1: invented people are generated"
+        "alt": "A marble mould on a long table, twelve identical small marble figures already standing in rows beside it"
       },
       "ru": {
         "short": "Пятьсот выдуманных людей собираются по схеме",
         "body": "Ты говоришь, сколько людей нужно и с каким seed. Mantoz собирает их из сорока признаков в четырех группах: происхождение, психология, способности, поведение. Граф зависимостей держит их связными, чтобы никто не оказался девятнадцатилетним с тридцатью годами управленческого стажа.",
         "result": "воспроизводимый набор людей на диске: один и тот же seed всегда дает тех же пятьсот.",
-        "alt": "Этап 1 Mantoz: собираются выдуманные люди"
+        "alt": "Мраморная форма на длинном столе, рядом уже стоят рядами двенадцать одинаковых фигурок"
       },
       "zh": {
         "short": "按一套结构生成五百个虚构的人",
         "body": "你说明要多少人、用哪个随机种子。Mantoz 按四大类共四十个特征生成他们：出身、心理、能力、行为。一张依赖图让这些特征彼此自洽，不会出现十九岁却有三十年管理经验的人。",
         "result": "磁盘上一批可复现的人：同一个种子永远给你同样的五百个。",
-        "alt": "Mantoz 第 1 步：生成虚构的人"
+        "alt": "长桌上的大理石模具，旁边已经成排站着十二个一模一样的小人像"
       }
     },
     "ground": {
@@ -365,19 +365,19 @@
         "short": "Real statistics make them look like a country",
         "body": "People sampled out of thin air are too smooth: a real country never is. Import the shares from an open statistical source and the sampler follows those instead of its own defaults. Only sources that permit commercial use ship with the project.",
         "result": "people whose shares match published statistics, with the source and its license written next to them.",
-        "alt": "Mantoz stage 2: real statistics make the people look like a country"
+        "alt": "Five marble slabs of different heights, and in front of each a group of figures whose count matches its height"
       },
       "ru": {
         "short": "Реальная статистика делает их похожими на страну",
         "body": "Люди, взятые из воздуха, слишком ровные: настоящая страна так не выглядит. Импортируй доли из открытого статистического источника, и сэмплер пойдет по ним вместо своих умолчаний. В комплекте едут только источники, где коммерческое использование разрешено.",
         "result": "люди, доли которых сходятся с опубликованной статистикой, а рядом записаны источник и его лицензия.",
-        "alt": "Этап 2 Mantoz: реальная статистика делает людей похожими на страну"
+        "alt": "Пять мраморных плит разной высоты, перед каждой группа фигурок, число которых совпадает с ее высотой"
       },
       "zh": {
         "short": "用真实统计让他们像一个国家",
         "body": "凭空抽出来的人太平滑了，真实的国家不是这样。从公开统计来源导入各项占比，采样器就按这些走，而不是自己的默认值。随项目提供的，只有允许商业使用的来源。",
         "result": "各项占比与公开统计吻合的人，旁边写着来源和它的许可证。",
-        "alt": "Mantoz 第 2 步：用真实统计让这些人像一个国家"
+        "alt": "五块高低不同的大理石板，每块前面站着一组人像，数量与板的高度相符"
       }
     },
     "run": {
@@ -385,19 +385,19 @@
         "short": "Every one of them goes through your task",
         "body": "The task lives in one of four environments: a survey form, a support chat, a web page, an app window. Every person goes through it several times, because one run of one agent is an anecdote. Execution goes through Harbor, and the sandbox is a config switch: Docker by default, Modal if you pay for it.",
         "result": "one trace per run, kept whole, including the answers that failed.",
-        "alt": "Mantoz stage 3: every person goes through your task"
+        "alt": "A single marble doorway with a queue of identical figures walking through it, left to right along one blue thread"
       },
       "ru": {
         "short": "Каждый из них проходит твою задачу",
         "body": "Задача живет в одной из четырех сред: анкета, чат поддержки, веб-страница, окно приложения. Каждый проходит ее по нескольку раз, потому что один прогон одного агента годится только на байку. Исполнение идет через Harbor, а песочница переключается конфигом: Docker по умолчанию, Modal если платишь.",
         "result": "по одному следу на прогон, целиком, включая ответы, которые не прошли.",
-        "alt": "Этап 3 Mantoz: каждый проходит твою задачу"
+        "alt": "Один мраморный проем, через который слева направо идет вереница одинаковых фигурок по синей нити"
       },
       "zh": {
         "short": "他们每一个都走一遍你的任务",
         "body": "任务放在四个环境之一：问卷表单、客服对话、网页、应用窗口。每个人都要跑好几遍，因为一个智能体跑一次只能算轶事。执行通过 Harbor 完成，沙箱是配置里的一个开关：默认 Docker，愿意付费就用 Modal。",
         "result": "每次运行留下一条完整记录，包括没通过的回答。",
-        "alt": "Mantoz 第 3 步：他们每一个都走一遍你的任务"
+        "alt": "一道大理石门，一列一模一样的小人像沿着一条蓝线从左到右穿过它"
       }
     },
     "verify": {
@@ -405,19 +405,19 @@
         "short": "The task decides for itself whether an answer passed",
         "body": "Each task carries its own checker, so nothing is graded by a general-purpose reviewer that never saw the rubric. Free-form answers go to two judges. The gap between them is measured, and the raw text of both is written into the verdict, so a strange score can be read instead of guessed at.",
         "result": "a verdict per run with the raw judge output kept, not summarised away.",
-        "alt": "Mantoz stage 4: the task decides for itself whether an answer passed"
+        "alt": "A marble balance weighing a carved tablet against a plain weight, with two marble seals standing guard"
       },
       "ru": {
         "short": "Задача сама решает, засчитан ответ или нет",
         "body": "У каждой задачи свой проверяющий, поэтому ничего не оценивает универсальный ревьюер, который рубрику в глаза не видел. Свободные ответы уходят двум судьям. Расхождение между ними замеряется, а сырой текст обоих ложится в вердикт, чтобы странную оценку можно было прочитать, а не угадывать.",
         "result": "вердикт на каждый прогон, где сырой ответ судьи сохранен, а не свернут в сводку.",
-        "alt": "Этап 4 Mantoz: задача сама решает, засчитан ответ или нет"
+        "alt": "Мраморные весы взвешивают плиту с бороздами против гладкой гири, по сторонам стоят две печати"
       },
       "zh": {
         "short": "任务自己判断这次回答算不算通过",
         "body": "每个任务带自己的检查程序，不会交给一个没见过评分标准的通用审阅者。开放式回答交给两个评审。它们的分歧会被量出来，两份原始文本都写进判定结果，这样奇怪的分数可以读出来，而不用猜。",
         "result": "每次运行一份判定，评审的原始输出被保留，不做压缩概括。",
-        "alt": "Mantoz 第 4 步：任务自己判断这次回答算不算通过"
+        "alt": "一架大理石天平，一边是刻着凹槽的石板，另一边是素净的砝码，两侧各立着一枚印章"
       }
     },
     "report": {
@@ -425,19 +425,19 @@
         "short": "The answers are counted up and split by group",
         "body": "Single runs are counted up to the level of everyone and of each group, with the aggregation method written into the report rather than left implicit. The thin viewer turns that report into one HTML page. No second frontend, no build step, no server.",
         "result": "one page showing how each group answered and where the groups split.",
-        "alt": "Mantoz stage 5: the answers are counted up and split by group"
+        "alt": "Nine blue threads gathering at a marble block and leaving as three gold bands that land as grooves of different length"
       },
       "ru": {
         "short": "Ответы сводятся и разбиваются по группам",
         "body": "Отдельные прогоны считаются до уровня всех сразу и каждой группы отдельно, а метод агрегации записан в отчет, а не подразумевается. Тонкий вьювер превращает отчет в одну HTML-страницу. Второго фронтенда нет, сборки нет, сервера нет.",
         "result": "одна страница, где видно, как ответила каждая группа и где группы разошлись.",
-        "alt": "Этап 5 Mantoz: ответы сводятся и разбиваются по группам"
+        "alt": "Девять синих нитей сходятся в мраморном блоке и выходят тремя золотыми лентами разной длины"
       },
       "zh": {
         "short": "把回答汇总，并按群体拆开",
         "body": "单次运行会被汇总到全体和每个群体两个层面，聚合方法直接写进报告，而不是让人去猜。轻量查看器把这份报告变成一个 HTML 页面。没有第二个前端，没有构建步骤，也没有服务器。",
         "result": "一个页面，看得到每个群体怎么答，以及群体之间在哪里分开。",
-        "alt": "Mantoz 第 5 步：把回答汇总，并按群体拆开"
+        "alt": "九条蓝线在大理石块处汇合，再以三条长短不同的金色带子离开，落成石板上的凹槽"
       }
     }
   }

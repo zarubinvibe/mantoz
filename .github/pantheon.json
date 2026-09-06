@@ -72,7 +72,11 @@
         "title_zh": "生成这些人",
         "diagram_en": "People",
         "diagram_ru": "Люди",
-        "diagram_zh": "造人"
+        "diagram_zh": "造人",
+        "source_path": "docs/assets/pantheon/stage-1-population.png",
+        "source_sha256": "d444f1bba94ebb82d0bf2529250d73c13b56abbf9c3d0e867c3d8e888d85459a",
+        "published_path": "docs/assets/pantheon/stage-1-population.png",
+        "published_sha256": "d444f1bba94ebb82d0bf2529250d73c13b56abbf9c3d0e867c3d8e888d85459a"
       },
       {
         "id": "ground",
@@ -81,7 +85,11 @@
         "title_zh": "对齐真实统计",
         "diagram_en": "Statistics",
         "diagram_ru": "Статистика",
-        "diagram_zh": "对齐"
+        "diagram_zh": "对齐",
+        "source_path": "docs/assets/pantheon/stage-2-ground.png",
+        "source_sha256": "26f698f97b7d3e7873862fa6a967cbb0dbc3481c6e7841a118144e36f414ccc8",
+        "published_path": "docs/assets/pantheon/stage-2-ground.png",
+        "published_sha256": "26f698f97b7d3e7873862fa6a967cbb0dbc3481c6e7841a118144e36f414ccc8"
       },
       {
         "id": "run",
@@ -90,7 +98,11 @@
         "title_zh": "让他们跑任务",
         "diagram_en": "Run",
         "diagram_ru": "Прогон",
-        "diagram_zh": "跑任务"
+        "diagram_zh": "跑任务",
+        "source_path": "docs/assets/pantheon/stage-3-run.png",
+        "source_sha256": "899beb2e292437fbb3457a2111027f1fbe4841fcf51f243d352959ecfe233972",
+        "published_path": "docs/assets/pantheon/stage-3-run.png",
+        "published_sha256": "899beb2e292437fbb3457a2111027f1fbe4841fcf51f243d352959ecfe233972"
       },
       {
         "id": "verify",
@@ -99,7 +111,11 @@
         "title_zh": "任务自己判分",
         "diagram_en": "Verify",
         "diagram_ru": "Проверка",
-        "diagram_zh": "判分"
+        "diagram_zh": "判分",
+        "source_path": "docs/assets/pantheon/stage-4-verify.png",
+        "source_sha256": "58441362e5e208f7232b9de44f0d453bb83c23f4e264fd825d8410e7464ddbf2",
+        "published_path": "docs/assets/pantheon/stage-4-verify.png",
+        "published_sha256": "58441362e5e208f7232b9de44f0d453bb83c23f4e264fd825d8410e7464ddbf2"
       },
       {
         "id": "report",
@@ -108,7 +124,11 @@
         "title_zh": "按群体读结果",
         "diagram_en": "Report",
         "diagram_ru": "Отчет",
-        "diagram_zh": "报告"
+        "diagram_zh": "报告",
+        "source_path": "docs/assets/pantheon/stage-5-report.png",
+        "source_sha256": "02de4a36484fad175e6bd5afd2e8a5f4a4d06ed1967099fbef932b0de07c90a5",
+        "published_path": "docs/assets/pantheon/stage-5-report.png",
+        "published_sha256": "02de4a36484fad175e6bd5afd2e8a5f4a4d06ed1967099fbef932b0de07c90a5"
       }
     ],
     "doc_frames": {
@@ -163,12 +183,32 @@
         "frames": [
           "assets/pantheon/doc-reference.png"
         ]
+      },
+      {
+        "path": "docs/ONBOARDING-CHAT.md",
+        "frames": [
+          "assets/pantheon/doc-chat.png"
+        ]
+      },
+      {
+        "path": "docs/ONBOARDING-CHAT.ru.md",
+        "frames": [
+          "assets/pantheon/doc-chat.png"
+        ]
+      },
+      {
+        "path": "docs/ONBOARDING-CHAT.zh.md",
+        "frames": [
+          "assets/pantheon/doc-chat.png"
+        ]
       }
     ]
   },
   "receipts": {
     "generation_path": ".github/pantheon/generation-receipt.json",
     "visual_judge_path": ".github/pantheon/visual-judge-receipt.json",
-    "prompt_path": ".github/pantheon/hero-source-prompt.txt"
+    "prompt_path": ".github/pantheon/hero-source-prompt.txt",
+    "stage_generation_path": ".github/pantheon/stage-generation-receipt.json",
+    "stage_visual_judge_path": ".github/pantheon/stage-visual-judge-receipt.json"
   }
 }
