@@ -1,0 +1,29 @@
+# Секреты — никогда в git
+.env
+.env.*
+*secret*
+*credential*
+*.pem
+id_rsa*
+
+# Артефакты
+node_modules/
+dist/
+build/
+runs/
+.firecrawl/
+__pycache__/
+*.log
+.DS_Store
+
+# Карта секретов (если положена в проект)
+**/references/secrets-map.md
+
+# Рантайм конвейера Helioz (состояние, логи, бюджет окна)
+.helioz/
+
+# Внешние данные граунда (CC BY 4.0, качаются отдельно, в git не идут)
+data/
+
+# Knowledge graph output (regenerated, not published)
+graphify-out/

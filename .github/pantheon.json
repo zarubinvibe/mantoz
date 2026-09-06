@@ -1,0 +1,174 @@
+{
+  "schema_version": 3,
+  "family_id": "zarubinvibe-pantheon",
+  "catalog_version": "2026-09-06",
+  "dress": "full",
+  "project": {
+    "slug": "mantoz",
+    "deity": "Manto",
+    "symbol": "oracular bowl and a carved tablet of answers"
+  },
+  "visuals": {
+    "style_anchor_sha256": "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2",
+    "column_reference_sha256": "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd",
+    "presentation": {
+      "min_width": 1600,
+      "aspect_ratio": "16:9",
+      "readme_width": "100%",
+      "published_width": 1664,
+      "published_height": 936
+    },
+    "bible": {
+      "character_sheet": {
+        "published_path": "docs/assets/pantheon/bible-character.png",
+        "published_sha256": "9860ad17930da506af6208586d98b2d76bbfdb3b35b6275f151c0654d7788df8",
+        "alt": "Карта персонажа: Манто из белого мрамора в четырех видах с гадальной чашей в руке, над ними три этюда головы"
+      },
+      "prop_sheet": {
+        "published_path": "docs/assets/pantheon/bible-props.png",
+        "published_sha256": "7bc869fbde151a5e2f50942756b57089407d102167205ee5f86b1273860eb343",
+        "alt": "Карта предметов: гадальная чаша с золотым ободом, плита с тремя бороздами, безликая фигурка человека, синяя нить и золотая лента"
+      }
+    },
+    "hero": {
+      "source_path": "docs/assets/pantheon/hero-source.png",
+      "source_sha256": "33addad5dd2004fa7c555cfa137f817e215c5fb91c9ba8ebea37525f3912fd15",
+      "published_path": "docs/assets/pantheon/hero.png",
+      "published_sha256": "a909e1c811698d849ebd32b5e911c32a092c15a87606a94f45b2dd4d71908445"
+    },
+    "emblem": {
+      "source_path": "docs/assets/pantheon/emblem-source.png",
+      "source_sha256": "586ed83d2a2af8accf1dbb1e242eb7c15375553e5ccc573b317d1f3a0a506a76",
+      "published_path": "docs/assets/pantheon/emblem.png",
+      "published_sha256": "4c06b843dd2580d4541e6b5fdd1b799c1ed224703f9146e797108f2663fa98e2"
+    },
+    "takt": {
+      "source_path": "docs/assets/pantheon/takt.png",
+      "source_sha256": "a750cadb2730f64f515a6d73e9012bb94f1010d8097da8f29c31e7c173d22565",
+      "plate_geometry": ".github/pantheon/takt-plity.json",
+      "languages": {
+        "en": {
+          "published_path": "docs/assets/pantheon/takt-en.png",
+          "published_sha256": "7ee7a97117cdc3998f7fd8ebc5db0011743e1dae1dba255f14a88ae8820a2112",
+          "alt": "Five marble plates in a row, each carved with one step of the work, a single gold band running behind them from the left edge"
+        },
+        "ru": {
+          "published_path": "docs/assets/pantheon/takt-ru.png",
+          "published_sha256": "439b4bab1be9166258705f46641e544f99ab44136602bd5e76dfa9ff7ba9be66",
+          "alt": "Пять мраморных плит в ряд, на каждой высечен один шаг работы, за ними идет одна золотая лента от левой кромки"
+        },
+        "zh": {
+          "published_path": "docs/assets/pantheon/takt-zh.png",
+          "published_sha256": "cdeda1186495e5b8af5a4dc3ccab41797d460e2de88972eb973ac7b94a6d1e5e",
+          "alt": "五块大理石板排成一行，每块刻着一个步骤，一条金色带子从左边穿过它们的后面"
+        }
+      }
+    },
+    "stages": [
+      {
+        "id": "population",
+        "title_en": "Build the crowd",
+        "title_ru": "Соберите толпу",
+        "title_zh": "生成人群",
+        "diagram_en": "Crowd",
+        "diagram_ru": "Толпа",
+        "diagram_zh": "人群"
+      },
+      {
+        "id": "ground",
+        "title_en": "Pull it toward real statistics",
+        "title_ru": "Притяните к реальной статистике",
+        "title_zh": "对齐真实统计",
+        "diagram_en": "Ground",
+        "diagram_ru": "Статистика",
+        "diagram_zh": "统计"
+      },
+      {
+        "id": "run",
+        "title_en": "Send everyone through the task",
+        "title_ru": "Прогоните всех через задачу",
+        "title_zh": "让所有人跑任务",
+        "diagram_en": "Run",
+        "diagram_ru": "Прогон",
+        "diagram_zh": "跑任务"
+      },
+      {
+        "id": "verify",
+        "title_en": "Let the task judge itself",
+        "title_ru": "Пусть задача судит сама",
+        "title_zh": "任务自己判分",
+        "diagram_en": "Verify",
+        "diagram_ru": "Проверка",
+        "diagram_zh": "判分"
+      },
+      {
+        "id": "report",
+        "title_en": "Read it by subgroup",
+        "title_ru": "Читайте по подгруппам",
+        "title_zh": "按群体读结果",
+        "diagram_en": "Report",
+        "diagram_ru": "Отчет",
+        "diagram_zh": "报告"
+      }
+    ],
+    "doc_frames": {
+      "contributing": {
+        "published_path": "docs/assets/pantheon/doc-contributing.png",
+        "published_sha256": "590e75f7e38ef12e344f8a0bc637ebdf91b8d525b7a51f6ff9ad917887f86126",
+        "alt": "Две мраморные плиты на низком столе: левая с тремя высеченными строками, правая пустая и ждет своей работы",
+        "pages": {
+          "en": "CONTRIBUTING.md",
+          "ru": "CONTRIBUTING.ru.md",
+          "zh": "CONTRIBUTING.zh.md"
+        }
+      },
+      "security": {
+        "published_path": "docs/assets/pantheon/doc-security.png",
+        "published_sha256": "52619543fb911df41cb6f48f36e378b1b8ebbdb8f98929c1cfb87d2676558ac6",
+        "alt": "Сплошная мраморная граничная стена, закрытый ларь на ближней стороне и пять синих нитей, которые упираются в подножие",
+        "pages": {
+          "en": "SECURITY.md",
+          "ru": "SECURITY.ru.md",
+          "zh": "SECURITY.zh.md"
+        }
+      }
+    },
+    "doc_pages": [
+      {
+        "path": "docs/ONBOARDING.md",
+        "frames": [
+          "assets/pantheon/doc-onboarding.png"
+        ]
+      },
+      {
+        "path": "docs/ONBOARDING.ru.md",
+        "frames": [
+          "assets/pantheon/doc-onboarding.png"
+        ]
+      },
+      {
+        "path": "docs/ONBOARDING.zh.md",
+        "frames": [
+          "assets/pantheon/doc-onboarding.png"
+        ]
+      },
+      {
+        "path": "docs/PARITY.md",
+        "frames": [
+          "assets/pantheon/doc-reference.png"
+        ]
+      },
+      {
+        "path": "docs/CONTEXT.md",
+        "frames": [
+          "assets/pantheon/doc-reference.png"
+        ]
+      }
+    ]
+  },
+  "receipts": {
+    "generation_path": ".github/pantheon/generation-receipt.json",
+    "visual_judge_path": ".github/pantheon/visual-judge-receipt.json",
+    "prompt_path": ".github/pantheon/hero-source-prompt.txt"
+  }
+}

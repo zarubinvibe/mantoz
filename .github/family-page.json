@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "owner": "zarubinvibe",
+  "slug": "mantoz",
+  "license_badge": "MIT",
+  "status_badge": "working",
+  "languages": [
+    "en",
+    "ru",
+    "zh"
+  ],
+  "quick_code": "git clone https://github.com/zarubinvibe/mantoz.git ~/mantoz\ncd ~/mantoz\npython3 --version          # 3.12 or newer; the installer says so if yours is older\nbash install.sh\n\nclaude                     # in Claude Code, then type /mantoz-setup\ncode .                     # or just open the project in your editor\n\nuv run python -m mantoz.population run --n-runs 3 --seed 7 --task survey --out runs/first.json\nuv run python -m mantoz.viewer render --report runs/first.json --out runs/first.html",
+  "text": {
+    "en": {
+      "title": "Mantoz",
+      "name": "Mantoz",
+      "tagline": "Test a product on a generated crowd before real people see it.",
+      "hero_alt": "Manto in white marble holds an oracular bowl beside a small marble crowd; blue threads run in along the ground and three gold bands leave for a tablet, next to the classical column",
+      "what": "Mantoz builds a crowd of made-up people, sends every one of them through the same task, and shows how each group answered. The people are generated: age, income, city, habits, what they care about. The task is real work. A survey form, a support chat, a web page, a desktop app. Nothing leaves your machine until you switch on a paid model yourself.",
+      "why": "You can ship a form and learn a month later that nobody over fifty finished it. Asking real users first costs weeks and a budget you may not have yet. A generated crowd does not replace them. It catches the loud breakages early: the question nobody understood, the button one group never reached, the wording that reads fine to you and to no one else.",
+      "advantage": "the verdict comes from a checker that belongs to the task, and it is written many times over, not once.",
+      "better": "One run of one agent says nothing about a population. Mantoz puts every persona through the task several times, each task carries its own verifier, and free-form answers go to two judges whose disagreement is measured and kept next to the raw text. You read the spread instead of one lucky answer.",
+      "how": "Five steps. Each one leaves a file on disk, so a run you interrupt continues from what is already written.",
+      "quick_intro": "You need macOS or Linux, Python 3.12 and `uv`. Docker as well if you want the sandboxed environments. Three doors below, any of them works.",
+      "quick_extra": "No Git? Download [the ZIP](https://github.com/zarubinvibe/mantoz/archive/refs/heads/main.zip), unpack it, and run the same `bash install.sh` inside. Want the package without a clone? `uv pip install git+https://github.com/zarubinvibe/mantoz.git` installs it straight from the repository. First time here? Open the project in Claude Code and run `/mantoz-setup`: the install goes as a conversation, one question at a time, and nothing is installed without your yes. Already have it? `/mantoz-update` brings it to the current version and shows the changes before touching anything.",
+      "quick_result": "a population report on disk and one HTML page you open in a browser, with the split by subgroup already counted.",
+      "compare": [
+        [
+          "**Mantoz**",
+          "A whole population has to answer and you do not have one",
+          "A generated crowd, task-owned verifiers, a subgroup split",
+          "Free; only a live LLM judge costs money",
+          "Your own machine",
+          "Generated people are not people: loud problems show, quiet ones may not"
+        ],
+        [
+          "Real user research",
+          "The decision is expensive and needs actual humans",
+          "What real customers do, with all the surprises",
+          "Weeks of work and an agency or panel budget",
+          "Out in the world",
+          "Too slow and too costly to run on every idea"
+        ],
+        [
+          "An A/B test in production",
+          "The feature already exists and traffic is large",
+          "Real behaviour at real scale",
+          "Engineering time, plus the cost of shipping a bad variant",
+          "Your production servers",
+          "You learn after users have already met the mistake"
+        ],
+        [
+          "Asking one chatbot",
+          "You want a quick read on the wording",
+          "An answer in ten seconds",
+          "Free or a few cents",
+          "Somebody else's servers",
+          "One voice, no distribution, nobody to disagree"
+        ],
+        [
+          "MatrAIx-Persona-8B",
+          "You want the published research setup itself",
+          "The original method and a very large released corpus",
+          "Free to read; the corpus is research-licensed",
+          "Your machine or a cluster",
+          "The persona corpus is research-only, so commercial use is not granted"
+        ],
+        [
+          "Asking friends and colleagues by hand",
+          "You need a sanity check today and nothing more",
+          "Honest reactions from people who know you",
+          "An hour of somebody's goodwill",
+          "A chat window or a kitchen",
+          "Five people who all resemble each other are not a population"
+        ]
+      ],
+      "glossary": [
+        [
+          "Persona",
+          "One generated person: age, income, city, habits, values"
+        ],
+        [
+          "Population run",
+          "The same task handed to many personas, several times each"
+        ],
+        [
+          "Verifier",
+          "A small program that belongs to the task and decides whether an answer passed"
+        ],
+        [
+          "Marginals",
+          "The share of each answer in real statistics, used to pull the crowd toward reality"
+        ]
+      ],
+      "safety": [
+        "Everything runs on your machine. There is no Mantoz server and no account to create.",
+        "`data/` never enters git. A license gate refuses any commit carrying survey data, derived marginals or model weights.",
+        "Grounding ships with one source: Rosstat through tochno.st, CC BY 4.0, commercial use granted in writing.",
+        "A source that forbids redistribution stays marked `local_only`, and nothing derived from it leaves the machine.",
+        "LLM judges are off by default. A free deterministic judge runs unless you pass `--live-provider` yourself.",
+        "Task environments run in Docker. The Modal backend is opt-in and it costs money."
+      ],
+      "safety_tail": "Before any push, read `git diff` and run `sh evals/licence_boundary_gate.sh`.",
+      "status": "Status: the MVP is closed. Seventeen tickets, all four environments running, the parity checklist green.",
+      "limits": [
+        "Generated people are not real users. A result is a hypothesis worth checking, not evidence.",
+        "Grounding covers Russian statistics today. Another country needs a source with the same written permission.",
+        "The four environments are deliberately plain: a form, a chat, a page, a desktop window. They are not your product.",
+        "Command output and error messages are in Russian. The documentation is not."
+      ],
+      "docs": "Deeper: [the parity checklist](docs/PARITY.md) compares Mantoz line by line against the published research setup, and [the glossary](docs/CONTEXT.md) explains the words the project uses. The persona method is borrowed as research and cited: [arXiv:2608.04205](https://arxiv.org/abs/2608.04205). Agent execution goes through [Harbor](https://github.com/harbor-framework/harbor), Apache-2.0, as a dependency, see [NOTICE](NOTICE).",
+      "license": "MIT. See [LICENSE](LICENSE).",
+      "welcome": "Hello. I am a lawyer with two daughters and a coffee business, so I build in the evening and I cannot run a research round for every idea I have.\n\nMantoz came out of that. It gives me a first read from a crowd before I spend anybody's time, my own included. It will not tell you what your customers think. It will tell you which of your ideas falls apart the moment a hundred different people touch it.\n\nIt sits in the Olympuz family of tools: https://github.com/zarubinvibe/athena#olympuz-family",
+      "compare_header": [
+        "Choice",
+        "Best when",
+        "What you get",
+        "What it costs",
+        "Where it runs",
+        "Trade-off"
+      ]
+    },
+    "ru": {
+      "title": "Mantoz",
+      "name": "Mantoz",
+      "tagline": "Проверьте продукт на выдуманной толпе раньше, чем его увидят живые люди.",
+      "hero_alt": "Манто из белого мрамора держит гадальную чашу, рядом небольшая мраморная толпа; по земле в чашу входят синие нити, из чаши к плите уходят три золотые ленты, справа классическая колонна",
+      "what": "Mantoz собирает толпу выдуманных людей, прогоняет через одну задачу каждого и показывает, как ответила каждая группа. Люди сгенерированы: возраст, доход, город, привычки, что для них важно. Задача при этом настоящая. Анкета, чат поддержки, веб-страница, десктопное приложение. С машины наружу ничего не уходит, пока вы сами не включите платную модель.",
+      "why": "Форму можно выкатить и через месяц узнать, что люди старше пятидесяти ее не дочитывали. Спросить живых пользователей стоит недель и денег, которых на этой стадии обычно нет. Выдуманная толпа их не заменит. Зато она рано ловит громкие поломки: вопрос, который никто не понял, кнопку, до которой одна группа не дошла, формулировку, понятную вам и больше никому.",
+      "advantage": "вердикт выносит проверка, встроенная в саму задачу, и выносит его помногу раз, а не однажды.",
+      "better": "Один прогон одного агента ничего не говорит о популяции. Mantoz гоняет каждую персону через задачу по нескольку раз, у каждой задачи своя проверка, а свободные ответы уходят двум судьям: расхождение между ними замеряется и лежит рядом с сырым текстом. Вы читаете разброс, а не единственный удачный ответ.",
+      "how": "Пять шагов. После каждого на диске остается файл, поэтому прерванный прогон продолжается с записанного.",
+      "quick_intro": "Нужны macOS или Linux, Python 3.12 и `uv`. Еще Docker, если хотите песочницы сред. Ниже три двери, годится любая.",
+      "quick_extra": "Нет Git? Скачайте [ZIP](https://github.com/zarubinvibe/mantoz/archive/refs/heads/main.zip), распакуйте и запустите внутри тот же `bash install.sh`. Хотите пакет без клона? `uv pip install git+https://github.com/zarubinvibe/mantoz.git` ставит его прямо из репозитория. Впервые здесь? Откройте проект в Claude Code и запустите `/mantoz-setup`: установка идет разговором, по одному вопросу, и ничего не ставится без вашего «да». Уже стоит? `/mantoz-update` подтянет текущую версию и покажет изменения до того, как что-то тронет.",
+      "quick_result": "отчет по популяции на диске и одна HTML-страница, которую открываешь в браузере: разбивка по подгруппам уже посчитана.",
+      "compare": [
+        [
+          "**Mantoz**",
+          "Ответ нужен от целой популяции, а ее нет",
+          "Выдуманная толпа, проверка внутри задачи, разбивка по подгруппам",
+          "Бесплатно; деньги стоит только живой LLM-судья",
+          "Ваша машина",
+          "Выдуманные люди не люди: громкое вылезет, тихое может и нет"
+        ],
+        [
+          "Живое исследование",
+          "Решение дорогое и требует настоящих людей",
+          "Поведение настоящих клиентов со всеми неожиданностями",
+          "Недели работы и бюджет на агентство или панель",
+          "В реальном мире",
+          "Слишком медленно и дорого, чтобы гонять на каждую идею"
+        ],
+        [
+          "A/B-тест в проде",
+          "Фича уже есть, и трафика хватает",
+          "Настоящее поведение на настоящем масштабе",
+          "Время разработки плюс цена выкатки плохого варианта",
+          "Ваши боевые серверы",
+          "Вы узнаете после того, как пользователи встретили ошибку"
+        ],
+        [
+          "Спросить один чат-бот",
+          "Нужно быстро оценить формулировку",
+          "Ответ за десять секунд",
+          "Бесплатно или несколько центов",
+          "Чужие серверы",
+          "Один голос, никакого распределения, возразить некому"
+        ],
+        [
+          "MatrAIx-Persona-8B",
+          "Нужна сама опубликованная исследовательская сборка",
+          "Оригинальный метод и очень большой выложенный корпус",
+          "Читать бесплатно; корпус под исследовательской лицензией",
+          "Ваша машина или кластер",
+          "Корпус персон только для исследований, коммерция не разрешена"
+        ],
+        [
+          "Спросить знакомых руками",
+          "Нужна проверка на вменяемость сегодня и не более",
+          "Честные реакции людей, которые вас знают",
+          "Час чужой доброй воли",
+          "Чат или кухня",
+          "Пять человек, похожих друг на друга, популяцией не работают"
+        ]
+      ],
+      "glossary": [
+        [
+          "Persona",
+          "Один сгенерированный человек: возраст, доход, город, привычки, ценности"
+        ],
+        [
+          "Population run",
+          "Одна задача, выданная многим персонам по нескольку раз каждой"
+        ],
+        [
+          "Verifier",
+          "Маленькая программа задачи, которая решает, засчитан ответ или нет"
+        ],
+        [
+          "Marginals",
+          "Доли ответов из реальной статистики, ими толпу подтягивают к реальности"
+        ]
+      ],
+      "safety": [
+        "Все крутится на вашей машине. Сервера Mantoz нет, аккаунт заводить негде.",
+        "`data/` в git не попадает. Лицензионные ворота отклоняют коммит, который тащит опросные данные, производные маргиналы или веса модели.",
+        "В граунде один источник: Росстат через tochno.st, CC BY 4.0, коммерческое использование разрешено письменно.",
+        "Источник с запретом на передачу помечен `local_only`, и производное от него машину не покидает.",
+        "LLM-судьи выключены. Пока вы сами не передадите `--live-provider`, работает бесплатный детерминированный судья.",
+        "Среды задач крутятся в Docker. Бэкенд Modal подключается отдельно и стоит денег."
+      ],
+      "safety_tail": "Перед любым push прочитайте `git diff` и прогоните `sh evals/licence_boundary_gate.sh`.",
+      "status": "Статус: MVP закрыт. Семнадцать тикетов, все четыре среды работают, чек-лист паритета зеленый.",
+      "limits": [
+        "Сгенерированные люди не живые пользователи. Результат стоит считать гипотезой к проверке, а не доказательством.",
+        "Граунд пока держится на российской статистике. Другой стране нужен источник с таким же письменным разрешением.",
+        "Четыре среды нарочно простые: форма, чат, страница, окно приложения. Вашим продуктом они не станут.",
+        "Вывод команд и тексты ошибок на русском. Документация нет."
+      ],
+      "docs": "Глубже: [чек-лист паритета](docs/PARITY.md) сравнивает Mantoz построчно с опубликованной исследовательской сборкой, а [словарь](docs/CONTEXT.md) объясняет слова, которыми проект пользуется. Метод персон взят как исследование и процитирован: [arXiv:2608.04205](https://arxiv.org/abs/2608.04205). Исполнение агентов идет через [Harbor](https://github.com/harbor-framework/harbor), Apache-2.0, зависимостью, смотрите [NOTICE](NOTICE).",
+      "license": "MIT. См. [LICENSE](LICENSE).",
+      "welcome": "Здравствуйте. Я юрист, у меня две дочки и кофейное производство, поэтому кодить получается вечером, и заказывать исследование под каждую идею я не могу.\n\nОтсюда вырос Mantoz. Он дает мне первое мнение толпы раньше, чем я потрачу чье-то время, включая свое. Что думают ваши клиенты, он не скажет. Он скажет, какая из ваших идей рассыпается, стоит ее потрогать сотне разных людей.\n\nОн стоит в семье инструментов Olympuz: https://github.com/zarubinvibe/athena#olympuz-family",
+      "compare_header": [
+        "Вариант",
+        "Когда подходит",
+        "Что получаете",
+        "Чего стоит",
+        "Где считается",
+        "Минус"
+      ]
+    },
+    "zh": {
+      "title": "Mantoz",
+      "name": "Mantoz",
+      "tagline": "在真人看到之前，先让生成的人群把产品走一遍。",
+      "hero_alt": "白色大理石的曼托手托占卜浅盘，旁边是一小群大理石人像；蓝色细线沿地面进入盘中，三条金色带子从盘中通向石板，右侧立着家族的古典石柱",
+      "what": "Mantoz 生成一群虚构的人，让每个人做同一件任务，然后告诉你每个群体是怎么答的。这些人是生成出来的：年龄、收入、城市、习惯、在意什么。任务却是真的：问卷、客服对话、网页、桌面应用。除非你自己打开付费模型，数据不会离开你的机器。",
+      "why": "你可以先上线一个表单，一个月后才发现五十岁以上的人没有一个填完。去问真实用户要花几周时间和一笔预算，这个阶段往往还没有。生成的人群替代不了他们，但能早点抓住那些明显的毛病：没人看懂的问题、有一群人始终没点到的按钮、你觉得清楚而别人看不懂的说法。",
+      "advantage": "判分由任务自带的检查程序给出，而且反复给很多次，不是只给一次。",
+      "better": "一个智能体跑一次，说明不了整个人群的情况。Mantoz 让每个人物把任务跑好几遍，每个任务带自己的检查程序，开放式回答交给两个评审：它们的分歧会被量出来，和原始回答一起存着。你读到的是分布，不是一次运气好的回答。",
+      "how": "五个步骤。每一步都在磁盘上留下文件，所以中断的运行可以从已经写下的地方继续。",
+      "quick_intro": "需要 macOS 或 Linux、Python 3.12 和 `uv`。想用沙箱环境还需要 Docker。下面三扇门，任选一扇。",
+      "quick_extra": "没有 Git？下载 [ZIP 包](https://github.com/zarubinvibe/mantoz/archive/refs/heads/main.zip)，解压后在里面运行同样的 `bash install.sh`。不想 clone？`uv pip install git+https://github.com/zarubinvibe/mantoz.git` 直接从仓库安装这个包。 第一次用？在 Claude Code 里打开这个项目，运行 `/mantoz-setup`：安装以对话方式进行，一次问一个问题，没有你的同意不会安装任何东西。已经装过了？`/mantoz-update` 会更新到当前版本，并在动手之前先给你看有哪些改动。",
+      "quick_result": "磁盘上的一份人群报告，以及一个可以用浏览器打开的 HTML 页面，按群体的拆分已经算好了。",
+      "compare": [
+        [
+          "**Mantoz**",
+          "需要一整个人群回答，而人群还不存在",
+          "生成的人群、任务自带的判分、按群体拆分",
+          "免费；只有在线 LLM 评审要花钱",
+          "你自己的机器",
+          "生成的人不是真人：明显的问题会露出来，细微的可能不会"
+        ],
+        [
+          "真实用户调研",
+          "这个决定很贵，必须找真人",
+          "真实客户的真实行为，连同所有意外",
+          "几周时间，加上调研公司或样本库的预算",
+          "现实世界里",
+          "太慢也太贵，没法对每个想法都跑一次"
+        ],
+        [
+          "线上 A/B 测试",
+          "功能已经上线，流量也够大",
+          "真实规模上的真实行为",
+          "研发时间，外加放出一个坏版本的代价",
+          "你的生产服务器",
+          "等你知道的时候，用户已经先撞上了这个错误"
+        ],
+        [
+          "问一个聊天机器人",
+          "只想快速判断措辞行不行",
+          "十秒钟就有答案",
+          "免费或者几分钱",
+          "别人的服务器",
+          "只有一个声音，没有分布，也没人反对"
+        ],
+        [
+          "MatrAIx-Persona-8B",
+          "你要的就是那套已发表的研究装置",
+          "原始方法和一个非常大的公开语料",
+          "阅读免费；语料是研究许可",
+          "你的机器或集群",
+          "人物语料仅限研究使用，没有商业授权"
+        ],
+        [
+          "手动问朋友和同事",
+          "今天需要一个基本判断，仅此而已",
+          "认识你的人给出的诚实反应",
+          "别人一个小时的好意",
+          "一个聊天窗口或者厨房",
+          "五个彼此相像的人构不成一个人群"
+        ]
+      ],
+      "glossary": [
+        [
+          "Persona",
+          "人物：一个生成出来的人，有年龄、收入、城市、习惯和价值观"
+        ],
+        [
+          "Population run",
+          "人群运行：同一个任务发给很多人物，每人跑好几遍"
+        ],
+        [
+          "Verifier",
+          "检查程序：属于任务本身的小程序，判断这次回答算不算通过"
+        ],
+        [
+          "Marginals",
+          "边际分布：真实统计里各个答案的占比，用来把生成的人群往现实上拉"
+        ]
+      ],
+      "safety": [
+        "全部在你自己的机器上跑。没有 Mantoz 服务器，也不需要注册账号。",
+        "`data/` 不进 git。许可闸门会拒绝任何把调查数据、派生边际分布或模型权重带进去的提交。",
+        "自带的数据来源只有一个：通过 tochno.st 的俄罗斯统计局数据，CC BY 4.0，书面允许商业使用。",
+        "禁止转发的来源会被标成 `local_only`，由它派生的东西不会离开这台机器。",
+        "LLM 评审默认关闭。除非你自己传 `--live-provider`，跑的是免费的确定性评审。",
+        "任务环境跑在 Docker 里。Modal 后端要单独打开，而且要花钱。"
+      ],
+      "safety_tail": "推送之前先读 `git diff`，再跑一次 `sh evals/licence_boundary_gate.sh`。",
+      "status": "状态：MVP 已经收口。十七个工单、四个环境都在跑，对等清单是绿的。",
+      "limits": [
+        "生成的人不是真实用户。结果是值得去验证的假设，不是证据。",
+        "目前的统计基础是俄罗斯数据。换一个国家，需要一个有同样书面许可的来源。",
+        "四个环境是故意做简单的：一个表单、一段对话、一个页面、一个桌面窗口。它们不是你的产品。",
+        "命令输出和报错信息是俄语。文档不是。"
+      ],
+      "docs": "更深入：[对等清单](docs/PARITY.md) 把 Mantoz 与已发表的研究装置逐条对照，[术语表](docs/CONTEXT.md) 解释项目里用到的词。人物方法是作为研究借用的，并已引用：[arXiv:2608.04205](https://arxiv.org/abs/2608.04205)。智能体执行通过依赖 [Harbor](https://github.com/harbor-framework/harbor)（Apache-2.0）完成，见 [NOTICE](NOTICE)。",
+      "license": "MIT。见 [LICENSE](LICENSE)。",
+      "welcome": "你好。我是律师，有两个女儿，还做咖啡生意，所以只能在晚上写代码，也没法为每个想法都做一轮调研。\n\nMantoz 就是这么来的。它让我在花掉别人（也包括我自己）的时间之前，先听到一群人的第一反应。它不会告诉你客户在想什么。它会告诉你，你的哪个想法一被一百个不同的人碰到就散了。\n\n它属于 Olympuz 工具家族：https://github.com/zarubinvibe/athena#olympuz-family",
+      "compare_header": [
+        "方案",
+        "适合什么时候",
+        "你会得到",
+        "代价是什么",
+        "在哪里运行",
+        "取舍"
+      ]
+    }
+  },
+  "stages": {
+    "population": {
+      "en": {
+        "short": "A crowd of personas is generated from a schema",
+        "body": "You say how many people you want and with which seed. Mantoz builds them from a schema of forty dimensions in four groups: background, psychology, capability, behaviour. A dependency graph keeps them coherent, so a nineteen-year-old does not come out with thirty years of management behind him.",
+        "result": "a reproducible crowd on disk: the same seed always gives the same people.",
+        "alt": "Mantoz stage 1: a crowd of personas is generated"
+      },
+      "ru": {
+        "short": "Толпа персон генерируется по схеме",
+        "body": "Вы говорите, сколько людей нужно и с каким seed. Mantoz собирает их по схеме из сорока измерений в четырех группах: происхождение, психология, способности, поведение. Граф зависимостей держит их связными, чтобы у девятнадцатилетнего не оказалось тридцати лет управленческого стажа.",
+        "result": "воспроизводимая толпа на диске: один и тот же seed всегда дает одних и тех же людей.",
+        "alt": "Этап 1 Mantoz: генерируется толпа персон"
+      },
+      "zh": {
+        "short": "按照一套结构生成一群人物",
+        "body": "你说明要多少人、用哪个随机种子。Mantoz 按四大类共四十个维度生成他们：出身、心理、能力、行为。一张依赖图让这些属性彼此自洽，不会出现十九岁的人却有三十年管理经验。",
+        "result": "磁盘上一群可复现的人：同一个种子永远给出同一批人。",
+        "alt": "Mantoz 第 1 步：生成一群人物"
+      }
+    },
+    "ground": {
+      "en": {
+        "short": "Real statistics pull the crowd toward reality",
+        "body": "A crowd sampled out of thin air is smooth in a way real populations never are. Import marginals from an open statistical source and the sampler follows those shares instead of its own defaults. Only sources that allow commercial use ship with the project.",
+        "result": "a crowd whose shares match published statistics, with the source and its license written next to it.",
+        "alt": "Mantoz stage 2: real statistics pull the crowd toward reality"
+      },
+      "ru": {
+        "short": "Реальная статистика подтягивает толпу к реальности",
+        "body": "Толпа, взятая из воздуха, слишком гладкая: живые популяции так не выглядят. Импортируйте маргиналы из открытого статистического источника, и сэмплер пойдет по этим долям вместо своих умолчаний. В комплекте едут только источники, где коммерческое использование разрешено.",
+        "result": "толпа, доли в которой сходятся с опубликованной статистикой, а рядом записаны источник и его лицензия.",
+        "alt": "Этап 2 Mantoz: реальная статистика подтягивает толпу к реальности"
+      },
+      "zh": {
+        "short": "用真实统计把人群往现实上拉",
+        "body": "凭空抽出来的人群过于平滑，真实人口不是这样的。从公开统计来源导入边际分布，采样器就按这些占比走，而不是自己的默认值。随项目一起提供的，只有允许商业使用的来源。",
+        "result": "各项占比与公开统计吻合的人群，旁边写着来源和它的许可证。",
+        "alt": "Mantoz 第 2 步：用真实统计把人群往现实上拉"
+      }
+    },
+    "run": {
+      "en": {
+        "short": "Everyone goes through the same task",
+        "body": "The task lives in one of four environments: a survey form, a support chat, a web page, a desktop app. Every persona goes through it several times, because one run of one agent is an anecdote. Execution goes through Harbor, and the sandbox backend is a config switch: Docker by default, Modal if you pay for it.",
+        "result": "one trace per run, kept whole, including the answers that failed.",
+        "alt": "Mantoz stage 3: everyone goes through the same task"
+      },
+      "ru": {
+        "short": "Все проходят одну и ту же задачу",
+        "body": "Задача живет в одной из четырех сред: анкета, чат поддержки, веб-страница, десктопное приложение. Каждая персона проходит ее по нескольку раз, потому что один прогон одного агента годится только на байку. Исполнение идет через Harbor, а бэкенд песочницы переключается конфигом: Docker по умолчанию, Modal если платите.",
+        "result": "по одному трейсу на прогон, целиком, включая ответы, которые не прошли.",
+        "alt": "Этап 3 Mantoz: все проходят одну и ту же задачу"
+      },
+      "zh": {
+        "short": "所有人跑同一个任务",
+        "body": "任务放在四个环境之一：问卷表单、客服对话、网页、桌面应用。每个人物都要跑好几遍，因为一个智能体跑一次只能算轶事。执行通过 Harbor 完成，沙箱后端是配置里的一个开关：默认 Docker，愿意付费就用 Modal。",
+        "result": "每次运行留下一条完整的记录，包括没通过的回答。",
+        "alt": "Mantoz 第 3 步：所有人跑同一个任务"
+      }
+    },
+    "verify": {
+      "en": {
+        "short": "The task decides for itself whether an answer passed",
+        "body": "Each task carries its own verifier, so nothing is judged by a general-purpose reviewer that never saw the rubric. Free-form answers go to two judges. Their disagreement is measured, and the raw text of both is written into the verdict, so a strange score can be read rather than guessed at.",
+        "result": "a verdict per run with the raw judge output kept, not summarised away.",
+        "alt": "Mantoz stage 4: the task decides for itself whether an answer passed"
+      },
+      "ru": {
+        "short": "Задача сама решает, засчитан ответ или нет",
+        "body": "У каждой задачи свой верификатор, поэтому ничего не оценивает универсальный ревьюер, который рубрику в глаза не видел. Свободные ответы уходят двум судьям. Расхождение между ними замеряется, а сырой текст обоих ложится в вердикт, чтобы странную оценку можно было прочитать, а не угадывать.",
+        "result": "вердикт на каждый прогон, где сырой ответ судьи сохранен, а не свернут в сводку.",
+        "alt": "Этап 4 Mantoz: задача сама решает, засчитан ответ или нет"
+      },
+      "zh": {
+        "short": "任务自己判断这次回答算不算通过",
+        "body": "每个任务带自己的检查程序，不会交给一个没见过评分标准的通用审阅者。开放式回答交给两个评审。它们的分歧会被量出来，两份原始文本都写进判定结果，这样奇怪的分数可以读出来，而不用猜。",
+        "result": "每次运行一份判定，评审的原始输出被保留，不做压缩概括。",
+        "alt": "Mantoz 第 4 步：任务自己判断这次回答算不算通过"
+      }
+    },
+    "report": {
+      "en": {
+        "short": "The runs are aggregated and split by subgroup",
+        "body": "Single runs are counted up to the level of the whole population and of each subgroup, with the aggregation method written into the report rather than left implicit. The thin viewer turns that report into one HTML page. No second frontend, no build step, no server.",
+        "result": "one page showing how each group answered and where the groups disagree.",
+        "alt": "Mantoz stage 5: the runs are aggregated and split by subgroup"
+      },
+      "ru": {
+        "short": "Прогоны сводятся и разбиваются по подгруппам",
+        "body": "Отдельные прогоны считаются до уровня всей популяции и каждой подгруппы, а метод агрегации записан в отчет, а не подразумевается. Тонкий вьювер превращает отчет в одну HTML-страницу. Второго фронтенда нет, сборки нет, сервера нет.",
+        "result": "одна страница, где видно, как ответила каждая группа и где группы разошлись.",
+        "alt": "Этап 5 Mantoz: прогоны сводятся и разбиваются по подгруппам"
+      },
+      "zh": {
+        "short": "把多次运行汇总，并按群体拆开",
+        "body": "单次运行会被汇总到整个人群和每个子群体的层面，聚合方法直接写进报告，而不是让人去猜。轻量查看器把这份报告变成一个 HTML 页面。没有第二个前端，没有构建步骤，也没有服务器。",
+        "result": "一个页面，看得到每个群体怎么答，以及群体之间在哪里分歧。",
+        "alt": "Mantoz 第 5 步：把多次运行汇总，并按群体拆开"
+      }
+    }
+  }
+}

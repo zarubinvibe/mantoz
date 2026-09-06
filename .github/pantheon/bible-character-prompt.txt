@@ -1,0 +1,14 @@
+Use case: stylized-concept
+Asset type: character sheet for a project of the Olympuz family
+Primary request: one wide sheet that fixes the figure of Manto so every later scene draws the same person.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column.
+Subject: the same white-marble figure of Manto shown four times in a row on a plain ivory ground: front, three-quarter turned to the viewer, strict profile, and from the back. She wears a long draped chiton with a muted-gold cord at the waist and a gold border at the shoulder. Her head is uncovered, eyes open, hair parted in the centre and gathered low at the nape. In every view except the back she holds a shallow round marble oracular bowl at waist height in her right hand. Above the row, three smaller head studies of the same face: front, three-quarter, profile.
+Composition/framing: 16:9 landscape, four full figures evenly spaced in one row, three head studies in a band above them, generous empty ivory margin, nothing cropped by any edge. No column in this frame.
+Style/medium: premium restrained 3D marble render, monumental carving with real weight, physically plausible materials, warm ivory Apple-like presentation
+Lighting/mood: soft daylight from upper left, long gentle shadows, calm and welcoming. Gold glows softly FROM WITHIN, never lit by a lamp or a hard rim light.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for the bands and rims only, sky blue #B8D6EA for the ground threads only, charcoal #3E3A36
+Constraints:
+- Everything rests on the ground and casts its own shadow. Nothing hovers.
+- Preserve the reference style of Image 1 exactly; highest final quality; maximum resolution.
+Avoid: rainbow of many colors, prismatic colors, flames, smoke, tripod, snake, screens, keyboards, charts, bar graphs, pie charts, cables, brand marks, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, callout labels, extra or missing fingers, fused fingers
+Text (verbatim): No readable text, no letters, no digits anywhere in the image.

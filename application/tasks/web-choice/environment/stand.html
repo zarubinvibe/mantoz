@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Выбор тарифа</title>
+<style>
+  body { font-family: sans-serif; max-width: 720px; margin: 2rem auto; }
+  .card { border: 1px solid #999; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+  .panel { display: none; margin: 0.5rem 0; color: #333; }
+  .panel.open { display: block; }
+  #confirmation { display: none; margin-top: 1rem; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Выберите тариф сервиса</h1>
+
+<section class="card" data-card="base">
+  <h2>Базовый</h2>
+  <p>0 ₽ в месяц</p>
+  <button type="button" data-details="base">Подробнее</button>
+  <div class="panel" data-panel="base">Один проект, без поддержки, данные только на устройстве.</div>
+  <button type="button" data-choose="base">Выбрать</button>
+</section>
+
+<section class="card" data-card="standart">
+  <h2>Стандарт</h2>
+  <p>490 ₽ в месяц</p>
+  <button type="button" data-details="standart">Подробнее</button>
+  <div class="panel" data-panel="standart">Десять проектов, поддержка по почте, резервные копии.</div>
+  <button type="button" data-choose="standart">Выбрать</button>
+</section>
+
+<section class="card" data-card="premium">
+  <h2>Премиум</h2>
+  <p>1490 ₽ в месяц</p>
+  <button type="button" data-details="premium">Подробнее</button>
+  <div class="panel" data-panel="premium">Без ограничений, личный менеджер, приоритетная поддержка.</div>
+  <button type="button" data-choose="premium">Выбрать</button>
+</section>
+
+<div id="confirmation" role="status"></div>
+
+<script>
+  document.querySelectorAll("[data-details]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var id = button.getAttribute("data-details");
+      document.querySelector('[data-panel="' + id + '"]').classList.toggle("open");
+    });
+  });
+  document.querySelectorAll("[data-choose]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var id = button.getAttribute("data-choose");
+      var confirmation = document.getElementById("confirmation");
+      confirmation.setAttribute("data-decision", id);
+      confirmation.textContent = "Выбран тариф: " + id;
+      confirmation.style.display = "block";
+    });
+  });
+</script>
+</body>
+</html>

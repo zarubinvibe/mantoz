@@ -1,0 +1,14 @@
+schema_version = "1.4"
+
+[metadata]
+title = "web-choice"
+environment = "web"
+
+[verifier]
+timeout_sec = 300.0
+
+[agent]
+timeout_sec = 600.0
+
+[environment]
+build_timeout_sec = 1800.0

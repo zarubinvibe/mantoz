@@ -1,0 +1,33 @@
+Mantoz
+Copyright (c) 2026 Filipp Zarubin
+Licensed under the MIT License. See LICENSE.
+
+This product includes software developed by third parties.
+
+--------------------------------------------------------------------------------
+Harbor
+https://github.com/harbor-framework/harbor
+Copyright benediktstroebl and Harbor contributors
+Licensed under the Apache License, Version 2.0 (Apache-2.0).
+
+Harbor is used as a declared package dependency (see pyproject.toml). It is not
+vendored, forked or renamed. Agent execution and the BaseEnvironment sandbox
+interface come from Harbor.
+
+You may obtain a copy of the Apache License 2.0 at
+https://www.apache.org/licenses/LICENSE-2.0
+
+--------------------------------------------------------------------------------
+Research attribution, not code
+
+The persona methodology of Mantoz is informed by MatrAIx-Persona-8B: the idea of
+a large categorical persona schema, dependency-aware synthetic generation, and
+evidence-aware human grounding.
+
+  Paper:      arXiv:2608.04205  https://arxiv.org/abs/2608.04205
+  Repository: https://github.com/MatrAIx-ai/MatrAIx-Persona-8B
+
+No MatrAIx code and no MatrAIx dataset ships in this repository. The schema,
+generator and grounding pipeline here are written from scratch. The published
+Persona1M corpus carries a research-only license and is never used in a
+production path.

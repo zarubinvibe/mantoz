@@ -1,0 +1,14 @@
+Use case: stylized-concept
+Asset type: workflow frame for a project of the Olympuz family
+Primary request: one wide frame showing five identical blank marble plates in a row, strung together by one gold band, ready to be carved with the five steps of the work.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column.
+Subject: five identical upright white-marble plates stand in one straight row on a low marble ledge, evenly spaced, each plate a plain rounded rectangle with a completely smooth blank face and no carving of any kind. A single continuous muted-gold band enters flat from the left edge of the frame, passes behind all five plates at the same height and leaves at the right edge. Three thin sky-blue threads lie flat on the ledge in front of the first plate only.
+Composition/framing: 16:9 landscape, the row of five plates centred and filling the middle band of the frame, all five plates the same size and the same distance apart, seen straight on with almost no perspective so every face reads flat and rectangular. Generous empty ivory space above and below. Nothing cropped. No column in this frame.
+Style/medium: premium restrained 3D marble render, monumental carving with real weight, physically plausible materials, warm ivory Apple-like presentation
+Lighting/mood: soft daylight from upper left, long gentle shadows, calm and welcoming. Gold glows softly FROM WITHIN, never lit by a lamp or a hard rim light.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for the bands and rims only, sky blue #B8D6EA for the ground threads only, charcoal #3E3A36
+Constraints:
+- Everything rests on the ground and casts its own shadow. Nothing hovers.
+- Preserve the reference style of Image 1 exactly; highest final quality; maximum resolution.
+Avoid: rainbow of many colors, prismatic colors, flames, smoke, tripod, snake, screens, keyboards, charts, bar graphs, pie charts, cables, brand marks, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, callout labels, extra or missing fingers, fused fingers
+Text (verbatim): No readable text, no letters, no digits anywhere in the image.

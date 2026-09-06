@@ -1,0 +1,21 @@
+Use case: stylized-concept
+Asset type: wide hero image for the README of a project of the Olympuz family
+Primary request: one wide scene that says in a single look what this project does - a whole crowd of made people answers the same question, and their many separate answers gather into a few carved lines on one tablet.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column. Match the light, the material, the palette and the restraint of Image 1 exactly, and place the column of Image 2 unchanged.
+Subject: Manto, the seer, stands slightly left of centre, turned three-quarters toward the viewer. Her right hand holds a shallow round marble oracular bowl at waist height, its rim tilted toward the viewer. Her left hand rests open at her side. On the ground to her left stand nine small identical white-marble figures in three ordered rows, each the height of her knee, all facing the bowl: they are the made people. Nine thin sky-blue threads run flat along the ground from the figures and rise only at the very end into the bowl. Out of the bowl three muted-gold bands rise, curve once through the air together and land flat on a marble tablet that stands upright on the ground at the right, where they become three straight carved grooves one under another.
+Composition/framing: 16:9 landscape, generous empty ivory space, the figure and her small crowd filling the left half, the tablet reading clearly right of centre. A classical white-marble column stands at the far right as the family signature, clearly separated from the tablet. Nothing overlaps the figure, nothing is cropped by any edge.
+Style/medium: premium restrained 3D marble sculpture render, monumental carving with deep drapery and real weight, physically plausible materials, warm ivory Apple-like presentation
+Lighting/mood: soft daylight from upper left, long gentle shadows, calm and welcoming. The gold bands glow softly FROM WITHIN, as if lit by their own material, never by a lamp or a hard rim light.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for the three bands and the bowl rim only, sky blue #B8D6EA for the nine ground threads only, charcoal #3E3A36
+Constraints:
+- Many blue threads go in, three gold bands come out. That count difference is the whole point of the picture and must be obvious: nine thin blue threads on the ground, exactly three gold bands in the air, exactly three carved grooves on the tablet.
+- The blue threads lie flat on the ground along nearly their whole length and lift only in the last stretch into the bowl. They never float across the frame.
+- The gold bands are one continuous piece each, from the bowl to the tablet. They touch the tablet. They never break into segments and never float free.
+- The nine small figures are plain and identical, without faces and without attributes, standing in three even rows on the ground, each casting its own shadow.
+- Everything carried is held by a closed hand. Everything standing rests on the ground and casts a shadow. Nothing hovers.
+- Her head is uncovered, eyes open, hair parted in the centre and gathered low at the nape.
+- Anatomically correct hands with exactly five fingers and one readable thumb, fingers not fused.
+- No screens, no keyboards, no charts, no graphs, no cables, no modern devices anywhere in the frame.
+- Preserve the reference style; highest final quality; maximum resolution.
+Avoid: rainbow of many colors, prismatic colors, veil, helmet, crown, blindfold, closed eyes, scales, sword, owl, spear, snake, tripod of fire, flames, smoke, floating bowl, floating tablet, a band floating free of the bowl, screens, keyboards, charts, bar graphs, pie charts, phones, laptops, cables, brand marks, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, extra or missing fingers, fused fingers, callout labels, crowd of full-size people
+Text (verbatim): No readable text, no letters, no digits anywhere in the image. The three lines on the tablet are plain grooves, not writing.

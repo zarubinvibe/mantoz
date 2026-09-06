@@ -1,0 +1,44 @@
+id: survey-feedback
+title: Обратная связь о цифровом сервисе
+description: Анкета реакции персоны на сервис записи к специалисту.
+questions:
+  - id: usage_frequency
+    type: single_choice
+    construct: engagement
+    text: Как часто вы пользуетесь сервисом?
+    options:
+      - каждый день
+      - несколько раз в неделю
+      - несколько раз в месяц
+      - реже одного раза в месяц
+  - id: usability_rating
+    type: likert
+    construct: usability
+    text: Сервис понятен и удобен в использовании.
+    scale:
+      min: 1
+      max: 5
+      min_label: совсем не согласен
+      max_label: полностью согласен
+  - id: data_trust
+    type: likert
+    construct: trust
+    text: Я готов доверить сервису свои личные данные.
+    scale:
+      min: 1
+      max: 5
+      min_label: совсем не согласен
+      max_label: полностью согласен
+  - id: recommendation
+    type: single_choice
+    construct: loyalty
+    text: Порекомендовали бы вы сервис знакомым?
+    options:
+      - да
+      - скорее да
+      - скорее нет
+      - нет
+  - id: improvement_text
+    type: free_text
+    construct: improvement
+    text: Что в сервисе вы бы изменили в первую очередь?

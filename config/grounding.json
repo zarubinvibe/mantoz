@@ -1,0 +1,34 @@
+{
+  "locales": {
+    "ru-RU": {
+      "sources": [
+        "rosstat"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "rosstat",
+      "name": "Росстат/ЦБ через tochno.st",
+      "license": "CC BY 4.0",
+      "url": "https://tochno.st/datasets/surveys",
+      "commercial_use": true,
+      "acquisition": {
+        "archive": "data/kouzh.zip",
+        "file": "data/grounding/rosstat-cbr.jsonl",
+        "instructions": "Импортёр ZIP не читает. Владелец распаковывает data/kouzh.zip вне репозитория, сохраняет атрибуцию, приводит колонки к id persona/schema/dimensions.json и кладёт JSON, JSONL или CSV по указанному пути."
+      }
+    },
+    {
+      "id": "rlms",
+      "name": "РМЭЗ-ВШЭ (RLMS-HSE)",
+      "license": "RLMS-HSE Terms (некоммерческая)",
+      "url": "https://www.hse.ru/rlms/spss",
+      "commercial_use": false,
+      "local_only": true,
+      "redistribution": false,
+      "data_path": "data/rlms/RLMS_panel_1994_2025.zip",
+      "note": "Локально у владельца, личное/научное использование (LIM-11). Производное наружу не отдаётся. Волны 1994-2025, файл .sav 472МБ."
+    }
+  ]
+}

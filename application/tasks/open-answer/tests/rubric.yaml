@@ -1,0 +1,25 @@
+{
+  "question": "Почему кофе часто воспринимается горьким?",
+  "max_score": 10,
+  "pass_score": 6,
+  "criteria": [
+    {
+      "id": "caffeine",
+      "weight": 4,
+      "terms": ["кофеин"],
+      "stems": ["кофеин"]
+    },
+    {
+      "id": "chlorogenic_acids",
+      "weight": 4,
+      "terms": ["хлорогеновые кислоты", "хлорогеновых кислот"],
+      "stems": ["хлороген", "кислот"]
+    },
+    {
+      "id": "causal_explanation",
+      "weight": 2,
+      "terms": ["потому что", "из-за"],
+      "stems": ["из-за"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+Use case: stylized-concept
+Asset type: document frame for the contributing page of a project of the Olympuz family
+Primary request: one wide frame that says: here is the work already carved, and here is an empty plate waiting for yours.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column.
+Subject: two identical upright white-marble plates stand side by side on a low marble table on a plain ivory floor. The left plate carries exactly three carved horizontal grooves. The right plate is completely blank and waiting. One continuous muted-gold band comes flat from the left edge, ends inside the top groove of the left plate, and a second shorter gold band lies on the table in front of the blank plate, not yet touching it. A classical white-marble column stands to the right as the family signature. There is no person and no animal anywhere in the frame.
+Composition/framing: 16:9 landscape, both plates centred and equal in size, generous empty ivory space, nothing cropped.
+Style/medium: premium restrained 3D marble render, monumental carving with real weight, physically plausible materials, warm ivory Apple-like presentation
+Lighting/mood: soft daylight from upper left, long gentle shadows, calm and welcoming. Gold glows softly FROM WITHIN, never lit by a lamp or a hard rim light.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for the bands and rims only, sky blue #B8D6EA for the ground threads only, charcoal #3E3A36
+Constraints:
+- Everything rests on the ground and casts its own shadow. Nothing hovers.
+- Preserve the reference style of Image 1 exactly; highest final quality; maximum resolution.
+Avoid: any human figure, any statue of a person, any deity, helmet, owl, shield, spear, rainbow of many colors, prismatic colors, flames, smoke, tripod, snake, screens, keyboards, charts, bar graphs, pie charts, cables, brand marks, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, callout labels, extra or missing fingers, fused fingers
+Text (verbatim): No readable text, no letters, no digits anywhere in the image.

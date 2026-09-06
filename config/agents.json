@@ -1,0 +1,88 @@
+{
+  "agents": [
+    {
+      "id": "claude",
+      "binary": "claude",
+      "harbor_agent": "claude-code",
+      "installed": true,
+      "limits": {"provider": "anthropic", "note": "подписка/ключ владельца, окно лимитов 5ч"}
+    },
+    {
+      "id": "codex",
+      "binary": "codex",
+      "harbor_agent": "codex",
+      "installed": true,
+      "limits": {"provider": "openai", "note": "план ChatGPT владельца"}
+    },
+    {
+      "id": "kimi",
+      "binary": "kimi",
+      "harbor_agent": "kimi-code",
+      "installed": true,
+      "limits": {"provider": "moonshot", "note": "квота аккаунта владельца"}
+    },
+    {
+      "id": "gemini",
+      "binary": "gemini",
+      "harbor_agent": "gemini-cli",
+      "installed": false,
+      "limits": null
+    },
+    {
+      "id": "aider",
+      "binary": "aider",
+      "harbor_agent": "aider",
+      "installed": false,
+      "limits": null
+    },
+    {
+      "id": "cursor-agent",
+      "binary": "cursor-agent",
+      "harbor_agent": "cursor-cli",
+      "installed": false,
+      "limits": null
+    },
+    {
+      "id": "qwen",
+      "binary": "qwen",
+      "harbor_agent": "qwen-coder",
+      "installed": false,
+      "limits": null
+    },
+    {
+      "id": "opencode",
+      "binary": "opencode",
+      "harbor_agent": "opencode",
+      "installed": false,
+      "limits": null
+    },
+    {
+      "id": "goose",
+      "binary": "goose",
+      "harbor_agent": "goose",
+      "installed": false,
+      "limits": null
+    },
+    {
+      "id": "copilot",
+      "binary": "copilot",
+      "harbor_agent": "copilot-cli",
+      "installed": false,
+      "limits": null
+    },
+    {
+      "id": "cline",
+      "binary": "cline",
+      "harbor_agent": "cline-cli",
+      "installed": false,
+      "limits": null
+    },
+    {
+      "id": "openhands",
+      "binary": "openhands",
+      "harbor_agent": "openhands",
+      "installed": false,
+      "limits": null
+    }
+  ]
+}

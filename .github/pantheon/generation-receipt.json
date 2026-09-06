@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "kind": "pantheon-generation",
+  "selection_mode": "managed-frontier",
+  "runtime": "codex",
+  "tool": "image_gen",
+  "route_id": "codex:image_gen:managed-frontier",
+  "model": {
+    "id": "provider-managed",
+    "revision": "provider-managed",
+    "tier": "frontier"
+  },
+  "quality": "highest",
+  "generation_id": "mantoz-pantheon-2026-09-06-codex-image-gen",
+  "generated_at": "2026-09-06T14:36:00Z",
+  "capability_snapshot": {
+    "checked_at": "2026-09-06T14:36:00Z",
+    "routes": [
+      {
+        "id": "codex:image_gen:managed-frontier",
+        "rank": 1,
+        "available": true,
+        "tier": "frontier",
+        "quality": "highest",
+        "model": {
+          "id": "provider-managed",
+          "revision": "provider-managed",
+          "tier": "frontier"
+        }
+      }
+    ]
+  },
+  "prompt": {
+    "path": ".github/pantheon/hero-source-prompt.txt",
+    "sha256": "6e23f797e3e3501f055aad21d1b399f99493cd0200c215e55a15e26c7d0d46cf"
+  },
+  "references": [
+    {
+      "role": "style-anchor",
+      "sha256": "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2"
+    },
+    {
+      "role": "column-reference",
+      "sha256": "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "codex-managed",
+      "route_id": "codex:image_gen:managed-frontier",
+      "generation_id": "mantoz-pantheon-2026-09-06-codex-image-gen",
+      "prompt_sha256": "6e23f797e3e3501f055aad21d1b399f99493cd0200c215e55a15e26c7d0d46cf",
+      "reference_sha256": [
+        "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2",
+        "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
+      ],
+      "outputs": [
+        {
+          "role": "hero",
+          "source_sha256": "33addad5dd2004fa7c555cfa137f817e215c5fb91c9ba8ebea37525f3912fd15",
+          "published_sha256": "a909e1c811698d849ebd32b5e911c32a092c15a87606a94f45b2dd4d71908445"
+        },
+        {
+          "role": "emblem",
+          "source_sha256": "586ed83d2a2af8accf1dbb1e242eb7c15375553e5ccc573b317d1f3a0a506a76",
+          "published_sha256": "4c06b843dd2580d4541e6b5fdd1b799c1ed224703f9146e797108f2663fa98e2"
+        },
+        {
+          "role": "bible-character",
+          "source_sha256": "9860ad17930da506af6208586d98b2d76bbfdb3b35b6275f151c0654d7788df8",
+          "published_sha256": "9860ad17930da506af6208586d98b2d76bbfdb3b35b6275f151c0654d7788df8"
+        },
+        {
+          "role": "bible-props",
+          "source_sha256": "7bc869fbde151a5e2f50942756b57089407d102167205ee5f86b1273860eb343",
+          "published_sha256": "7bc869fbde151a5e2f50942756b57089407d102167205ee5f86b1273860eb343"
+        },
+        {
+          "role": "takt",
+          "source_sha256": "a750cadb2730f64f515a6d73e9012bb94f1010d8097da8f29c31e7c173d22565",
+          "published_sha256": "a750cadb2730f64f515a6d73e9012bb94f1010d8097da8f29c31e7c173d22565"
+        },
+        {
+          "role": "takt-en",
+          "source_sha256": "a750cadb2730f64f515a6d73e9012bb94f1010d8097da8f29c31e7c173d22565",
+          "published_sha256": "7ee7a97117cdc3998f7fd8ebc5db0011743e1dae1dba255f14a88ae8820a2112"
+        },
+        {
+          "role": "takt-ru",
+          "source_sha256": "a750cadb2730f64f515a6d73e9012bb94f1010d8097da8f29c31e7c173d22565",
+          "published_sha256": "439b4bab1be9166258705f46641e544f99ab44136602bd5e76dfa9ff7ba9be66"
+        },
+        {
+          "role": "takt-zh",
+          "source_sha256": "a750cadb2730f64f515a6d73e9012bb94f1010d8097da8f29c31e7c173d22565",
+          "published_sha256": "cdeda1186495e5b8af5a4dc3ccab41797d460e2de88972eb973ac7b94a6d1e5e"
+        },
+        {
+          "role": "doc-onboarding",
+          "source_sha256": "f6f1ee3a51b3c8d4698835fddf430f18944c6e1df4ca72207b10815570a30e18",
+          "published_sha256": "f6f1ee3a51b3c8d4698835fddf430f18944c6e1df4ca72207b10815570a30e18"
+        },
+        {
+          "role": "doc-reference",
+          "source_sha256": "afc329be7ac94752285defcaf8ab5b162aba099f639397af824dfbc5cd0df159",
+          "published_sha256": "afc329be7ac94752285defcaf8ab5b162aba099f639397af824dfbc5cd0df159"
+        },
+        {
+          "role": "doc-contributing",
+          "source_sha256": "590e75f7e38ef12e344f8a0bc637ebdf91b8d525b7a51f6ff9ad917887f86126",
+          "published_sha256": "590e75f7e38ef12e344f8a0bc637ebdf91b8d525b7a51f6ff9ad917887f86126"
+        },
+        {
+          "role": "doc-security",
+          "source_sha256": "52619543fb911df41cb6f48f36e378b1b8ebbdb8f98929c1cfb87d2676558ac6",
+          "published_sha256": "52619543fb911df41cb6f48f36e378b1b8ebbdb8f98929c1cfb87d2676558ac6"
+        }
+      ]
+    }
+  ],
+  "winner_id": "codex-managed",
+  "notes": {
+    "prompts": {
+      "hero-source": ".github/pantheon/hero-source-prompt.txt",
+      "emblem-source": ".github/pantheon/emblem-source-prompt.txt",
+      "bible-character": ".github/pantheon/bible-character-prompt.txt",
+      "bible-props": ".github/pantheon/bible-props-prompt.txt",
+      "takt": ".github/pantheon/takt-prompt.txt",
+      "doc-onboarding": ".github/pantheon/doc-onboarding-prompt.txt",
+      "doc-reference": ".github/pantheon/doc-reference-prompt.txt",
+      "doc-contributing": ".github/pantheon/doc-contributing-prompt.txt",
+      "doc-security": ".github/pantheon/doc-security-prompt.txt"
+    },
+    "composited": "takt-en, takt-ru and takt-zh are the generated takt.png with the stage labels carved on by scripts/pantheon-takt.py; no model wrote that text",
+    "source_dimensions": {
+      "hero": "1672x941",
+      "emblem": "1254x1254",
+      "series": "1672x941 each"
+    }
+  }
+}
