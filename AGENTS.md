@@ -10,6 +10,10 @@ personas, runs every one of them through the same task in one of four environmen
 (survey / chat / web / app), verifies each run with a verifier owned by the task, and aggregates
 the outcome to the population and subgroup level.
 
+## First contact with a stranger
+
+A newcomer starts in chat, not on a page: send them to [docs/ONBOARDING-CHAT.md](docs/ONBOARDING-CHAT.md) (`docs/ONBOARDING-CHAT.ru.md`, `docs/ONBOARDING-CHAT.zh.md`) and walk it with them, one question at a time, taking no step without their yes.
+
 ## Build, run, test
 
 ```bash
