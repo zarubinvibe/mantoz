@@ -57,6 +57,19 @@ def check_persona_schema() -> None:
     PASSED.append("every persona dimension carries values")
 
 
+def check_taxonomy_matches_source() -> None:
+    """Схема собрана прибором. Правка руками разъедется с источником молча."""
+    import subprocess
+    tool = ROOT / "scripts/persona-taxonomy.py"
+    if not tool.is_file():
+        FAILURES.append("missing file: scripts/persona-taxonomy.py")
+        return
+    done = subprocess.run([sys.executable, str(tool), "--check"], cwd=ROOT,
+                          capture_output=True, text=True)
+    check("taxonomy matches its declared source", done.returncode == 0,
+          (done.stderr or done.stdout).strip().split("\n")[0])
+
+
 def check_persona_dag() -> None:
     schema = load_json("persona/schema/dimensions.json")
     edges_file = load_json("persona/schema/dependencies.json")
@@ -172,6 +185,7 @@ def check_data_boundary() -> None:
 
 def main() -> int:
     check_persona_schema()
+    check_taxonomy_matches_source()
     check_persona_dag()
     check_grounding_registry()
     check_agent_registry()

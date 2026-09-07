@@ -9,8 +9,8 @@ PYTHONPATH="${PYTHONPATH:+$PYTHONPATH:}src"
 export PYTHONPATH
 GATE="python3 -m mantoz.parity_gate"
 d=$(mktemp -d)
-hdr='| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |'
-sep='|---|---|---|---|'
+hdr='| Подсистема | Возможность | У них | У нас | Статус | Чем доказано |'
+sep='|---|---|---|---|---|---|'
 
 fail() { echo "ПРОБА ПРОВАЛЕНА: $1"; exit 1; }
 
@@ -26,34 +26,34 @@ $GATE --selftest >/dev/null 2>&1 || fail "селфтест прибора кра
 $GATE >/dev/null 2>&1 || fail "настоящая таблица красная - есть незакрытые строки чек-листа"
 
 # 4. Обоснование ссылкой на REQ - не обоснование.
-printf '%s\n%s\n| persona | выдумка | отсутствует обоснованно | REQ-99 |\n' "$hdr" "$sep" > "$d/req.md"
+printf '%s\n%s\n| persona | выдумка | 1 | 0 | не берём: обосновано пунктом REQ-99 | REQ-99 |\n' "$hdr" "$sep" > "$d/req.md"
 if $GATE --file "$d/req.md" >/dev/null 2>&1; then fail "ссылка на REQ принята как обоснование"; fi
 
 # 5. Проза со словами настоящего пункта - не обоснование (нечеткое сопоставление запрещено).
-printf '%s\n%s\n| persona | выдумка | отсутствует обоснованно | платной основе выдуманный сервис |\n' "$hdr" "$sep" > "$d/fuzzy.md"
+printf '%s\n%s\n| persona | выдумка | 1 | 0 | не берём: обосновано пунктом платной основе выдуманный сервис | платной основе выдуманный сервис |\n' "$hdr" "$sep" > "$d/fuzzy.md"
 if $GATE --file "$d/fuzzy.md" >/dev/null 2>&1; then fail "нечеткое совпадение слов принято как обоснование"; fi
 
 # 6. Несуществующий ID - не обоснование.
-printf '%s\n%s\n| persona | выдумка | отсутствует обоснованно | OUT-99 |\n' "$hdr" "$sep" > "$d/ghost.md"
+printf '%s\n%s\n| persona | выдумка | 1 | 0 | не берём: обосновано пунктом OUT-99 | OUT-99 |\n' "$hdr" "$sep" > "$d/ghost.md"
 if $GATE --file "$d/ghost.md" >/dev/null 2>&1; then fail "несуществующий OUT-99 принят как обоснование"; fi
 
 # 7. Настоящий ID из queue/GOAL.md - принимается, таблица целиком зеленая.
-printf '%s\n%s\n| persona | выдумка | отсутствует обоснованно | OUT-01 |\n' "$hdr" "$sep" > "$d/ok.md"
+printf '%s\n%s\n| persona | выдумка | 1 | 0 | не берём: обосновано пунктом OUT-01 | OUT-01 |\n' "$hdr" "$sep" > "$d/ok.md"
 $GATE --file "$d/ok.md" >/dev/null 2>&1 || fail "настоящий OUT-01 не принят как обоснование"
 
 # 8. Формат ID строгий: OUT-1 и OUT-001 - не OUT-01.
-printf '%s\n%s\n| persona | выдумка | отсутствует обоснованно | OUT-1 |\n' "$hdr" "$sep" > "$d/short.md"
+printf '%s\n%s\n| persona | выдумка | 1 | 0 | не берём: обосновано пунктом OUT-1 | OUT-1 |\n' "$hdr" "$sep" > "$d/short.md"
 if $GATE --file "$d/short.md" >/dev/null 2>&1; then fail "OUT-1 принят вместо строгого OUT-01"; fi
-printf '%s\n%s\n| persona | выдумка | отсутствует обоснованно | OUT-001 |\n' "$hdr" "$sep" > "$d/long.md"
+printf '%s\n%s\n| persona | выдумка | 1 | 0 | не берём: обосновано пунктом OUT-001 | OUT-001 |\n' "$hdr" "$sep" > "$d/long.md"
 if $GATE --file "$d/long.md" >/dev/null 2>&1; then fail "OUT-001 принят вместо строгого OUT-01"; fi
 
 # 9. Настоящий ID вне своей области действия - не обоснование.
 #    OUT-04 покрывает playground; строка подсистемы persona им прикрыться не может.
-printf '%s\n%s\n| persona | выдумка | отсутствует обоснованно | OUT-04 |\n' "$hdr" "$sep" > "$d/wrong-scope.md"
+printf '%s\n%s\n| persona | выдумка | 1 | 0 | не берём: обосновано пунктом OUT-04 | OUT-04 |\n' "$hdr" "$sep" > "$d/wrong-scope.md"
 if $GATE --file "$d/wrong-scope.md" >/dev/null 2>&1; then fail "OUT-04 принят для строки persona вне его области действия"; fi
 
 # 10. Контроль к пробе 9: тот же ID в своей области действия принимается.
-printf '%s\n%s\n| playground | выдумка | отсутствует обоснованно | OUT-04 |\n' "$hdr" "$sep" > "$d/right-scope.md"
+printf '%s\n%s\n| playground | выдумка | 1 | 0 | не берём: обосновано пунктом OUT-04 | OUT-04 |\n' "$hdr" "$sep" > "$d/right-scope.md"
 $GATE --file "$d/right-scope.md" >/dev/null 2>&1 || fail "OUT-04 не принят для playground - своей области действия"
 
 echo "пробы гейта: 11/11 ok"

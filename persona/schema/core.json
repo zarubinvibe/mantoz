@@ -1,0 +1,425 @@
+{
+  "schema_version": 1,
+  "note": "Ядро таксономии: демографический костяк, писан руками и не генерируется. Всё остальное растёт из domains.json.",
+  "dimensions": [
+    {
+      "id": "age_group",
+      "category": "background_demographics",
+      "description": "Возрастная группа",
+      "values": [
+        "18–24",
+        "25–34",
+        "35–44",
+        "45–54",
+        "55–64",
+        "65+"
+      ]
+    },
+    {
+      "id": "settlement_type",
+      "category": "background_demographics",
+      "description": "Тип населённого пункта",
+      "values": [
+        "сельская местность",
+        "малый город",
+        "средний город",
+        "крупный город"
+      ]
+    },
+    {
+      "id": "household_size",
+      "category": "background_demographics",
+      "description": "Размер домохозяйства",
+      "values": [
+        "один человек",
+        "два человека",
+        "три человека",
+        "четыре и более"
+      ]
+    },
+    {
+      "id": "living_arrangement",
+      "category": "background_demographics",
+      "description": "Форма совместного проживания",
+      "values": [
+        "один",
+        "с партнёром",
+        "с семьёй",
+        "с соседями"
+      ]
+    },
+    {
+      "id": "education_level",
+      "category": "background_demographics",
+      "description": "Наивысший завершённый уровень образования",
+      "values": [
+        "основное общее",
+        "среднее общее",
+        "среднее профессиональное",
+        "высшее",
+        "послевузовское"
+      ]
+    },
+    {
+      "id": "employment_status",
+      "category": "background_demographics",
+      "description": "Текущая занятость",
+      "values": [
+        "учится",
+        "работает по найму",
+        "работает на себя",
+        "не работает",
+        "на пенсии"
+      ]
+    },
+    {
+      "id": "income_stability",
+      "category": "background_demographics",
+      "description": "Стабильность дохода",
+      "values": [
+        "нестабильный",
+        "переменный",
+        "стабильный"
+      ]
+    },
+    {
+      "id": "caregiving_role",
+      "category": "background_demographics",
+      "description": "Регулярная забота о других",
+      "values": [
+        "нет",
+        "забота о детях",
+        "забота о взрослых",
+        "несколько ролей"
+      ]
+    },
+    {
+      "id": "language_context",
+      "category": "background_demographics",
+      "description": "Языковая среда повседневной жизни",
+      "values": [
+        "один язык",
+        "два языка",
+        "многоязычная среда"
+      ]
+    },
+    {
+      "id": "mobility_pattern",
+      "category": "background_demographics",
+      "description": "Частота смены места жизни",
+      "values": [
+        "оседлый",
+        "периодически переезжает",
+        "часто переезжает"
+      ]
+    },
+    {
+      "id": "openness_to_experience",
+      "category": "psychology_values",
+      "description": "Открытость новому опыту",
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
+    },
+    {
+      "id": "conscientiousness",
+      "category": "psychology_values",
+      "description": "Склонность к организованности и самодисциплине",
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
+    },
+    {
+      "id": "extraversion",
+      "category": "psychology_values",
+      "description": "Потребность в социальном взаимодействии",
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
+    },
+    {
+      "id": "agreeableness",
+      "category": "psychology_values",
+      "description": "Склонность к сотрудничеству и компромиссу",
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
+    },
+    {
+      "id": "emotional_stability",
+      "category": "psychology_values",
+      "description": "Устойчивость эмоциональных реакций",
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
+    },
+    {
+      "id": "risk_tolerance",
+      "category": "psychology_values",
+      "description": "Готовность принимать неопределённость и риск",
+      "values": [
+        "избегает",
+        "принимает после оценки",
+        "легко принимает"
+      ]
+    },
+    {
+      "id": "decision_style",
+      "category": "psychology_values",
+      "description": "Преобладающий стиль принятия решений",
+      "values": [
+        "интуитивный",
+        "сбалансированный",
+        "аналитический"
+      ]
+    },
+    {
+      "id": "time_orientation",
+      "category": "psychology_values",
+      "description": "Временной горизонт при выборе",
+      "values": [
+        "текущие потребности",
+        "баланс настоящего и будущего",
+        "долгосрочная перспектива"
+      ]
+    },
+    {
+      "id": "value_priority",
+      "category": "psychology_values",
+      "description": "Ведущий личный приоритет",
+      "values": [
+        "безопасность",
+        "достижение",
+        "самостоятельность",
+        "забота",
+        "традиция",
+        "новизна"
+      ]
+    },
+    {
+      "id": "ambiguity_tolerance",
+      "category": "psychology_values",
+      "description": "Способность действовать без полной ясности",
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
+    },
+    {
+      "id": "literacy",
+      "category": "capabilities_skills",
+      "description": "Уровень работы с письменным текстом",
+      "values": [
+        "базовый",
+        "уверенный",
+        "продвинутый"
+      ]
+    },
+    {
+      "id": "numeracy",
+      "category": "capabilities_skills",
+      "description": "Уровень работы с числами и расчётами",
+      "values": [
+        "базовый",
+        "уверенный",
+        "продвинутый"
+      ]
+    },
+    {
+      "id": "digital_literacy",
+      "category": "capabilities_skills",
+      "description": "Уверенность в работе с цифровыми устройствами и сервисами",
+      "values": [
+        "базовая",
+        "уверенная",
+        "продвинутая"
+      ]
+    },
+    {
+      "id": "information_search",
+      "category": "capabilities_skills",
+      "description": "Умение находить нужную информацию",
+      "values": [
+        "базовое",
+        "уверенное",
+        "продвинутое"
+      ]
+    },
+    {
+      "id": "critical_evaluation",
+      "category": "capabilities_skills",
+      "description": "Умение проверять доводы и источники",
+      "values": [
+        "базовое",
+        "уверенное",
+        "продвинутое"
+      ]
+    },
+    {
+      "id": "written_communication",
+      "category": "capabilities_skills",
+      "description": "Умение ясно излагать мысли письменно",
+      "values": [
+        "базовое",
+        "уверенное",
+        "продвинутое"
+      ]
+    },
+    {
+      "id": "spoken_communication",
+      "category": "capabilities_skills",
+      "description": "Умение ясно излагать мысли устно",
+      "values": [
+        "базовое",
+        "уверенное",
+        "продвинутое"
+      ]
+    },
+    {
+      "id": "planning_skill",
+      "category": "capabilities_skills",
+      "description": "Умение разбивать цель на шаги",
+      "values": [
+        "базовое",
+        "уверенное",
+        "продвинутое"
+      ]
+    },
+    {
+      "id": "learning_speed",
+      "category": "capabilities_skills",
+      "description": "Темп освоения новых задач",
+      "values": [
+        "постепенный",
+        "средний",
+        "быстрый"
+      ]
+    },
+    {
+      "id": "domain_familiarity",
+      "category": "capabilities_skills",
+      "description": "Знакомство с предметной областью текущего сценария",
+      "values": [
+        "нет",
+        "начальное",
+        "рабочее",
+        "глубокое"
+      ]
+    },
+    {
+      "id": "information_source_preference",
+      "category": "behavior_habits",
+      "description": "Предпочитаемый источник информации",
+      "values": [
+        "знакомые",
+        "поиск",
+        "специалисты",
+        "сообщества",
+        "смешанный подход"
+      ]
+    },
+    {
+      "id": "content_format_preference",
+      "category": "behavior_habits",
+      "description": "Предпочитаемый формат информации",
+      "values": [
+        "текст",
+        "аудио",
+        "видео",
+        "интерактивный"
+      ]
+    },
+    {
+      "id": "response_detail_preference",
+      "category": "behavior_habits",
+      "description": "Предпочитаемая подробность ответа",
+      "values": [
+        "краткая",
+        "средняя",
+        "подробная"
+      ]
+    },
+    {
+      "id": "routine_consistency",
+      "category": "behavior_habits",
+      "description": "Устойчивость повседневного распорядка",
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
+    },
+    {
+      "id": "technology_adoption",
+      "category": "behavior_habits",
+      "description": "Скорость перехода на новые технологии",
+      "values": [
+        "сразу",
+        "после проверки другими",
+        "после широкого распространения",
+        "избегает"
+      ]
+    },
+    {
+      "id": "help_seeking",
+      "category": "behavior_habits",
+      "description": "Первый шаг при затруднении",
+      "values": [
+        "разбирается сам",
+        "спрашивает знакомых",
+        "обращается к специалисту"
+      ]
+    },
+    {
+      "id": "feedback_style",
+      "category": "behavior_habits",
+      "description": "Обычный стиль обратной связи",
+      "values": [
+        "прямой",
+        "дипломатичный",
+        "сдержанный"
+      ]
+    },
+    {
+      "id": "privacy_sensitivity",
+      "category": "behavior_habits",
+      "description": "Осторожность при передаче личных данных",
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
+    },
+    {
+      "id": "planning_habit",
+      "category": "behavior_habits",
+      "description": "Привычная степень планирования действий",
+      "values": [
+        "действует спонтанно",
+        "планирует главные шаги",
+        "планирует подробно"
+      ]
+    },
+    {
+      "id": "follow_through",
+      "category": "behavior_habits",
+      "description": "Привычка доводить начатое до конца",
+      "values": [
+        "часто бросает",
+        "завершает важное",
+        "обычно завершает"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,755 @@
+{
+  "schema_version": 1,
+  "note": "Источник роста таксономии. Одна строка это домен жизни; фасеты умножают его на шкалы. Минус перед именем зависимости значит обратную связь: чем выше у родителя, тем ниже у потомка. Схема пересобирается прибором scripts/persona-taxonomy.py, руками dimensions.json не правится.",
+  "scales": {
+    "frequency": {
+      "label": "как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    "attitude": {
+      "label": "как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    "spend_share": {
+      "label": "доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    "confidence": {
+      "label": "насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    "channel": {
+      "label": "через что делает",
+      "values": [
+        "вживую",
+        "по телефону",
+        "в приложении",
+        "на сайте",
+        "через знакомых"
+      ]
+    },
+    "trust": {
+      "label": "насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    "priority": {
+      "label": "насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    }
+  },
+  "domains": [
+    {
+      "id": "groceries",
+      "label": "покупка продуктов",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "channel",
+        "spend_share"
+      ],
+      "depends_on": [
+        "income_stability",
+        "settlement_type"
+      ]
+    },
+    {
+      "id": "clothing",
+      "label": "покупка одежды",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "channel",
+        "spend_share"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "delivery",
+      "label": "доставка на дом",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "channel",
+        "trust"
+      ],
+      "depends_on": [
+        "settlement_type",
+        "-age_group"
+      ]
+    },
+    {
+      "id": "marketplace",
+      "label": "маркетплейсы",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "trust",
+        "spend_share"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "cafes",
+      "label": "кафе и рестораны",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "cooking",
+      "label": "готовка дома",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "confidence"
+      ],
+      "depends_on": [
+        "living_arrangement"
+      ]
+    },
+    {
+      "id": "public_transport",
+      "label": "общественный транспорт",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "attitude"
+      ],
+      "depends_on": [
+        "settlement_type"
+      ]
+    },
+    {
+      "id": "own_car",
+      "label": "личный автомобиль",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share"
+      ],
+      "depends_on": [
+        "income_stability",
+        "-settlement_type"
+      ]
+    },
+    {
+      "id": "taxi",
+      "label": "такси",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share"
+      ],
+      "depends_on": [
+        "income_stability",
+        "settlement_type"
+      ]
+    },
+    {
+      "id": "travel_domestic",
+      "label": "поездки по стране",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "travel_abroad",
+      "label": "поездки за границу",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "sport",
+      "label": "спорт и движение",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "priority"
+      ],
+      "depends_on": [
+        "age_group"
+      ]
+    },
+    {
+      "id": "doctor_visits",
+      "label": "визиты к врачу",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "trust",
+        "channel"
+      ],
+      "depends_on": [
+        "age_group"
+      ]
+    },
+    {
+      "id": "pharmacy",
+      "label": "аптека",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share"
+      ],
+      "depends_on": [
+        "age_group"
+      ]
+    },
+    {
+      "id": "banking",
+      "label": "банковские операции",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "channel",
+        "trust"
+      ],
+      "depends_on": [
+        "age_group",
+        "income_stability"
+      ]
+    },
+    {
+      "id": "credit",
+      "label": "кредиты и рассрочка",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "attitude"
+      ],
+      "depends_on": [
+        "-income_stability"
+      ]
+    },
+    {
+      "id": "savings",
+      "label": "сбережения",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "priority"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "investing",
+      "label": "инвестиции",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "confidence",
+        "trust"
+      ],
+      "depends_on": [
+        "income_stability",
+        "education_level"
+      ]
+    },
+    {
+      "id": "insurance",
+      "label": "страхование",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "attitude",
+        "trust"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "government_services",
+      "label": "госуслуги",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "channel",
+        "trust"
+      ],
+      "depends_on": [
+        "education_level"
+      ]
+    },
+    {
+      "id": "charity",
+      "label": "благотворительность",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "news",
+      "label": "новости",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "channel",
+        "trust"
+      ],
+      "depends_on": [
+        "age_group",
+        "education_level"
+      ]
+    },
+    {
+      "id": "social_media",
+      "label": "соцсети",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "trust"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "video_streaming",
+      "label": "видео и стриминг",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "gaming",
+      "label": "игры",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "reading",
+      "label": "чтение",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "priority"
+      ],
+      "depends_on": [
+        "education_level"
+      ]
+    },
+    {
+      "id": "courses",
+      "label": "обучение и курсы",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share",
+        "priority"
+      ],
+      "depends_on": [
+        "education_level"
+      ]
+    },
+    {
+      "id": "volunteering",
+      "label": "волонтёрство",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "priority"
+      ],
+      "depends_on": [
+        "age_group"
+      ]
+    },
+    {
+      "id": "religion",
+      "label": "религиозная практика",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "priority"
+      ],
+      "depends_on": [
+        "age_group",
+        "settlement_type"
+      ]
+    },
+    {
+      "id": "pets",
+      "label": "домашние животные",
+      "category": "behavior_habits",
+      "facets": [
+        "frequency",
+        "spend_share"
+      ],
+      "depends_on": [
+        "living_arrangement"
+      ]
+    },
+    {
+      "id": "smartphone",
+      "label": "смартфон",
+      "category": "capabilities_skills",
+      "facets": [
+        "confidence",
+        "frequency"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "computer",
+      "label": "компьютер",
+      "category": "capabilities_skills",
+      "facets": [
+        "confidence",
+        "frequency"
+      ],
+      "depends_on": [
+        "-age_group",
+        "education_level"
+      ]
+    },
+    {
+      "id": "online_payments",
+      "label": "онлайн-платежи",
+      "category": "capabilities_skills",
+      "facets": [
+        "confidence",
+        "trust"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "spreadsheets",
+      "label": "таблицы и расчёты",
+      "category": "capabilities_skills",
+      "facets": [
+        "confidence"
+      ],
+      "depends_on": [
+        "education_level",
+        "employment_status"
+      ]
+    },
+    {
+      "id": "foreign_language",
+      "label": "иностранный язык",
+      "category": "capabilities_skills",
+      "facets": [
+        "confidence",
+        "frequency"
+      ],
+      "depends_on": [
+        "-education_level"
+      ]
+    },
+    {
+      "id": "driving",
+      "label": "вождение",
+      "category": "capabilities_skills",
+      "facets": [
+        "confidence",
+        "frequency"
+      ],
+      "depends_on": [
+        "age_group"
+      ]
+    },
+    {
+      "id": "repairs",
+      "label": "мелкий ремонт",
+      "category": "capabilities_skills",
+      "facets": [
+        "confidence",
+        "frequency"
+      ],
+      "depends_on": [
+        "living_arrangement"
+      ]
+    },
+    {
+      "id": "public_speaking",
+      "label": "публичные выступления",
+      "category": "capabilities_skills",
+      "facets": [
+        "confidence",
+        "frequency"
+      ],
+      "depends_on": [
+        "employment_status"
+      ]
+    },
+    {
+      "id": "negotiation",
+      "label": "переговоры",
+      "category": "capabilities_skills",
+      "facets": [
+        "confidence"
+      ],
+      "depends_on": [
+        "employment_status"
+      ]
+    },
+    {
+      "id": "ai_tools",
+      "label": "нейросети и AI-инструменты",
+      "category": "capabilities_skills",
+      "facets": [
+        "confidence",
+        "frequency",
+        "trust"
+      ],
+      "depends_on": [
+        "-age_group",
+        "education_level"
+      ]
+    },
+    {
+      "id": "privacy",
+      "label": "приватность данных",
+      "category": "psychology_values",
+      "facets": [
+        "priority",
+        "trust"
+      ],
+      "depends_on": [
+        "education_level"
+      ]
+    },
+    {
+      "id": "new_products",
+      "label": "новые продукты",
+      "category": "psychology_values",
+      "facets": [
+        "attitude",
+        "trust"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "price_vs_quality",
+      "label": "цена против качества",
+      "category": "psychology_values",
+      "facets": [
+        "priority"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "brand_loyalty",
+      "label": "верность бренду",
+      "category": "psychology_values",
+      "facets": [
+        "priority",
+        "attitude"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "advertising",
+      "label": "реклама",
+      "category": "psychology_values",
+      "facets": [
+        "attitude",
+        "trust"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "reviews",
+      "label": "чужие отзывы",
+      "category": "psychology_values",
+      "facets": [
+        "trust",
+        "priority"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "subscriptions",
+      "label": "подписки",
+      "category": "psychology_values",
+      "facets": [
+        "attitude",
+        "spend_share"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "environment",
+      "label": "экология",
+      "category": "psychology_values",
+      "facets": [
+        "priority",
+        "attitude"
+      ],
+      "depends_on": [
+        "education_level"
+      ]
+    },
+    {
+      "id": "work_life_balance",
+      "label": "баланс работы и жизни",
+      "category": "psychology_values",
+      "facets": [
+        "priority"
+      ],
+      "depends_on": [
+        "employment_status"
+      ]
+    },
+    {
+      "id": "risk_taking",
+      "label": "готовность рисковать",
+      "category": "psychology_values",
+      "facets": [
+        "attitude",
+        "priority"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "planning_horizon",
+      "label": "горизонт планирования",
+      "category": "psychology_values",
+      "facets": [
+        "priority"
+      ],
+      "depends_on": [
+        "income_stability"
+      ]
+    },
+    {
+      "id": "authority",
+      "label": "отношение к начальству",
+      "category": "psychology_values",
+      "facets": [
+        "attitude",
+        "trust"
+      ],
+      "depends_on": [
+        "employment_status"
+      ]
+    },
+    {
+      "id": "crowds",
+      "label": "отношение к толпе и очередям",
+      "category": "psychology_values",
+      "facets": [
+        "attitude"
+      ],
+      "depends_on": [
+        "settlement_type"
+      ]
+    },
+    {
+      "id": "change",
+      "label": "отношение к переменам",
+      "category": "psychology_values",
+      "facets": [
+        "attitude"
+      ],
+      "depends_on": [
+        "-age_group"
+      ]
+    },
+    {
+      "id": "data_sharing",
+      "label": "готовность делиться данными",
+      "category": "psychology_values",
+      "facets": [
+        "attitude",
+        "trust"
+      ],
+      "depends_on": [
+        "-education_level"
+      ]
+    }
+  ]
+}

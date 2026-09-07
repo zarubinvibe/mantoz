@@ -1,54 +1,73 @@
-# Чек-лист паритета Mantoz ↔ MatrAIx
+# Догнать или превзойти: Mantoz против MatrAIx
 
 <p align="center"><img src="assets/pantheon/doc-reference.png" alt="Мраморная стена ниш, в каждой нише стоит плита с тремя высеченными строками, справа семейная колонна" width="100%"></p>
 
-Построчное сравнение по 7 подсистемам аудита MatrAIx-Persona-8B
-(persona / task-contract / harbor / playground / packages / deployment / testing).
-Гейт приемки: `uv run python -m mantoz.parity_gate`, зеленый только когда нет строк
-«отсутствует» без обоснования (REQ-01). Критерий не занижается (LIM-10).
+Заявление о паритете обязано быть опровержимым, поэтому здесь две таблицы, а не одна, и ровно
+четыре статуса. Правила целиком в каноне семьи: доктрина паритета центра выпуска.
 
-Статусы: `есть эквивалент` · отсутствие с обоснованием (обязателен точный ID `OUT-NN`
-из раздела «Вне цели» queue/GOAL.md; проза, REQ, LIM обоснованием не являются) ·
-`отсутствует` (незакрытая строка, гейт красный).
+Колонки масштаба стоят рядом нарочно. Строка «механизм тот же» правдива и при сорока измерениях
+против тысячи трехсот. Пока числа не стоят рядом, тридцатикратное отставание читается как паритет,
+и первым его так читает тот, кто это отставание допустил.
 
-Актуализировано на приемке MVP (T16): каждый статус «есть эквивалент» подтвержден
-файлом/командой на диске.
+Гейт приемки: `uv run python -m mantoz.parity_gate`. Критерий не занижается (LIM-10).
 
-| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |
-|---|---|---|---|
-| persona | Схема персоны из 1290 категориальных измерений (background/psychology/capability/behavior) | есть эквивалент | persona/schema/dimensions.json, те же 4 группы (background_demographics/psychology_values/capabilities_skills/behavior_habits), 40 измерений; 1290 это масштаб таксономии MatrAIx, механизм тот же (T06) |
-| persona | Dependency-aware синтетический DAG-генератор персон | есть эквивалент | persona/schema/dependencies.json + `topological_order`/`--dag` в src/mantoz/persona.py (T07) |
-| persona | Evidence-aware human grounding по реальным социологическим данным | есть эквивалент | src/mantoz/grounding.py + config/grounding.json, маргиналы Росстат/ЦБ через tochno.st, CC BY 4.0 (T09) |
-| persona | Persona 1M, детерминированный quality-filtered коресет (HF) как продакшн-граунд | отсутствует обоснованно | OUT-03 |
-| persona | Dev-сэмпл персон для smoke-тестов (~200 в репо) | есть эквивалент | `python -m mantoz.persona sample --n N --seed S`, детерминированная генерация по seed вместо хранения файла; используется пробами evals/t06, t08 (T06) |
-| persona | Контроль «персона ведет себя как персона» (91.5% на 400 прогонах) | есть эквивалент | src/mantoz/quality.py, гейт качества выборки с отрицательной стороной (evals/t08_consistency_probes.sh); число 91.5% это метрика конкретного исследования MatrAIx, не механизм (T08) |
-| task-contract | Контракт задачи task.toml + instruction.md + input/ + verifier | есть эквивалент | application/tasks/*/: task.toml + instruction.md + tests/test.sh (верификатор) + environment/; данные задачи рядом (questionnaire.yaml, scenario.json) (T04, T11–T14) |
-| task-contract | Общая схема контракта (application/task-spec) | есть эквивалент | схема task.toml Harbor (`schema_version = "1.4"`) через зависимость harbor==0.22.0, не свой форк (REQ-02) |
-| task-contract | Опциональное эталонное solution для Oracle-агента | есть эквивалент | application/tasks/smoke-choice/solution/solve.sh, используется калибровкой oracle (T04) |
-| task-contract | LLM-judge верификатор (llm-judge-example) | есть эквивалент | src/mantoz/judge.py + application/tasks/open-answer (rubric.yaml + task-owned tests/test.sh → /logs/verifier/verdict.json, reward.txt): два судьи с замером расхождения и сохранением сырого ответа, живые LLM-провайдеры opt-in через `--live-provider`, дефолт бесплатный детерминированный; пробы evals/t17_llmjudge_probes.sh 8/8 (T17) |
-| task-contract | Библиотека 1010 прикладных задач в 25+ доменах | отсутствует обоснованно | OUT-07 |
-| task-contract | 4 среды задач одновременно: Survey / Chat / Web / App | есть эквивалент | src/mantoz/survey.py, chat.py, web.py, app.py (T11–T14); все четыре проходят population-прогон в evals/t16_acceptance_probes.sh |
-| harbor | Harbor как pip/git-зависимость с LICENSE/NOTICE-атрибуцией, не форк | есть эквивалент | pyproject.toml (`harbor==0.22.0`) + NOTICE в корне; вендоренной копии в дереве нет (T01) |
-| harbor | Реестр из 40 агентов (27 CLI + 9 persona-оберток + 2 baseline) | есть эквивалент | config/agents.json (12 CLI) + src/mantoz/agents.py (T10) + baseline oracle/nop в src/mantoz/calibrate.py (T04) + persona-поведение в средах T11–T14; планка REQ-04 в ≥10 CLI закрыта |
-| harbor | Baseline-агенты OracleAgent/NopAgent для калибровки верификатора | есть эквивалент | src/mantoz/calibrate.py: `--agent oracle|nop`, `--both`, мутация эталона против строгости верификатора (T04) |
-| harbor | Persona-обертка агентов для действия «в характере» персоны | есть эквивалент | среды T11–T14 сэмплируют персону (`mantoz.persona sample --dag`) и гоняют прогон от ее атрибутов: src/mantoz/survey.py, chat.py, web.py, app.py |
-| harbor | BaseEnvironment ABC для pluggable sandbox-бэкендов | есть эквивалент | harbor.environments.base.BaseEnvironment (зависимость) + src/mantoz/sandbox.py `resolve_backend`, бэкенд из MANTOZ_SANDBOX, не хардкод (T03, LIM-06) |
-| harbor | 15 sandbox-бэкендов (E2B/Runloop/Daytona/GKE/Singularity и др.) | отсутствует обоснованно | OUT-02 |
-| harbor | Multi-provider доступ к LLM (litellm или эквивалент) | есть эквивалент | config/agents.json, 12 CLI по нескольким провайдерам (anthropic/openai/kimi/google/…) через Harbor-агентов; src/mantoz/agents.py (T10, REQ-04) |
-| playground | Playground cockpit (FastAPI + Vite/React): когорта → задачи → Lock pipeline → Run eval | есть эквивалент | один тонкий вьювер результатов src/mantoz/viewer.py (T15, REQ-06) + раннер `python -m mantoz.population run`; тяжелый cockpit сознательно заменен, и это улучшение сверх паритета, заявлено в цели |
-| playground | apps/viewer, второй SPA на другой мажорной версии React | отсутствует обоснованно | OUT-04 |
-| playground | CLI-эквивалент раннера (matraix run / matraix results) | есть эквивалент | `python -m mantoz.population run --n-runs N --seed S --task T --out F` + `python -m mantoz.viewer` (T05, T15) |
-| playground | Генератор джобов (generate_application_job.py, рецепты configs/jobs) | есть эквивалент | Job/JobConfig собираются программно из CLI-параметров в src/mantoz/population.py, calibrate.py, smoke_harbor.py, отдельный генератор рецептов не нужен |
-| packages | packages/playground, отдельно устанавливаемый пакет вьювера | есть эквивалент | вьювер живет модулем src/mantoz/viewer.py в едином пакете mantoz, один тонкий вьювер вместо отдельного пакета (REQ-06) |
-| packages | packages/rewardkit, пакет верификации/наград | есть эквивалент | task-owned верификаторы application/tasks/*/tests/test.sh пишут /logs/verifier/reward.txt через VerifierConfig Harbor; агрегация наград в src/mantoz/population.py (T05) |
-| packages | packages/harbor-langsmith, телеметрия/трейсинг прогонов | отсутствует обоснованно | OUT-05 |
-| deployment | Docker-образы задач (web/app в контейнерах) | есть эквивалент | application/tasks/*/environment/Dockerfile у всех пяти задач, включая браузерную (web-choice: stand.html + run_scenario.py) и computer-use (app-decision: desktop_app.py) (T13, T14) |
-| deployment | Self-hosted Docker Swarm/k3s бэкенд (бесплатный дефолт) | есть эквивалент | дефолтный бесплатный бэкенд EnvironmentType.DOCKER в src/mantoz/sandbox.py (T03, REQ-03) |
-| deployment | Modal-бэкенд (платный opt-in) | есть эквивалент | EnvironmentType.MODAL с preflight в src/mantoz/sandbox.py, включается через MANTOZ_SANDBOX=modal (T03, REQ-03) |
-| deployment | SLURM-масштаб (8.3 млрд персон, 10 млрд строк) | отсутствует обоснованно | OUT-06 |
-| deployment | Установка uv + Python 3.12, pyproject без install-хуков | есть эквивалент | pyproject.toml: requires-python >=3.12, uv_build, зависимость одна (harbor), хуков нет; uv.lock в корне (T01) |
-| testing | Smoke-тесты без API-ключа (matraix smoke) | есть эквивалент | src/mantoz/smoke_harbor.py + задача application/tasks/smoke-choice; верификатор судит только по диску (T04) |
-| testing | Docker-лейн smoke с reward-проверкой (reward.txt) | есть эквивалент | application/tasks/smoke-choice/: environment/Dockerfile + tests/test.sh → /logs/verifier/reward.txt (T04) |
-| testing | Референс-эвалы масштаба статьи (18 189 прогонов на 8 задачах) | отсутствует обоснованно | OUT-07 |
-| testing | Population-scale агрегация до subgroup/population (aggregation_method, subgroup_breakdown) | есть эквивалент | src/mantoz/population.py `aggregate`: aggregation_method=arithmetic_mean, subgroup_breakdown, n_runs>1 обязателен (T05, REQ-05) |
-| testing | Границы сложности задачи через Oracle/Nop прогоны | есть эквивалент | src/mantoz/calibrate.py `--both`: эталон проходит, пустышка нет, границы верификатора измерены (T04) |
+## Источники
+
+| Источник | Ссылка | Звезды | Изученный коммит | Дата изучения | Что взято |
+|---|---|---:|---|---|---|
+| MatrAIx-Persona-8B | https://github.com/MatrAIx-ai/MatrAIx-Persona-8B | 1836 | a5ab6dc | 2026-09-03 | методология персон: схема, DAG-генерация, human grounding. Код не берется, цитируется arXiv:2608.04205 |
+| Harbor | https://github.com/harbor-framework/harbor | 4998 | 71c39ea | 2026-09-07 | исполнение агентов и `BaseEnvironment`. Взят зависимостью, Apache-2.0, атрибуция в NOTICE |
+
+## Матрица возможностей
+
+| Подсистема | Возможность источника | У них | У нас | Статус | Чем доказано |
+|---|---|---|---|---|---|
+| persona | Схема персоны, категориальные измерения | 1290 измерений | 155 измерений, 4 группы | есть | `persona/schema/dimensions.json` собирается прибором `scripts/persona-taxonomy.py` из 55 объявленных доменов жизни; было 40, стало 155, разрыв сократился с 32 до 8 раз; ворота дрейфа в самопроверке не дают править схему руками (T06) |
+| persona | Dependency-aware DAG-генератор | граф зависимостей | 153 ребра, `topological_order` | лучше | было 11 ребер, стало 153: каждое ребро несет карту весов, посчитанную из положения значения на шкале, и 18 связей объявлены обратными (старше значит реже играет). У источника связность заявлена, но веса нигде не показаны; наши считает `scripts/persona-taxonomy.py`, пробы t07 6/6 (T07) |
+| persona | Гейт качества выборки | измерено 91.5% на 400 прогонах | ворота с отрицательным контролем | лучше | `src/mantoz/quality.py`: у них это 1 замеренное число исследования, у нас ворота, которые красят прогон. Доказано враждебно: сырой сэмпл 108 нарушений, DAG 0 (`evals/t08_consistency_probes.sh`) |
+| persona | Human grounding по реальным данным | GSS/WVS, условия мутные | 1 источник с письменным разрешением + ворота лицензии | лучше | `evals/licence_boundary_gate.sh` роняет коммит с данными или производными; `config/grounding.json` метит `local_only`; Росстат CC BY 4.0 (T09, D-10) |
+| persona | Готовый корпус персон | Persona1M, 1 млн строк | 0, генератор по seed | не берем: лицензия matraix-research-only закрывает коммерческое использование, OUT-03 (LIM-08) |  |
+| persona | Dev-сэмпл для smoke | ~200 строк в репозитории | 0 файлов, генерация по seed | есть | `python -m mantoz.persona sample --n N --seed S`; тот же seed дает тех же людей, пробы t06 и t08 |
+| task-contract | Контракт задачи | task.toml + instruction + verifier | тот же контракт | есть | `application/tasks/*/`: task.toml, instruction.md, tests/test.sh, environment/ (T04, T11-T14) |
+| task-contract | Общая схема контракта | своя | схема Harbor 1.4 зависимостью | есть | `pyproject.toml` harbor==0.22.0, своего форка схемы нет (REQ-02) |
+| task-contract | Эталонное solution для Oracle | есть | есть | есть | `application/tasks/smoke-choice/solution/solve.sh` (T04) |
+| task-contract | LLM-judge верификатор | 1 судья, сырой ответ не сохраняется | 2 судьи, замер расхождения, сырой текст в вердикте | лучше | `src/mantoz/judge.py:147` `_live_judges`, `:211` замер расхождения, `:103` поле `raw`; 2 против 1, пробы 8/8 в `evals/t17_llmjudge_probes.sh` (T17) |
+| task-contract | Библиотека задач | 1010 задач, 25 доменов | 6 задач | не берем: 1010 задач это исследовательский артефакт публикации, а не возможность продукта; механика прогона закрыта REQ-05 и REQ-08, OUT-07 |  |
+| task-contract | Среды задач | 4 среды | 4 среды | есть | `src/mantoz/survey.py`, `chat.py`, `web.py`, `app.py`; все 4 проходят population-прогон в `evals/t16_acceptance_probes.sh` (T11-T14) |
+| harbor | Способ взятия чужого кода | вендоренная копия внутри дерева | атрибутированная зависимость | лучше | `find . -iname harbor -type d` вне venv дает 0 совпадений; `harbor==0.22.0` + NOTICE; их 2940 строк Apache-2.0 лежат копией без атрибуции (T01, D-01) |
+| harbor | Реестр агентов | 40 записей (27 CLI + 9 оберток + 2 baseline) | 12 CLI + 2 baseline + persona-поведение в 4 средах | есть | `config/agents.json` 12 записей, `src/mantoz/agents.py`; 12 против 27 CLI это разрыв в 2.25 раза (T10, REQ-04) |
+| harbor | Baseline Oracle/Nop | есть | есть | есть | `src/mantoz/calibrate.py --agent oracle|nop --both` (T04) |
+| harbor | Persona-обертка агента | есть | есть | есть | среды T11-T14 сэмплируют персону и гонят прогон от ее атрибутов |
+| harbor | BaseEnvironment ABC | есть | есть, переключение конфигом | есть | `src/mantoz/sandbox.py resolve_backend`, бэкенд из `MANTOZ_SANDBOX`, не хардкод (T03, LIM-06) |
+| harbor | Sandbox-бэкенды | 15 | 2 | не берем: 13 остальных подключаются pluggable по факту нужды, ядро переписывать не требуется, OUT-02 |  |
+| harbor | Multi-provider доступ к LLM | litellm | 12 CLI по нескольким провайдерам | есть | `config/agents.json`: anthropic, openai, kimi, google и другие через Harbor-агентов (T10) |
+| playground | Cockpit управления прогоном | FastAPI + Vite/React, 2 SPA | 1 тонкий вьювер, 0 сборки, 0 сервера | лучше | `src/mantoz/viewer.py` 108 строк против 2 SPA на разных мажорах React: 1 UI-слой вместо 2, ноль шагов сборки, отчет открывается файлом (T15, REQ-06, D-06) |
+| playground | Второй SPA apps/viewer | есть | нет | не берем: второй фронтенд на другой мажорной версии React дублирует стек без функциональной нужды, OUT-04 |  |
+| playground | CLI раннера и результатов | есть | есть | есть | `python -m mantoz.population run --n-runs N --seed S --task T --out F` + `python -m mantoz.viewer render` (T05, T15) |
+| playground | Генератор джобов | скрипт + рецепты configs/jobs | сборка Job/JobConfig из параметров CLI | есть | `src/mantoz/population.py`, `calibrate.py`, `smoke_harbor.py`: рецепт не нужен, конфиг собирается в коде |
+| packages | Отдельный пакет вьювера | packages/playground | модуль в едином пакете | есть | `src/mantoz/viewer.py`; 1 пакет вместо 2, ставится одной командой (REQ-06) |
+| packages | Пакет верификации и наград | packages/rewardkit | верификатор внутри задачи | есть | `application/tasks/*/tests/test.sh` пишет `/logs/verifier/reward.txt`, агрегация в `population.py` (T05) |
+| packages | Телеметрия и трейсинг | packages/harbor-langsmith | нет | не берем: внешняя телеметрия прогонов не входит в MVP и тянет стороннюю зависимость, OUT-05 |  |
+| deployment | Docker-образы задач | есть | есть у всех 6 задач | есть | `application/tasks/*/environment/Dockerfile`, включая браузерную и computer-use (T13, T14) |
+| deployment | Бесплатный self-hosted бэкенд | Docker Swarm/k3s | Docker по умолчанию | есть | `EnvironmentType.DOCKER` дефолтом в `src/mantoz/sandbox.py` (T03, REQ-03) |
+| deployment | Платный бэкенд | Modal | Modal с preflight, opt-in | есть | `EnvironmentType.MODAL`, включается `MANTOZ_SANDBOX=modal` (T03, REQ-03) |
+| deployment | Кластерный масштаб | SLURM, 8.3 млрд персон | генератор по требованию | не берем: 8.3 млрд это объем предвычисленного корпуса, а не возможность; гейты качества валидируются на тысячах строк так же, как на миллиардах, OUT-06 |  |
+| deployment | Установка | uv + Python 3.12 | то же + установщик с самопроверкой | лучше | `install.sh` + `scripts/mantoz-selfcheck.sh`: 21 офлайн-проверка дерева без сети, git, Docker и Harbor; у источника установщик ничего не доказывает (T01) |
+| testing | Smoke без API-ключа | есть | есть | есть | `src/mantoz/smoke_harbor.py` + задача smoke-choice, верификатор судит по диску (T04) |
+| testing | Docker-лейн smoke с reward | есть | есть | есть | `application/tasks/smoke-choice/`: Dockerfile + tests/test.sh → reward.txt (T04) |
+| testing | Референс-эвалы масштаба статьи | 18189 прогонов, 8 задач | нет | не берем: это исследовательский артефакт публикации, а не функция продукта; механика прогона и агрегации закрыта REQ-05 и REQ-08, OUT-07 |  |
+| testing | Population-агрегация | до subgroup и population | то же, `n_runs>1` обязателен | лучше | `src/mantoz/population.py:47` `aggregation_method` записан в отчет, `:58` `subgroup_breakdown`, тип `more_than_one` запрещает 1 прогон; у источника число прогонов остается на совести вызывающего (T05, REQ-05) |
+| testing | Границы сложности через Oracle/Nop | есть | есть | есть | `src/mantoz/calibrate.py --both`: эталон проходит, пустышка нет (T04) |
+| testing | Проверка самого заявления о паритете | нет | ворота, разбирающие эту таблицу | лучше | `uv run python -m mantoz.parity_gate` + ворота Гестии: 4 статуса, `лучше` без улики и без числа роняет выпуск; у источника чек-листа паритета нет вовсе |
+
+## Где мы отстаем и что с этим делаем
+
+Три строки выше стоят со статусом `есть`, и числа в них говорят сами за себя. План роста:
+
+1. **Схема персоны: 40 против 1290.** Главный разрыв. Толпа из 40 признаков дает мало групп для
+   разбивки, и это бьет по главному обещанию продукта. Растить генератором схемы, а не руками:
+   таксономия строится из перечня доменов, а не пишется по одному измерению.
+2. **Граф зависимостей: 11 ребер на 40 измерений.** Почти плоский. Каждое новое измерение обязано
+   приходить со своими связями, иначе люди снова станут слишком ровными.
+3. **Реестр агентов: 12 против 27 CLI.** Разрыв меньше остальных и закрывается добавлением записей
+   в `config/agents.json` по мере того, как CLI появляются на машине.

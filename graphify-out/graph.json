@@ -4,12 +4,102 @@
   "graph": {},
   "nodes": [
     {
+      "label": "persona-taxonomy.py",
+      "file_type": "code",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L1",
+      "id": "scripts_persona_taxonomy_py",
+      "community": 14,
+      "norm_label": "persona-taxonomy.py"
+    },
+    {
+      "label": "load()",
+      "file_type": "code",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L34",
+      "id": "scripts_persona_taxonomy_load",
+      "community": 14,
+      "norm_label": "load()"
+    },
+    {
+      "label": "build_dimensions()",
+      "file_type": "code",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L38",
+      "id": "scripts_persona_taxonomy_build_dimensions",
+      "community": 14,
+      "norm_label": "build_dimensions()"
+    },
+    {
+      "label": "boost_map()",
+      "file_type": "code",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L61",
+      "id": "scripts_persona_taxonomy_boost_map",
+      "community": 14,
+      "norm_label": "boost_map()"
+    },
+    {
+      "label": "build_edges()",
+      "file_type": "code",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L84",
+      "id": "scripts_persona_taxonomy_build_edges",
+      "community": 14,
+      "norm_label": "build_edges()"
+    },
+    {
+      "label": "acyclic()",
+      "file_type": "code",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L115",
+      "id": "scripts_persona_taxonomy_acyclic",
+      "community": 14,
+      "norm_label": "acyclic()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L134",
+      "id": "scripts_persona_taxonomy_main",
+      "community": 14,
+      "norm_label": "main()"
+    },
+    {
+      "label": "\u042f\u0434\u0440\u043e \u0438\u0434\u0451\u0442 \u043f\u0435\u0440\u0432\u044b\u043c \u0438 \u043d\u0435\u0438\u0437\u043c\u0435\u043d\u043d\u044b\u043c, \u0434\u0430\u043b\u044c\u0448\u0435 \u0434\u043e\u043c\u0435\u043d \u043d\u0430 \u0444\u0430\u0441\u0435\u0442.",
+      "file_type": "rationale",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L39",
+      "id": "scripts_persona_taxonomy_rationale_39",
+      "community": 14,
+      "norm_label": "\u044f\u0434\u0440\u043e \u0438\u0434\u0435\u0442 \u043f\u0435\u0440\u0432\u044b\u043c \u0438 \u043d\u0435\u0438\u0437\u043c\u0435\u043d\u043d\u044b\u043c, \u0434\u0430\u043b\u044c\u0448\u0435 \u0434\u043e\u043c\u0435\u043d \u043d\u0430 \u0444\u0430\u0441\u0435\u0442."
+    },
+    {
+      "label": "\u041a\u0430\u0440\u0442\u0430 \u0432\u0435\u0441\u043e\u0432 \u043c\u0435\u0436\u0434\u0443 \u0434\u0432\u0443\u043c\u044f \u043f\u043e\u0440\u044f\u0434\u043a\u043e\u0432\u044b\u043c\u0438 \u0448\u043a\u0430\u043b\u0430\u043c\u0438.      \u0420\u0435\u0431\u0440\u043e `prefer` \u0431\u0435\u0437 \u0432\u0435\u0441\u043e\u0432 \u043d\u0438\u0447\u0435\u0433",
+      "file_type": "rationale",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L62",
+      "id": "scripts_persona_taxonomy_rationale_62",
+      "community": 14,
+      "norm_label": "\u043a\u0430\u0440\u0442\u0430 \u0432\u0435\u0441\u043e\u0432 \u043c\u0435\u0436\u0434\u0443 \u0434\u0432\u0443\u043c\u044f \u043f\u043e\u0440\u044f\u0434\u043a\u043e\u0432\u044b\u043c\u0438 \u0448\u043a\u0430\u043b\u0430\u043c\u0438.      \u0440\u0435\u0431\u0440\u043e `prefer` \u0431\u0435\u0437 \u0432\u0435\u0441\u043e\u0432 \u043d\u0438\u0447\u0435\u0433"
+    },
+    {
+      "label": "\u0421\u0432\u044f\u0437\u0438 \u044f\u0434\u0440\u0430 \u0441\u043e\u0445\u0440\u0430\u043d\u044f\u044e\u0442\u0441\u044f \u043a\u0430\u043a \u0435\u0441\u0442\u044c, \u043a \u043d\u0438\u043c \u0434\u043e\u0431\u0430\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u043d\u044b\u0435 \u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438 \u0434\u043e\u043c\u0435\u043d",
+      "file_type": "rationale",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L85",
+      "id": "scripts_persona_taxonomy_rationale_85",
+      "community": 14,
+      "norm_label": "\u0441\u0432\u044f\u0437\u0438 \u044f\u0434\u0440\u0430 \u0441\u043e\u0445\u0440\u0430\u043d\u044f\u044e\u0442\u0441\u044f \u043a\u0430\u043a \u0435\u0441\u0442\u044c, \u043a \u043d\u0438\u043c \u0434\u043e\u0431\u0430\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u043d\u044b\u0435 \u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438 \u0434\u043e\u043c\u0435\u043d"
+    },
+    {
       "label": "mantoz-selfcheck.py",
       "file_type": "code",
       "source_file": "scripts/mantoz-selfcheck.py",
       "source_location": "L1",
       "id": "scripts_mantoz_selfcheck_py",
-      "community": 9,
+      "community": 10,
       "norm_label": "mantoz-selfcheck.py"
     },
     {
@@ -18,7 +108,7 @@
       "source_file": "scripts/mantoz-selfcheck.py",
       "source_location": "L24",
       "id": "scripts_mantoz_selfcheck_check",
-      "community": 9,
+      "community": 10,
       "norm_label": "check()"
     },
     {
@@ -27,7 +117,7 @@
       "source_file": "scripts/mantoz-selfcheck.py",
       "source_location": "L31",
       "id": "scripts_mantoz_selfcheck_load_json",
-      "community": 9,
+      "community": 10,
       "norm_label": "load_json()"
     },
     {
@@ -36,80 +126,98 @@
       "source_file": "scripts/mantoz-selfcheck.py",
       "source_location": "L43",
       "id": "scripts_mantoz_selfcheck_check_persona_schema",
-      "community": 9,
+      "community": 10,
       "norm_label": "check_persona_schema()"
+    },
+    {
+      "label": "check_taxonomy_matches_source()",
+      "file_type": "code",
+      "source_file": "scripts/mantoz-selfcheck.py",
+      "source_location": "L60",
+      "id": "scripts_mantoz_selfcheck_check_taxonomy_matches_source",
+      "community": 10,
+      "norm_label": "check_taxonomy_matches_source()"
     },
     {
       "label": "check_persona_dag()",
       "file_type": "code",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L60",
+      "source_location": "L73",
       "id": "scripts_mantoz_selfcheck_check_persona_dag",
-      "community": 9,
+      "community": 10,
       "norm_label": "check_persona_dag()"
     },
     {
       "label": "check_grounding_registry()",
       "file_type": "code",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L96",
+      "source_location": "L109",
       "id": "scripts_mantoz_selfcheck_check_grounding_registry",
-      "community": 9,
+      "community": 10,
       "norm_label": "check_grounding_registry()"
     },
     {
       "label": "check_agent_registry()",
       "file_type": "code",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L116",
+      "source_location": "L129",
       "id": "scripts_mantoz_selfcheck_check_agent_registry",
-      "community": 9,
+      "community": 10,
       "norm_label": "check_agent_registry()"
     },
     {
       "label": "check_task_contracts()",
       "file_type": "code",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L126",
+      "source_location": "L139",
       "id": "scripts_mantoz_selfcheck_check_task_contracts",
-      "community": 9,
+      "community": 10,
       "norm_label": "check_task_contracts()"
     },
     {
       "label": "check_parity_checklist()",
       "file_type": "code",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L137",
+      "source_location": "L150",
       "id": "scripts_mantoz_selfcheck_check_parity_checklist",
-      "community": 9,
+      "community": 10,
       "norm_label": "check_parity_checklist()"
     },
     {
       "label": "check_attribution()",
       "file_type": "code",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L155",
+      "source_location": "L168",
       "id": "scripts_mantoz_selfcheck_check_attribution",
-      "community": 9,
+      "community": 10,
       "norm_label": "check_attribution()"
     },
     {
       "label": "check_data_boundary()",
       "file_type": "code",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L164",
+      "source_location": "L177",
       "id": "scripts_mantoz_selfcheck_check_data_boundary",
-      "community": 9,
+      "community": 10,
       "norm_label": "check_data_boundary()"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L173",
+      "source_location": "L186",
       "id": "scripts_mantoz_selfcheck_main",
-      "community": 9,
+      "community": 10,
       "norm_label": "main()"
+    },
+    {
+      "label": "\u0421\u0445\u0435\u043c\u0430 \u0441\u043e\u0431\u0440\u0430\u043d\u0430 \u043f\u0440\u0438\u0431\u043e\u0440\u043e\u043c. \u041f\u0440\u0430\u0432\u043a\u0430 \u0440\u0443\u043a\u0430\u043c\u0438 \u0440\u0430\u0437\u044a\u0435\u0434\u0435\u0442\u0441\u044f \u0441 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u043e\u043c \u043c\u043e\u043b\u0447\u0430.",
+      "file_type": "rationale",
+      "source_file": "scripts/mantoz-selfcheck.py",
+      "source_location": "L61",
+      "id": "scripts_mantoz_selfcheck_rationale_61",
+      "community": 10,
+      "norm_label": "\u0441\u0445\u0435\u043c\u0430 \u0441\u043e\u0431\u0440\u0430\u043d\u0430 \u043f\u0440\u0438\u0431\u043e\u0440\u043e\u043c. \u043f\u0440\u0430\u0432\u043a\u0430 \u0440\u0443\u043a\u0430\u043c\u0438 \u0440\u0430\u0437\u044a\u0435\u0434\u0435\u0442\u0441\u044f \u0441 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u043e\u043c \u043c\u043e\u043b\u0447\u0430."
     },
     {
       "label": "pantheon-takt.py",
@@ -117,7 +225,7 @@
       "source_file": "scripts/pantheon-takt.py",
       "source_location": "L1",
       "id": "scripts_pantheon_takt_py",
-      "community": 31,
+      "community": 33,
       "norm_label": "pantheon-takt.py"
     },
     {
@@ -126,7 +234,7 @@
       "source_file": "scripts/pantheon-takt.py",
       "source_location": "L39",
       "id": "scripts_pantheon_takt_fit",
-      "community": 31,
+      "community": 33,
       "norm_label": "fit()"
     },
     {
@@ -135,7 +243,7 @@
       "source_file": "scripts/pantheon-takt.py",
       "source_location": "L51",
       "id": "scripts_pantheon_takt_carve",
-      "community": 31,
+      "community": 33,
       "norm_label": "carve()"
     },
     {
@@ -144,7 +252,7 @@
       "source_file": "scripts/pantheon-takt.py",
       "source_location": "L72",
       "id": "scripts_pantheon_takt_main",
-      "community": 31,
+      "community": 33,
       "norm_label": "main()"
     },
     {
@@ -153,7 +261,7 @@
       "source_file": "scripts/pantheon-takt.py",
       "source_location": "L40",
       "id": "scripts_pantheon_takt_rationale_40",
-      "community": 31,
+      "community": 33,
       "norm_label": "largest size that still leaves a margin inside the plate."
     },
     {
@@ -162,7 +270,7 @@
       "source_file": "application/tasks/web-choice/environment/run_scenario.py",
       "source_location": "L1",
       "id": "application_tasks_web_choice_environment_run_scenario_py",
-      "community": 12,
+      "community": 17,
       "norm_label": "run_scenario.py"
     },
     {
@@ -171,7 +279,7 @@
       "source_file": "application/tasks/app-decision/environment/run_scenario.py",
       "source_location": "L21",
       "id": "environment_run_scenario_main",
-      "community": 12,
+      "community": 17,
       "norm_label": "main()"
     },
     {
@@ -180,7 +288,7 @@
       "source_file": "application/tasks/app-decision/environment/run_scenario.py",
       "source_location": "L1",
       "id": "environment_run_scenario_rationale_1",
-      "community": 12,
+      "community": 17,
       "norm_label": "\u043f\u0440\u043e\u0445\u043e\u0434\u0438\u0442 desktop-\u0441\u0446\u0435\u043d\u0430\u0440\u0438\u0438 \u043c\u044b\u0448\u044c\u044e \u0438 \u0441\u043d\u0438\u043c\u0430\u0435\u0442 \u0432\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u044b\u0438 \u0434\u0438\u0441\u043f\u043b\u0435\u0438."
     },
     {
@@ -189,7 +297,7 @@
       "source_file": "application/tasks/app-decision/environment/desktop_app.py",
       "source_location": "L1",
       "id": "application_tasks_app_decision_environment_desktop_app_py",
-      "community": 12,
+      "community": 17,
       "norm_label": "desktop_app.py"
     },
     {
@@ -198,7 +306,7 @@
       "source_file": "application/tasks/app-decision/environment/desktop_app.py",
       "source_location": "L6",
       "id": "environment_desktop_app_decisionapp",
-      "community": 12,
+      "community": 17,
       "norm_label": "decisionapp"
     },
     {
@@ -207,7 +315,7 @@
       "source_file": "application/tasks/app-decision/environment/desktop_app.py",
       "source_location": "L7",
       "id": "environment_desktop_app_decisionapp_init",
-      "community": 12,
+      "community": 17,
       "norm_label": ".__init__()"
     },
     {
@@ -216,7 +324,7 @@
       "source_file": "application/tasks/app-decision/environment/desktop_app.py",
       "source_location": "L50",
       "id": "environment_desktop_app_decisionapp_choose",
-      "community": 12,
+      "community": 17,
       "norm_label": ".choose()"
     },
     {
@@ -225,7 +333,7 @@
       "source_file": "application/tasks/app-decision/environment/desktop_app.py",
       "source_location": "L1",
       "id": "environment_desktop_app_rationale_1",
-      "community": 12,
+      "community": 17,
       "norm_label": "\u043c\u0438\u043d\u0438\u043c\u0430\u043b\u044c\u043d\u043e\u0435 desktop-\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435: \u0434\u0438\u0430\u043b\u043e\u0433 \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u044f \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0438."
     },
     {
@@ -234,7 +342,7 @@
       "source_file": "application/tasks/app-decision/environment/run_scenario.py",
       "source_location": "L1",
       "id": "application_tasks_app_decision_environment_run_scenario_py",
-      "community": 12,
+      "community": 17,
       "norm_label": "run_scenario.py"
     },
     {
@@ -243,7 +351,7 @@
       "source_file": "application/tasks/app-decision/environment/run_scenario.py",
       "source_location": "L15",
       "id": "environment_run_scenario_command",
-      "community": 12,
+      "community": 7,
       "norm_label": "command()"
     },
     {
@@ -252,7 +360,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L1",
       "id": "src_mantoz_survey_py",
-      "community": 10,
+      "community": 11,
       "norm_label": "survey.py"
     },
     {
@@ -261,7 +369,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L43",
       "id": "mantoz_survey_load_questionnaire",
-      "community": 10,
+      "community": 11,
       "norm_label": "load_questionnaire()"
     },
     {
@@ -270,7 +378,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L47",
       "id": "mantoz_survey_completes_questionnaire",
-      "community": 10,
+      "community": 11,
       "norm_label": "completes_questionnaire()"
     },
     {
@@ -279,7 +387,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L58",
       "id": "mantoz_survey_answer_questionnaire",
-      "community": 10,
+      "community": 11,
       "norm_label": "answer_questionnaire()"
     },
     {
@@ -288,7 +396,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L92",
       "id": "mantoz_survey_validate_answers",
-      "community": 10,
+      "community": 11,
       "norm_label": "validate_answers()"
     },
     {
@@ -297,7 +405,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L113",
       "id": "mantoz_survey_run_persona_trial",
-      "community": 10,
+      "community": 11,
       "norm_label": "run_persona_trial()"
     },
     {
@@ -306,7 +414,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L157",
       "id": "mantoz_survey_run",
-      "community": 10,
+      "community": 11,
       "norm_label": "run()"
     },
     {
@@ -315,7 +423,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L186",
       "id": "mantoz_survey_verify",
-      "community": 10,
+      "community": 11,
       "norm_label": "verify()"
     },
     {
@@ -324,7 +432,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L198",
       "id": "mantoz_survey_main",
-      "community": 10,
+      "community": 11,
       "norm_label": "main()"
     },
     {
@@ -333,7 +441,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L1",
       "id": "mantoz_survey_rationale_1",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u0441\u0440\u0435\u0434\u0430 survey: \u043f\u0435\u0440\u0441\u043e\u043d\u0430 \u043e\u0442\u0432\u0435\u0447\u0430\u0435\u0442 \u043d\u0430 \u0430\u043d\u043a\u0435\u0442\u0443 \u0434\u0435\u0442\u0435\u0440\u043c\u0438\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e, \u043f\u043e \u0441\u0432\u043e\u0438\u043c \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u0430\u043c."
     },
     {
@@ -342,7 +450,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L48",
       "id": "mantoz_survey_rationale_48",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0442\u043e\u0436\u0435 \u0441\u043b\u0435\u0434\u0441\u0442\u0432\u0438\u0435 \u043f\u0435\u0440\u0441\u043e\u043d\u044b: \u0431\u0440\u043e\u0441\u0430\u044e\u0449\u0438\u0435 \u043d\u0430 \u043f\u043e\u043b\u043f\u0443\u0442\u0438 \u043d\u0435 \u0434\u043e\u043f\u0438\u0441\u044b\u0432\u0430\u044e\u0442."
     },
     {
@@ -351,7 +459,7 @@
       "source_file": "src/mantoz/survey.py",
       "source_location": "L114",
       "id": "mantoz_survey_rationale_114",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u043f\u0440\u043e\u0433\u043e\u043d\u044f\u0435\u0442 survey-\u0437\u0430\u0434\u0430\u0447\u0443 \u043e\u0434\u043d\u043e\u0438 \u043f\u0435\u0440\u0441\u043e\u043d\u043e\u0438 \u0447\u0435\u0440\u0435\u0437 harbor.      \u043e\u0442\u0432\u0435\u0442\u044b \u0432\u044b\u0432\u043e\u0434\u044f\u0442\u0441\u044f \u0434\u0435\u0442\u0435\u0440"
     },
     {
@@ -360,7 +468,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L1",
       "id": "src_mantoz_web_py",
-      "community": 0,
+      "community": 9,
       "norm_label": "web.py"
     },
     {
@@ -369,7 +477,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L30",
       "id": "mantoz_web_completes_scenario",
-      "community": 0,
+      "community": 9,
       "norm_label": "completes_scenario()"
     },
     {
@@ -378,7 +486,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L41",
       "id": "mantoz_web_plan_actions",
-      "community": 0,
+      "community": 9,
       "norm_label": "plan_actions()"
     },
     {
@@ -387,7 +495,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L60",
       "id": "mantoz_web_validate_outcome",
-      "community": 0,
+      "community": 9,
       "norm_label": "validate_outcome()"
     },
     {
@@ -396,7 +504,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L81",
       "id": "mantoz_web_run_persona_trial",
-      "community": 0,
+      "community": 9,
       "norm_label": "run_persona_trial()"
     },
     {
@@ -405,7 +513,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L148",
       "id": "mantoz_web_read_container_result",
-      "community": 0,
+      "community": 9,
       "norm_label": "_read_container_result()"
     },
     {
@@ -414,7 +522,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L157",
       "id": "mantoz_web_reward",
-      "community": 0,
+      "community": 9,
       "norm_label": "_reward()"
     },
     {
@@ -423,7 +531,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L162",
       "id": "mantoz_web_run",
-      "community": 0,
+      "community": 9,
       "norm_label": "run()"
     },
     {
@@ -432,7 +540,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L194",
       "id": "mantoz_web_verify",
-      "community": 0,
+      "community": 9,
       "norm_label": "verify()"
     },
     {
@@ -441,7 +549,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L208",
       "id": "mantoz_web_main",
-      "community": 0,
+      "community": 9,
       "norm_label": "main()"
     },
     {
@@ -450,7 +558,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L1",
       "id": "mantoz_web_rationale_1",
-      "community": 0,
+      "community": 9,
       "norm_label": "\u0441\u0440\u0435\u0434\u0430 web: \u043f\u0435\u0440\u0441\u043e\u043d\u0430 \u043f\u0440\u043e\u0445\u043e\u0434\u0438\u0442 \u0441\u0446\u0435\u043d\u0430\u0440\u0438\u0438 \u0432\u044b\u0431\u043e\u0440\u0430 \u0442\u0430\u0440\u0438\u0444\u0430 \u0432 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0435.  \u0434\u0435\u0444\u043e\u043b\u0442 \u2014 \u0431\u0435\u0437 \u0432\u044b\u0437"
     },
     {
@@ -459,7 +567,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L31",
       "id": "mantoz_web_rationale_31",
-      "community": 0,
+      "community": 9,
       "norm_label": "\u0443\u0445\u043e\u0434 \u0431\u0435\u0437 \u0432\u044b\u0431\u043e\u0440\u0430 - \u0442\u043e\u0436\u0435 \u0441\u043b\u0435\u0434\u0441\u0442\u0432\u0438\u0435 \u043f\u0435\u0440\u0441\u043e\u043d\u044b: \u0431\u0440\u043e\u0441\u0430\u044e\u0449\u0438\u0435 \u043d\u0435 \u0434\u043e\u0445\u043e\u0434\u044f\u0442 \u0434\u043e \u043a\u043d\u043e\u043f\u043a\u0438."
     },
     {
@@ -468,7 +576,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L42",
       "id": "mantoz_web_rationale_42",
-      "community": 0,
+      "community": 9,
       "norm_label": "\u0441\u0442\u0440\u043e\u0438\u0442 \u043f\u043b\u0430\u043d \u0441\u0446\u0435\u043d\u0430\u0440\u0438\u044f \u0438\u0437 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u043e\u0432 \u043f\u0435\u0440\u0441\u043e\u043d\u044b, \u0434\u0435\u0442\u0435\u0440\u043c\u0438\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e."
     },
     {
@@ -477,7 +585,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L84",
       "id": "mantoz_web_rationale_84",
-      "community": 0,
+      "community": 9,
       "norm_label": "\u043f\u0440\u043e\u0433\u043e\u043d\u044f\u0435\u0442 web-\u0437\u0430\u0434\u0430\u0447\u0443 \u043e\u0434\u043d\u043e\u0438 \u043f\u0435\u0440\u0441\u043e\u043d\u043e\u0438 \u0447\u0435\u0440\u0435\u0437 harbor.      \u043f\u043b\u0430\u043d \u0434\u0435\u0438\u0441\u0442\u0432\u0438\u0438 \u0432\u044b\u0432\u043e\u0434\u0438\u0442\u0441\u044f \u0434"
     },
     {
@@ -486,7 +594,7 @@
       "source_file": "src/mantoz/web.py",
       "source_location": "L149",
       "id": "mantoz_web_rationale_149",
-      "community": 0,
+      "community": 9,
       "norm_label": "\u0447\u0438\u0442\u0430\u0435\u0442 result.json, \u0441\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0438 \u0432\u0435\u0440\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440\u043e\u043c \u043a\u043e\u043d\u0442\u0435\u0438\u043d\u0435\u0440\u0430 \u043d\u0430 \u0445\u043e\u0441\u0442."
     },
     {
@@ -495,7 +603,7 @@
       "source_file": "src/mantoz/viewer.py",
       "source_location": "L1",
       "id": "src_mantoz_viewer_py",
-      "community": 20,
+      "community": 22,
       "norm_label": "viewer.py"
     },
     {
@@ -504,7 +612,7 @@
       "source_file": "src/mantoz/viewer.py",
       "source_location": "L10",
       "id": "mantoz_viewer_esc",
-      "community": 20,
+      "community": 22,
       "norm_label": "esc()"
     },
     {
@@ -513,7 +621,7 @@
       "source_file": "src/mantoz/viewer.py",
       "source_location": "L14",
       "id": "mantoz_viewer_render_failed_trials",
-      "community": 20,
+      "community": 22,
       "norm_label": "render_failed_trials()"
     },
     {
@@ -522,7 +630,7 @@
       "source_file": "src/mantoz/viewer.py",
       "source_location": "L34",
       "id": "mantoz_viewer_render_report",
-      "community": 20,
+      "community": 22,
       "norm_label": "render_report()"
     },
     {
@@ -531,7 +639,7 @@
       "source_file": "src/mantoz/viewer.py",
       "source_location": "L81",
       "id": "mantoz_viewer_render",
-      "community": 20,
+      "community": 22,
       "norm_label": "render()"
     },
     {
@@ -540,7 +648,7 @@
       "source_file": "src/mantoz/viewer.py",
       "source_location": "L97",
       "id": "mantoz_viewer_main",
-      "community": 20,
+      "community": 22,
       "norm_label": "main()"
     },
     {
@@ -549,7 +657,7 @@
       "source_file": "src/mantoz/viewer.py",
       "source_location": "L1",
       "id": "mantoz_viewer_rationale_1",
-      "community": 20,
+      "community": 22,
       "norm_label": "\u0442\u043e\u043d\u043a\u0438\u0438 \u0432\u044c\u044e\u0432\u0435\u0440 \u043e\u0442\u0447\u0435\u0442\u043e\u0432 population: \u0441\u0430\u043c\u043e\u0434\u043e\u0441\u0442\u0430\u0442\u043e\u0447\u043d\u044b\u0438 html \u0431\u0435\u0437 \u0441\u0431\u043e\u0440\u043a\u0438 \u0438 npm."
     },
     {
@@ -558,7 +666,7 @@
       "source_file": "src/mantoz/viewer.py",
       "source_location": "L15",
       "id": "mantoz_viewer_rationale_15",
-      "community": 20,
+      "community": 22,
       "norm_label": "\u043d\u0435\u0441\u043e\u0441\u0442\u043e\u044f\u0432\u0448\u0438\u0435\u0441\u044f \u043f\u0440\u043e\u0433\u043e\u043d\u044b - \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u0438 \u0431\u043b\u043e\u043a, \u043e\u043d\u0438 \u043d\u0435 \u0440\u0430\u0441\u0442\u0432\u043e\u0440\u044f\u044e\u0442\u0441\u044f \u0432 \u0434\u043e\u043b\u044f\u0445."
     },
     {
@@ -567,7 +675,7 @@
       "source_file": "src/mantoz/population.py",
       "source_location": "L1",
       "id": "src_mantoz_population_py",
-      "community": 28,
+      "community": 30,
       "norm_label": "population.py"
     },
     {
@@ -576,7 +684,7 @@
       "source_file": "src/mantoz/population.py",
       "source_location": "L20",
       "id": "mantoz_population_more_than_one",
-      "community": 28,
+      "community": 30,
       "norm_label": "more_than_one()"
     },
     {
@@ -585,7 +693,7 @@
       "source_file": "src/mantoz/population.py",
       "source_location": "L27",
       "id": "mantoz_population_aggregate",
-      "community": 28,
+      "community": 30,
       "norm_label": "aggregate()"
     },
     {
@@ -594,7 +702,7 @@
       "source_file": "src/mantoz/population.py",
       "source_location": "L62",
       "id": "mantoz_population_write_report",
-      "community": 28,
+      "community": 30,
       "norm_label": "write_report()"
     },
     {
@@ -603,7 +711,7 @@
       "source_file": "src/mantoz/population.py",
       "source_location": "L77",
       "id": "mantoz_population_run",
-      "community": 28,
+      "community": 30,
       "norm_label": "run()"
     },
     {
@@ -612,7 +720,7 @@
       "source_file": "src/mantoz/population.py",
       "source_location": "L184",
       "id": "mantoz_population_main",
-      "community": 28,
+      "community": 30,
       "norm_label": "main()"
     },
     {
@@ -621,7 +729,7 @@
       "source_file": "src/mantoz/__init__.py",
       "source_location": "L1",
       "id": "src_mantoz_init_py",
-      "community": 37,
+      "community": 39,
       "norm_label": "__init__.py"
     },
     {
@@ -783,7 +891,7 @@
       "source_file": "src/mantoz/sandbox.py",
       "source_location": "L1",
       "id": "src_mantoz_sandbox_py",
-      "community": 0,
+      "community": 3,
       "norm_label": "sandbox.py"
     },
     {
@@ -792,7 +900,7 @@
       "source_file": "src/mantoz/sandbox.py",
       "source_location": "L8",
       "id": "mantoz_sandbox_resolve_backend",
-      "community": 0,
+      "community": 3,
       "norm_label": "resolve_backend()"
     },
     {
@@ -801,7 +909,7 @@
       "source_file": "src/mantoz/sandbox.py",
       "source_location": "L19",
       "id": "mantoz_sandbox_main",
-      "community": 0,
+      "community": 3,
       "norm_label": "main()"
     },
     {
@@ -810,7 +918,7 @@
       "source_file": "src/mantoz/chat.py",
       "source_location": "L1",
       "id": "src_mantoz_chat_py",
-      "community": 15,
+      "community": 3,
       "norm_label": "chat.py"
     },
     {
@@ -819,7 +927,7 @@
       "source_file": "src/mantoz/chat.py",
       "source_location": "L21",
       "id": "mantoz_chat_load_material",
-      "community": 15,
+      "community": 3,
       "norm_label": "load_material()"
     },
     {
@@ -828,7 +936,7 @@
       "source_file": "src/mantoz/chat.py",
       "source_location": "L25",
       "id": "mantoz_chat_run_dialogue",
-      "community": 15,
+      "community": 3,
       "norm_label": "run_dialogue()"
     },
     {
@@ -837,7 +945,7 @@
       "source_file": "src/mantoz/chat.py",
       "source_location": "L49",
       "id": "mantoz_chat_validate_transcript",
-      "community": 15,
+      "community": 3,
       "norm_label": "validate_transcript()"
     },
     {
@@ -846,7 +954,7 @@
       "source_file": "src/mantoz/chat.py",
       "source_location": "L69",
       "id": "mantoz_chat_run_persona_trial",
-      "community": 0,
+      "community": 3,
       "norm_label": "run_persona_trial()"
     },
     {
@@ -855,7 +963,7 @@
       "source_file": "src/mantoz/chat.py",
       "source_location": "L106",
       "id": "mantoz_chat_run",
-      "community": 15,
+      "community": 3,
       "norm_label": "run()"
     },
     {
@@ -864,7 +972,7 @@
       "source_file": "src/mantoz/chat.py",
       "source_location": "L127",
       "id": "mantoz_chat_verify",
-      "community": 15,
+      "community": 3,
       "norm_label": "verify()"
     },
     {
@@ -873,7 +981,7 @@
       "source_file": "src/mantoz/chat.py",
       "source_location": "L143",
       "id": "mantoz_chat_main",
-      "community": 15,
+      "community": 3,
       "norm_label": "main()"
     },
     {
@@ -882,7 +990,7 @@
       "source_file": "src/mantoz/chat.py",
       "source_location": "L1",
       "id": "mantoz_chat_rationale_1",
-      "community": 15,
+      "community": 3,
       "norm_label": "\u0434\u0435\u0442\u0435\u0440\u043c\u0438\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f chat-\u0441\u0440\u0435\u0434\u0430: \u0440\u0435\u043f\u043b\u0438\u043a\u0438 \u0437\u0430\u0432\u0438\u0441\u044f\u0442 \u043e\u0442 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u043e\u0432 \u043f\u0435\u0440\u0441\u043e\u043d\u044b."
     },
     {
@@ -891,7 +999,7 @@
       "source_file": "src/mantoz/chat.py",
       "source_location": "L26",
       "id": "mantoz_chat_rationale_26",
-      "community": 15,
+      "community": 3,
       "norm_label": "\u0441\u0442\u0440\u043e\u0438\u0442 \u0441\u0442\u0430\u0431\u0438\u043b\u044c\u043d\u044b\u0438 \u0434\u0438\u0430\u043b\u043e\u0433 \u0438\u0437 \u0447\u0435\u0442\u044b\u0440\u0435\u0445 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u043e\u0432 \u043f\u0435\u0440\u0441\u043e\u043d\u044b."
     },
     {
@@ -1026,52 +1134,52 @@
       "source_file": "src/mantoz/parity_gate.py",
       "source_location": "L1",
       "id": "src_mantoz_parity_gate_py",
-      "community": 13,
+      "community": 15,
       "norm_label": "parity_gate.py"
     },
     {
       "label": "load_out_scopes()",
       "file_type": "code",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L89",
+      "source_location": "L90",
       "id": "mantoz_parity_gate_load_out_scopes",
-      "community": 13,
+      "community": 15,
       "norm_label": "load_out_scopes()"
     },
     {
       "label": "_honest_justification()",
       "file_type": "code",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L113",
+      "source_location": "L114",
       "id": "mantoz_parity_gate_honest_justification",
-      "community": 13,
+      "community": 15,
       "norm_label": "_honest_justification()"
     },
     {
       "label": "evaluate()",
       "file_type": "code",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L120",
+      "source_location": "L121",
       "id": "mantoz_parity_gate_evaluate",
-      "community": 13,
+      "community": 15,
       "norm_label": "evaluate()"
     },
     {
       "label": "selftest()",
       "file_type": "code",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L153",
+      "source_location": "L177",
       "id": "mantoz_parity_gate_selftest",
-      "community": 13,
+      "community": 15,
       "norm_label": "selftest()"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L180",
+      "source_location": "L204",
       "id": "mantoz_parity_gate_main",
-      "community": 13,
+      "community": 15,
       "norm_label": "main()"
     },
     {
@@ -1080,34 +1188,34 @@
       "source_file": "src/mantoz/parity_gate.py",
       "source_location": "L1",
       "id": "mantoz_parity_gate_rationale_1",
-      "community": 13,
+      "community": 15,
       "norm_label": "\u0433\u0435\u0438\u0442 \u043f\u0440\u0438\u0435\u043c\u043a\u0438 \u043f\u0430\u0440\u0438\u0442\u0435\u0442\u0430 mantoz \u2194 matraix (req-01).  \u0447\u0438\u0442\u0430\u0435\u0442 docs/parity.md (\u0438\u043b\u0438 \u043f\u0443\u0442"
     },
     {
       "label": "``OUT-NN`` \u2192 \u043f\u043e\u0434\u0441\u0438\u0441\u0442\u0435\u043c\u044b \u0438\u0437 ``[\u043f\u043e\u043a\u0440\u044b\u0432\u0430\u0435\u0442: \u2026]`` \u0440\u0430\u0437\u0434\u0435\u043b\u0430 \u00ab\u0412\u043d\u0435 \u0446\u0435\u043b\u0438\u00bb GOAL.md.      \u041f",
       "file_type": "rationale",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L90",
-      "id": "mantoz_parity_gate_rationale_90",
-      "community": 13,
+      "source_location": "L91",
+      "id": "mantoz_parity_gate_rationale_91",
+      "community": 15,
       "norm_label": "``out-nn`` \u2192 \u043f\u043e\u0434\u0441\u0438\u0441\u0442\u0435\u043c\u044b \u0438\u0437 ``[\u043f\u043e\u043a\u0440\u044b\u0432\u0430\u0435\u0442: ...]`` \u0440\u0430\u0437\u0434\u0435\u043b\u0430 \u00ab\u0432\u043d\u0435 \u0446\u0435\u043b\u0438\u00bb goal.md.      \u043f"
     },
     {
       "label": "\u0422\u043e\u0447\u043d\u044b\u0439 ID \u0438\u0437 \u00ab\u0412\u043d\u0435 \u0446\u0435\u043b\u0438\u00bb, \u0447\u044c\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u043f\u043e\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u043f\u043e\u0434\u0441\u0438\u0441\u0442\u0435\u043c\u0443 \u0441\u0442\u0440\u043e\u043a\u0438.",
       "file_type": "rationale",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L114",
-      "id": "mantoz_parity_gate_rationale_114",
-      "community": 13,
+      "source_location": "L115",
+      "id": "mantoz_parity_gate_rationale_115",
+      "community": 15,
       "norm_label": "\u0442\u043e\u0447\u043d\u044b\u0438 id \u0438\u0437 \u00ab\u0432\u043d\u0435 \u0446\u0435\u043b\u0438\u00bb, \u0447\u044c\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c \u0434\u0435\u0438\u0441\u0442\u0432\u0438\u044f \u043f\u043e\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u043f\u043e\u0434\u0441\u0438\u0441\u0442\u0435\u043c\u0443 \u0441\u0442\u0440\u043e\u043a\u0438."
     },
     {
       "label": "\u0412\u0435\u0440\u043d\u0443\u0442\u044c \u0441\u043f\u0438\u0441\u043e\u043a \u043d\u0435\u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445 \u0441\u0442\u0440\u043e\u043a \u0442\u0430\u0431\u043b\u0438\u0446\u044b \u043f\u0430\u0440\u0438\u0442\u0435\u0442\u0430.",
       "file_type": "rationale",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L121",
-      "id": "mantoz_parity_gate_rationale_121",
-      "community": 13,
+      "source_location": "L122",
+      "id": "mantoz_parity_gate_rationale_122",
+      "community": 15,
       "norm_label": "\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0441\u043f\u0438\u0441\u043e\u043a \u043d\u0435\u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445 \u0441\u0442\u0440\u043e\u043a \u0442\u0430\u0431\u043b\u0438\u0446\u044b \u043f\u0430\u0440\u0438\u0442\u0435\u0442\u0430."
     },
     {
@@ -1116,7 +1224,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L1",
       "id": "src_mantoz_app_py",
-      "community": 0,
+      "community": 12,
       "norm_label": "app.py"
     },
     {
@@ -1125,7 +1233,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L25",
       "id": "mantoz_app_plan_decision",
-      "community": 0,
+      "community": 12,
       "norm_label": "plan_decision()"
     },
     {
@@ -1134,7 +1242,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L37",
       "id": "mantoz_app_validate_outcome",
-      "community": 0,
+      "community": 12,
       "norm_label": "validate_outcome()"
     },
     {
@@ -1143,7 +1251,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L56",
       "id": "mantoz_app_verifier_dir",
-      "community": 0,
+      "community": 12,
       "norm_label": "_verifier_dir()"
     },
     {
@@ -1152,7 +1260,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L60",
       "id": "mantoz_app_read_container_result",
-      "community": 0,
+      "community": 12,
       "norm_label": "_read_container_result()"
     },
     {
@@ -1161,7 +1269,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L68",
       "id": "mantoz_app_screenshot_evidence",
-      "community": 0,
+      "community": 12,
       "norm_label": "_screenshot_evidence()"
     },
     {
@@ -1170,7 +1278,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L85",
       "id": "mantoz_app_run_persona_trial",
-      "community": 0,
+      "community": 12,
       "norm_label": "run_persona_trial()"
     },
     {
@@ -1179,7 +1287,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L127",
       "id": "mantoz_app_run",
-      "community": 0,
+      "community": 12,
       "norm_label": "run()"
     },
     {
@@ -1188,7 +1296,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L153",
       "id": "mantoz_app_verify",
-      "community": 0,
+      "community": 12,
       "norm_label": "verify()"
     },
     {
@@ -1197,7 +1305,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L167",
       "id": "mantoz_app_main",
-      "community": 0,
+      "community": 12,
       "norm_label": "main()"
     },
     {
@@ -1206,7 +1314,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L1",
       "id": "mantoz_app_rationale_1",
-      "community": 0,
+      "community": 12,
       "norm_label": "app-\u0441\u0440\u0435\u0434\u0430: \u043f\u0435\u0440\u0441\u043e\u043d\u0430 \u0440\u0435\u0448\u0430\u0435\u0442 \u0432 desktop-\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0438 \u0447\u0435\u0440\u0435\u0437 harbor."
     },
     {
@@ -1215,7 +1323,7 @@
       "source_file": "src/mantoz/app.py",
       "source_location": "L26",
       "id": "mantoz_app_rationale_26",
-      "community": 0,
+      "community": 12,
       "norm_label": "\u0434\u0435\u0442\u0435\u0440\u043c\u0438\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e \u0432\u044b\u0432\u043e\u0434\u0438\u0442 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0438\u0437 \u0434\u043e\u0432\u0435\u0440\u0438\u044f \u043a \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0438 \u0438 \u043f\u0440\u0438\u0432\u0430\u0442\u043d\u043e\u0441\u0442\u0438."
     },
     {
@@ -1224,7 +1332,7 @@
       "source_file": "src/mantoz/calibrate.py",
       "source_location": "L1",
       "id": "src_mantoz_calibrate_py",
-      "community": 0,
+      "community": 3,
       "norm_label": "calibrate.py"
     },
     {
@@ -1233,7 +1341,7 @@
       "source_file": "src/mantoz/calibrate.py",
       "source_location": "L23",
       "id": "mantoz_calibrate_run_trial_result",
-      "community": 0,
+      "community": 3,
       "norm_label": "run_trial_result()"
     },
     {
@@ -1242,7 +1350,7 @@
       "source_file": "src/mantoz/calibrate.py",
       "source_location": "L41",
       "id": "mantoz_calibrate_judge_trial",
-      "community": 0,
+      "community": 3,
       "norm_label": "judge_trial()"
     },
     {
@@ -1251,7 +1359,7 @@
       "source_file": "src/mantoz/calibrate.py",
       "source_location": "L55",
       "id": "mantoz_calibrate_run_trial",
-      "community": 0,
+      "community": 3,
       "norm_label": "run_trial()"
     },
     {
@@ -1260,7 +1368,7 @@
       "source_file": "src/mantoz/calibrate.py",
       "source_location": "L60",
       "id": "mantoz_calibrate_run",
-      "community": 0,
+      "community": 3,
       "norm_label": "run()"
     },
     {
@@ -1269,7 +1377,7 @@
       "source_file": "src/mantoz/calibrate.py",
       "source_location": "L91",
       "id": "mantoz_calibrate_main",
-      "community": 0,
+      "community": 3,
       "norm_label": "main()"
     },
     {
@@ -1278,7 +1386,7 @@
       "source_file": "src/mantoz/calibrate.py",
       "source_location": "L24",
       "id": "mantoz_calibrate_rationale_24",
-      "community": 0,
+      "community": 3,
       "norm_label": "\u043f\u0440\u043e\u0433\u043e\u043d\u044f\u0435\u0442 \u0437\u0430\u0434\u0430\u0447\u0443 \u0447\u0435\u0440\u0435\u0437 \u0430\u0433\u0435\u043d\u0442\u0430 harbor, \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442 trialresult."
     },
     {
@@ -1287,7 +1395,7 @@
       "source_file": "src/mantoz/calibrate.py",
       "source_location": "L42",
       "id": "mantoz_calibrate_rationale_42",
-      "community": 0,
+      "community": 3,
       "norm_label": "\u0441\u0443\u0434\u0438\u0442 trialresult: (\u043f\u0440\u043e\u0448\u0435\u043b, \u0441\u0442\u0440\u043e\u043a\u0430-\u0438\u0441\u0445\u043e\u0434). \u043f\u0440\u043e\u0448\u0435\u043b == \u043f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0438     \u0432\u0435\u0440\u0434\u0438\u043a\u0442 \u0432"
     },
     {
@@ -1296,7 +1404,7 @@
       "source_file": "src/mantoz/calibrate.py",
       "source_location": "L56",
       "id": "mantoz_calibrate_rationale_56",
-      "community": 0,
+      "community": 3,
       "norm_label": "\u043f\u0440\u043e\u0433\u043e\u043d\u044f\u0435\u0442 \u0437\u0430\u0434\u0430\u0447\u0443 \u0447\u0435\u0440\u0435\u0437 \u0430\u0433\u0435\u043d\u0442\u0430 harbor \u0438 \u0441\u0443\u0434\u0438\u0442 \u0432\u0435\u0440\u0434\u0438\u043a\u0442 \u0432\u0435\u0440\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440\u0430."
     },
     {
@@ -1305,7 +1413,7 @@
       "source_file": "src/mantoz/grounding.py",
       "source_location": "L1",
       "id": "src_mantoz_grounding_py",
-      "community": 29,
+      "community": 31,
       "norm_label": "grounding.py"
     },
     {
@@ -1314,7 +1422,7 @@
       "source_file": "src/mantoz/grounding.py",
       "source_location": "L14",
       "id": "mantoz_grounding_load_rows",
-      "community": 29,
+      "community": 31,
       "norm_label": "load_rows()"
     },
     {
@@ -1323,7 +1431,7 @@
       "source_file": "src/mantoz/grounding.py",
       "source_location": "L35",
       "id": "mantoz_grounding_build_marginals",
-      "community": 29,
+      "community": 31,
       "norm_label": "build_marginals()"
     },
     {
@@ -1332,7 +1440,7 @@
       "source_file": "src/mantoz/grounding.py",
       "source_location": "L62",
       "id": "mantoz_grounding_validate_source",
-      "community": 29,
+      "community": 31,
       "norm_label": "validate_source()"
     },
     {
@@ -1341,7 +1449,7 @@
       "source_file": "src/mantoz/grounding.py",
       "source_location": "L70",
       "id": "mantoz_grounding_write_marginals",
-      "community": 29,
+      "community": 31,
       "norm_label": "write_marginals()"
     },
     {
@@ -1350,7 +1458,7 @@
       "source_file": "src/mantoz/grounding.py",
       "source_location": "L91",
       "id": "mantoz_grounding_main",
-      "community": 29,
+      "community": 31,
       "norm_label": "main()"
     },
     {
@@ -1413,7 +1521,7 @@
       "source_file": "src/mantoz/smoke_harbor.py",
       "source_location": "L1",
       "id": "src_mantoz_smoke_harbor_py",
-      "community": 16,
+      "community": 18,
       "norm_label": "smoke_harbor.py"
     },
     {
@@ -1422,7 +1530,7 @@
       "source_file": "src/mantoz/smoke_harbor.py",
       "source_location": "L24",
       "id": "mantoz_smoke_harbor_stubpersona",
-      "community": 16,
+      "community": 18,
       "norm_label": "stubpersona"
     },
     {
@@ -1431,7 +1539,7 @@
       "source_file": "",
       "source_location": "",
       "id": "baseagent",
-      "community": 16,
+      "community": 18,
       "norm_label": "baseagent"
     },
     {
@@ -1440,7 +1548,7 @@
       "source_file": "src/mantoz/smoke_harbor.py",
       "source_location": "L27",
       "id": "mantoz_smoke_harbor_name",
-      "community": 16,
+      "community": 18,
       "norm_label": "name()"
     },
     {
@@ -1449,7 +1557,7 @@
       "source_file": "src/mantoz/smoke_harbor.py",
       "source_location": "L31",
       "id": "mantoz_smoke_harbor_version",
-      "community": 16,
+      "community": 18,
       "norm_label": "version()"
     },
     {
@@ -1458,7 +1566,7 @@
       "source_file": "src/mantoz/smoke_harbor.py",
       "source_location": "L35",
       "id": "mantoz_smoke_harbor_setup",
-      "community": 16,
+      "community": 18,
       "norm_label": "setup()"
     },
     {
@@ -1467,7 +1575,7 @@
       "source_file": "src/mantoz/smoke_harbor.py",
       "source_location": "L39",
       "id": "mantoz_smoke_harbor_run",
-      "community": 16,
+      "community": 18,
       "norm_label": "run()"
     },
     {
@@ -1476,7 +1584,7 @@
       "source_file": "src/mantoz/smoke_harbor.py",
       "source_location": "L57",
       "id": "mantoz_smoke_harbor_smoke",
-      "community": 16,
+      "community": 18,
       "norm_label": "smoke()"
     },
     {
@@ -1485,7 +1593,7 @@
       "source_file": "src/mantoz/smoke_harbor.py",
       "source_location": "L100",
       "id": "mantoz_smoke_harbor_main",
-      "community": 16,
+      "community": 18,
       "norm_label": "main()"
     },
     {
@@ -1683,7 +1791,7 @@
       "source_file": "CONTRIBUTING.zh.md",
       "source_location": "L1",
       "id": "contributing_zh_md",
-      "community": 21,
+      "community": 23,
       "norm_label": "contributing.zh.md"
     },
     {
@@ -1692,7 +1800,7 @@
       "source_file": "CONTRIBUTING.zh.md",
       "source_location": "L1",
       "id": "zarubinvibe_mantoz_contributing_zh_mantoz",
-      "community": 21,
+      "community": 23,
       "norm_label": "\u53c2\u4e0e mantoz"
     },
     {
@@ -1701,7 +1809,7 @@
       "source_file": "CONTRIBUTING.zh.md",
       "source_location": "L7",
       "id": "zarubinvibe_mantoz_contributing_zh",
-      "community": 21,
+      "community": 23,
       "norm_label": "\u5b89\u88c5"
     },
     {
@@ -1710,7 +1818,7 @@
       "source_file": "CONTRIBUTING.zh.md",
       "source_location": "L9",
       "id": "zarubinvibe_mantoz_contributing_zh_codeblock_1",
-      "community": 21,
+      "community": 23,
       "norm_label": "code:bash (git clone https://github.com/zarubinvibe/mantoz.git)"
     },
     {
@@ -1719,7 +1827,7 @@
       "source_file": "CONTRIBUTING.zh.md",
       "source_location": "L19",
       "id": "zarubinvibe_mantoz_contributing_zh_19",
-      "community": 21,
+      "community": 23,
       "norm_label": "\u4e00\u6b21\u6539\u52a8\u7684\u6d41\u7a0b"
     },
     {
@@ -1728,7 +1836,7 @@
       "source_file": "CONTRIBUTING.zh.md",
       "source_location": "L31",
       "id": "zarubinvibe_mantoz_contributing_zh_31",
-      "community": 21,
+      "community": 23,
       "norm_label": "\u4f1a\u88ab\u5408\u5e76\u7684"
     },
     {
@@ -1737,7 +1845,7 @@
       "source_file": "CONTRIBUTING.zh.md",
       "source_location": "L39",
       "id": "zarubinvibe_mantoz_contributing_zh_39",
-      "community": 21,
+      "community": 23,
       "norm_label": "\u4e0d\u4f1a\u88ab\u5408\u5e76\u7684"
     },
     {
@@ -1746,7 +1854,7 @@
       "source_file": "CONTRIBUTING.zh.md",
       "source_location": "L49",
       "id": "zarubinvibe_mantoz_contributing_zh_49",
-      "community": 21,
+      "community": 23,
       "norm_label": "\u62a5\u544a\u95ee\u9898"
     },
     {
@@ -1755,7 +1863,7 @@
       "source_file": "SECURITY.ru.md",
       "source_location": "L1",
       "id": "security_ru_md",
-      "community": 24,
+      "community": 26,
       "norm_label": "security.ru.md"
     },
     {
@@ -1764,7 +1872,7 @@
       "source_file": "SECURITY.ru.md",
       "source_location": "L1",
       "id": "zarubinvibe_mantoz_security_ru",
-      "community": 24,
+      "community": 26,
       "norm_label": "\u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u044c \u0438 \u043f\u0440\u0438\u0432\u0430\u0442\u043d\u043e\u0441\u0442\u044c"
     },
     {
@@ -1773,7 +1881,7 @@
       "source_file": "SECURITY.ru.md",
       "source_location": "L5",
       "id": "zarubinvibe_mantoz_security_ru_5",
-      "community": 24,
+      "community": 26,
       "norm_label": "\u043a\u0430\u043a \u0441\u043e\u043e\u0431\u0449\u0438\u0442\u044c \u043e\u0431 \u0443\u044f\u0437\u0432\u0438\u043c\u043e\u0441\u0442\u0438"
     },
     {
@@ -1782,7 +1890,7 @@
       "source_file": "SECURITY.ru.md",
       "source_location": "L12",
       "id": "zarubinvibe_mantoz_security_ru_mantoz",
-      "community": 24,
+      "community": 26,
       "norm_label": "\u0447\u0435\u0433\u043e mantoz \u043a\u0430\u0441\u0430\u0435\u0442\u0441\u044f"
     },
     {
@@ -1791,7 +1899,7 @@
       "source_file": "SECURITY.ru.md",
       "source_location": "L24",
       "id": "zarubinvibe_mantoz_security_ru_24",
-      "community": 24,
+      "community": 26,
       "norm_label": "\u0433\u0440\u0430\u043d\u0438\u0446\u0430 \u043f\u043e \u0434\u0430\u043d\u043d\u044b\u043c"
     },
     {
@@ -1800,7 +1908,7 @@
       "source_file": "SECURITY.ru.md",
       "source_location": "L43",
       "id": "zarubinvibe_mantoz_security_ru_codeblock_1",
-      "community": 24,
+      "community": 26,
       "norm_label": "code:bash (sh evals/licence_boundary_gate.sh)"
     },
     {
@@ -1809,7 +1917,7 @@
       "source_file": "SECURITY.ru.md",
       "source_location": "L47",
       "id": "zarubinvibe_mantoz_security_ru_mantoz_47",
-      "community": 24,
+      "community": 26,
       "norm_label": "\u043e\u0442 \u0447\u0435\u0433\u043e mantoz \u043d\u0435 \u0437\u0430\u0449\u0438\u0442\u0438\u0442"
     },
     {
@@ -2007,7 +2115,7 @@
       "source_file": "SECURITY.zh.md",
       "source_location": "L1",
       "id": "security_zh_md",
-      "community": 25,
+      "community": 27,
       "norm_label": "security.zh.md"
     },
     {
@@ -2016,7 +2124,7 @@
       "source_file": "SECURITY.zh.md",
       "source_location": "L1",
       "id": "zarubinvibe_mantoz_security_zh",
-      "community": 25,
+      "community": 27,
       "norm_label": "\u5b89\u5168\u4e0e\u9690\u79c1"
     },
     {
@@ -2025,7 +2133,7 @@
       "source_file": "SECURITY.zh.md",
       "source_location": "L5",
       "id": "zarubinvibe_mantoz_security_zh_5",
-      "community": 25,
+      "community": 27,
       "norm_label": "\u5982\u4f55\u62a5\u544a\u6f0f\u6d1e"
     },
     {
@@ -2034,7 +2142,7 @@
       "source_file": "SECURITY.zh.md",
       "source_location": "L11",
       "id": "zarubinvibe_mantoz_security_zh_mantoz",
-      "community": 25,
+      "community": 27,
       "norm_label": "mantoz \u4f1a\u78b0\u5230\u4ec0\u4e48"
     },
     {
@@ -2043,7 +2151,7 @@
       "source_file": "SECURITY.zh.md",
       "source_location": "L23",
       "id": "zarubinvibe_mantoz_security_zh_23",
-      "community": 25,
+      "community": 27,
       "norm_label": "\u6570\u636e\u8fb9\u754c"
     },
     {
@@ -2052,7 +2160,7 @@
       "source_file": "SECURITY.zh.md",
       "source_location": "L36",
       "id": "zarubinvibe_mantoz_security_zh_codeblock_1",
-      "community": 25,
+      "community": 27,
       "norm_label": "code:bash (sh evals/licence_boundary_gate.sh)"
     },
     {
@@ -2061,7 +2169,7 @@
       "source_file": "SECURITY.zh.md",
       "source_location": "L40",
       "id": "zarubinvibe_mantoz_security_zh_mantoz_40",
-      "community": 25,
+      "community": 27,
       "norm_label": "mantoz \u4e0d\u80fd\u66ff\u4f60\u6321\u4f4f\u7684"
     },
     {
@@ -2070,7 +2178,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L1",
       "id": "contributing_md",
-      "community": 22,
+      "community": 24,
       "norm_label": "contributing.md"
     },
     {
@@ -2079,7 +2187,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L1",
       "id": "zarubinvibe_mantoz_contributing_contributing_to_mantoz",
-      "community": 22,
+      "community": 24,
       "norm_label": "contributing to mantoz"
     },
     {
@@ -2088,7 +2196,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L7",
       "id": "zarubinvibe_mantoz_contributing_set_up",
-      "community": 22,
+      "community": 24,
       "norm_label": "set up"
     },
     {
@@ -2097,7 +2205,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L9",
       "id": "zarubinvibe_mantoz_contributing_codeblock_1",
-      "community": 22,
+      "community": 24,
       "norm_label": "code:bash (git clone https://github.com/zarubinvibe/mantoz.git)"
     },
     {
@@ -2106,7 +2214,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L20",
       "id": "zarubinvibe_mantoz_contributing_the_path_of_a_change",
-      "community": 22,
+      "community": 24,
       "norm_label": "the path of a change"
     },
     {
@@ -2115,7 +2223,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L32",
       "id": "zarubinvibe_mantoz_contributing_what_gets_merged",
-      "community": 22,
+      "community": 24,
       "norm_label": "what gets merged"
     },
     {
@@ -2124,7 +2232,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L39",
       "id": "zarubinvibe_mantoz_contributing_what_does_not",
-      "community": 22,
+      "community": 24,
       "norm_label": "what does not"
     },
     {
@@ -2133,7 +2241,7 @@
       "source_file": "CONTRIBUTING.md",
       "source_location": "L49",
       "id": "zarubinvibe_mantoz_contributing_reporting_a_problem",
-      "community": 22,
+      "community": 24,
       "norm_label": "reporting a problem"
     },
     {
@@ -2142,7 +2250,7 @@
       "source_file": "CONTRIBUTING.ru.md",
       "source_location": "L1",
       "id": "contributing_ru_md",
-      "community": 23,
+      "community": 25,
       "norm_label": "contributing.ru.md"
     },
     {
@@ -2151,7 +2259,7 @@
       "source_file": "CONTRIBUTING.ru.md",
       "source_location": "L1",
       "id": "zarubinvibe_mantoz_contributing_ru_mantoz",
-      "community": 23,
+      "community": 25,
       "norm_label": "\u043a\u0430\u043a \u0443\u0447\u0430\u0441\u0442\u0432\u043e\u0432\u0430\u0442\u044c \u0432 mantoz"
     },
     {
@@ -2160,7 +2268,7 @@
       "source_file": "CONTRIBUTING.ru.md",
       "source_location": "L7",
       "id": "zarubinvibe_mantoz_contributing_ru",
-      "community": 23,
+      "community": 25,
       "norm_label": "\u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430"
     },
     {
@@ -2169,7 +2277,7 @@
       "source_file": "CONTRIBUTING.ru.md",
       "source_location": "L9",
       "id": "zarubinvibe_mantoz_contributing_ru_codeblock_1",
-      "community": 23,
+      "community": 25,
       "norm_label": "code:bash (git clone https://github.com/zarubinvibe/mantoz.git)"
     },
     {
@@ -2178,7 +2286,7 @@
       "source_file": "CONTRIBUTING.ru.md",
       "source_location": "L20",
       "id": "zarubinvibe_mantoz_contributing_ru_20",
-      "community": 23,
+      "community": 25,
       "norm_label": "\u043f\u0443\u0442\u044c \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f"
     },
     {
@@ -2187,7 +2295,7 @@
       "source_file": "CONTRIBUTING.ru.md",
       "source_location": "L32",
       "id": "zarubinvibe_mantoz_contributing_ru_32",
-      "community": 23,
+      "community": 25,
       "norm_label": "\u0447\u0442\u043e \u043f\u0440\u0438\u043c\u0443\u0442"
     },
     {
@@ -2196,7 +2304,7 @@
       "source_file": "CONTRIBUTING.ru.md",
       "source_location": "L39",
       "id": "zarubinvibe_mantoz_contributing_ru_39",
-      "community": 23,
+      "community": 25,
       "norm_label": "\u0447\u0442\u043e \u043d\u0435 \u043f\u0440\u0438\u043c\u0443\u0442"
     },
     {
@@ -2205,7 +2313,7 @@
       "source_file": "CONTRIBUTING.ru.md",
       "source_location": "L49",
       "id": "zarubinvibe_mantoz_contributing_ru_49",
-      "community": 23,
+      "community": 25,
       "norm_label": "\u043a\u0430\u043a \u0441\u043e\u043e\u0431\u0449\u0438\u0442\u044c \u043e \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0435"
     },
     {
@@ -2214,7 +2322,7 @@
       "source_file": "GEMINI.md",
       "source_location": "L1",
       "id": "gemini_md",
-      "community": 33,
+      "community": 36,
       "norm_label": "gemini.md"
     },
     {
@@ -2223,7 +2331,7 @@
       "source_file": "GEMINI.md",
       "source_location": "L1",
       "id": "zarubinvibe_mantoz_gemini_agent_instructions",
-      "community": 33,
+      "community": 36,
       "norm_label": "agent instructions"
     },
     {
@@ -2232,7 +2340,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "agents_md",
-      "community": 14,
+      "community": 16,
       "norm_label": "agents.md"
     },
     {
@@ -2241,7 +2349,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "zarubinvibe_mantoz_agents_agent_rules_mantoz",
-      "community": 14,
+      "community": 16,
       "norm_label": "agent rules \u2014 mantoz"
     },
     {
@@ -2250,7 +2358,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L6",
       "id": "zarubinvibe_mantoz_agents_what_this_project_is",
-      "community": 14,
+      "community": 16,
       "norm_label": "what this project is"
     },
     {
@@ -2259,7 +2367,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L13",
       "id": "zarubinvibe_mantoz_agents_first_contact_with_a_stranger",
-      "community": 14,
+      "community": 16,
       "norm_label": "first contact with a stranger"
     },
     {
@@ -2268,7 +2376,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L17",
       "id": "zarubinvibe_mantoz_agents_the_knowledge_graph_answers_first",
-      "community": 14,
+      "community": 16,
       "norm_label": "the knowledge graph answers first"
     },
     {
@@ -2277,7 +2385,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L21",
       "id": "zarubinvibe_mantoz_agents_build_run_test",
-      "community": 14,
+      "community": 16,
       "norm_label": "build, run, test"
     },
     {
@@ -2286,7 +2394,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L23",
       "id": "zarubinvibe_mantoz_agents_codeblock_1",
-      "community": 14,
+      "community": 16,
       "norm_label": "code:bash (uv venv --python 3.12 && uv pip install -e .   # install)"
     },
     {
@@ -2295,7 +2403,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L35",
       "id": "zarubinvibe_mantoz_agents_hard_rules",
-      "community": 14,
+      "community": 16,
       "norm_label": "hard rules"
     },
     {
@@ -2304,7 +2412,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L55",
       "id": "zarubinvibe_mantoz_agents_style",
-      "community": 14,
+      "community": 16,
       "norm_label": "style"
     },
     {
@@ -2313,7 +2421,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L62",
       "id": "zarubinvibe_mantoz_agents_publication",
-      "community": 14,
+      "community": 16,
       "norm_label": "publication"
     },
     {
@@ -2511,7 +2619,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "claude_md",
-      "community": 34,
+      "community": 37,
       "norm_label": "claude.md"
     },
     {
@@ -2520,7 +2628,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "zarubinvibe_mantoz_claude_agent_instructions",
-      "community": 34,
+      "community": 37,
       "norm_label": "agent instructions"
     },
     {
@@ -2529,7 +2637,7 @@
       "source_file": "SECURITY.md",
       "source_location": "L1",
       "id": "security_md",
-      "community": 26,
+      "community": 28,
       "norm_label": "security.md"
     },
     {
@@ -2538,7 +2646,7 @@
       "source_file": "SECURITY.md",
       "source_location": "L1",
       "id": "zarubinvibe_mantoz_security_security_and_privacy",
-      "community": 26,
+      "community": 28,
       "norm_label": "security and privacy"
     },
     {
@@ -2547,7 +2655,7 @@
       "source_file": "SECURITY.md",
       "source_location": "L5",
       "id": "zarubinvibe_mantoz_security_reporting_a_vulnerability",
-      "community": 26,
+      "community": 28,
       "norm_label": "reporting a vulnerability"
     },
     {
@@ -2556,7 +2664,7 @@
       "source_file": "SECURITY.md",
       "source_location": "L12",
       "id": "zarubinvibe_mantoz_security_what_mantoz_touches",
-      "community": 26,
+      "community": 28,
       "norm_label": "what mantoz touches"
     },
     {
@@ -2565,7 +2673,7 @@
       "source_file": "SECURITY.md",
       "source_location": "L24",
       "id": "zarubinvibe_mantoz_security_the_data_boundary",
-      "community": 26,
+      "community": 28,
       "norm_label": "the data boundary"
     },
     {
@@ -2574,7 +2682,7 @@
       "source_file": "SECURITY.md",
       "source_location": "L43",
       "id": "zarubinvibe_mantoz_security_codeblock_1",
-      "community": 26,
+      "community": 28,
       "norm_label": "code:bash (sh evals/licence_boundary_gate.sh)"
     },
     {
@@ -2583,7 +2691,7 @@
       "source_file": "SECURITY.md",
       "source_location": "L47",
       "id": "zarubinvibe_mantoz_security_what_mantoz_does_not_protect_you_from",
-      "community": 26,
+      "community": 28,
       "norm_label": "what mantoz does not protect you from"
     },
     {
@@ -2592,7 +2700,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L1",
       "id": "docs_onboarding_zh_md",
-      "community": 1,
+      "community": 0,
       "norm_label": "onboarding.zh.md"
     },
     {
@@ -2601,7 +2709,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L1",
       "id": "docs_onboarding_zh_mantoz",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u4e0a\u624b\u5f15\u5bfc:\u4f60\u7684\u7b2c\u4e00\u6b21 mantoz \u8fd0\u884c"
     },
     {
@@ -2610,7 +2718,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L11",
       "id": "docs_onboarding_zh_1",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u7b2c 1 \u6b65:\u6253\u5f00\u7ec8\u7aef"
     },
     {
@@ -2619,7 +2727,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L17",
       "id": "docs_onboarding_zh_2_python",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u7b2c 2 \u6b65:\u786e\u8ba4\u6709 python"
     },
     {
@@ -2628,7 +2736,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L19",
       "id": "docs_onboarding_zh_codeblock_1",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (python3 --version)"
     },
     {
@@ -2637,7 +2745,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L25",
       "id": "docs_onboarding_zh_3",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u7b2c 3 \u6b65:\u628a\u4ee3\u7801\u62ff\u4e0b\u6765"
     },
     {
@@ -2646,7 +2754,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L27",
       "id": "docs_onboarding_zh_codeblock_2",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (git clone https://github.com/zarubinvibe/mantoz.git ~/mantoz)"
     },
     {
@@ -2655,7 +2763,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L36",
       "id": "docs_onboarding_zh_4_uv",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u7b2c 4 \u6b65:\u5b89\u88c5 uv"
     },
     {
@@ -2664,7 +2772,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L40",
       "id": "docs_onboarding_zh_codeblock_3",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (curl -lssf https://astral.sh/uv/install.sh | sh)"
     },
     {
@@ -2673,7 +2781,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L46",
       "id": "docs_onboarding_zh_5",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u7b2c 5 \u6b65:\u8fd0\u884c\u5b89\u88c5\u811a\u672c"
     },
     {
@@ -2682,7 +2790,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L48",
       "id": "docs_onboarding_zh_codeblock_4",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (bash install.sh)"
     },
     {
@@ -2691,7 +2799,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L56",
       "id": "docs_onboarding_zh_6",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u7b2c 6 \u6b65:\u751f\u6210\u4e00\u7fa4\u4eba,\u770b\u4e00\u773c"
     },
     {
@@ -2700,7 +2808,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L58",
       "id": "docs_onboarding_zh_codeblock_5",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (uv run python -m mantoz.persona sample --n 200 --seed 7 --da)"
     },
     {
@@ -2709,7 +2817,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L64",
       "id": "docs_onboarding_zh_codeblock_6",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (python3 -c \"import json;print(len(json.load(open('runs/peopl)"
     },
     {
@@ -2718,7 +2826,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L72",
       "id": "docs_onboarding_zh_7",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u7b2c 7 \u6b65:\u8ba9\u8fd9\u7fa4\u4eba\u505a\u4e00\u4efd\u95ee\u5377"
     },
     {
@@ -2727,7 +2835,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L74",
       "id": "docs_onboarding_zh_codeblock_7",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (uv run python -m mantoz.population run --n-runs 3 --seed 7 -)"
     },
     {
@@ -2736,7 +2844,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L82",
       "id": "docs_onboarding_zh_8",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u7b2c 8 \u6b65:\u628a\u62a5\u544a\u53d8\u6210\u9875\u9762"
     },
     {
@@ -2745,7 +2853,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L84",
       "id": "docs_onboarding_zh_codeblock_8",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (uv run python -m mantoz.viewer render --report runs/first.js)"
     },
     {
@@ -2754,7 +2862,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L93",
       "id": "docs_onboarding_zh_9",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u7b2c 9 \u6b65:\u63d0\u4ea4\u4efb\u4f55\u4e1c\u897f\u4e4b\u524d,\u5148\u68c0\u67e5\u8bb8\u53ef\u8fb9\u754c"
     },
     {
@@ -2763,7 +2871,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L95",
       "id": "docs_onboarding_zh_codeblock_9",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (sh evals/licence_boundary_gate.sh)"
     },
     {
@@ -2772,7 +2880,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L101",
       "id": "docs_onboarding_zh_10",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u7b2c 10 \u6b65:\u6362\u4e00\u4e2a\u73af\u5883\u8bd5\u8bd5"
     },
     {
@@ -2781,7 +2889,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L105",
       "id": "docs_onboarding_zh_codeblock_10",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (uv run python -m mantoz.population run --n-runs 3 --seed 7 -)"
     },
     {
@@ -2790,7 +2898,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L113",
       "id": "docs_onboarding_zh",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u600e\u4e48\u66f4\u65b0"
     },
     {
@@ -2799,7 +2907,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L117",
       "id": "docs_onboarding_zh_codeblock_11",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (cd ~/mantoz)"
     },
     {
@@ -2808,7 +2916,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L126",
       "id": "docs_onboarding_zh_126",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u63a5\u4e0b\u6765\u770b\u4ec0\u4e48"
     },
     {
@@ -2817,7 +2925,7 @@
       "source_file": "docs/ONBOARDING.zh.md",
       "source_location": "L132",
       "id": "docs_onboarding_zh_132",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u5982\u679c\u8fd9\u4e9b\u5bf9\u4f60\u6709\u7528"
     },
     {
@@ -2826,7 +2934,7 @@
       "source_file": "docs/ONBOARDING-CHAT.zh.md",
       "source_location": "L1",
       "id": "docs_onboarding_chat_zh_md",
-      "community": 17,
+      "community": 19,
       "norm_label": "onboarding-chat.zh.md"
     },
     {
@@ -2835,7 +2943,7 @@
       "source_file": "docs/ONBOARDING-CHAT.zh.md",
       "source_location": "L1",
       "id": "docs_onboarding_chat_zh_mantoz",
-      "community": 17,
+      "community": 19,
       "norm_label": "\u7528\u5bf9\u8bdd\u5b89\u88c5 mantoz"
     },
     {
@@ -2844,7 +2952,7 @@
       "source_file": "docs/ONBOARDING-CHAT.zh.md",
       "source_location": "L21",
       "id": "docs_onboarding_chat_zh_1",
-      "community": 17,
+      "community": 19,
       "norm_label": "\u7b2c 1 \u6b65:\u5148\u770b\u770b\u4f60\u673a\u5668\u4e0a\u5df2\u7ecf\u6709\u4ec0\u4e48"
     },
     {
@@ -2853,7 +2961,7 @@
       "source_file": "docs/ONBOARDING-CHAT.zh.md",
       "source_location": "L34",
       "id": "docs_onboarding_chat_zh_2",
-      "community": 17,
+      "community": 19,
       "norm_label": "\u7b2c 2 \u6b65:\u628a\u9879\u76ee\u653e\u5230\u78c1\u76d8\u4e0a"
     },
     {
@@ -2862,7 +2970,7 @@
       "source_file": "docs/ONBOARDING-CHAT.zh.md",
       "source_location": "L47",
       "id": "docs_onboarding_chat_zh_3",
-      "community": 17,
+      "community": 19,
       "norm_label": "\u7b2c 3 \u6b65:\u88c5\u597d\u8fd0\u884c\u73af\u5883"
     },
     {
@@ -2871,7 +2979,7 @@
       "source_file": "docs/ONBOARDING-CHAT.zh.md",
       "source_location": "L57",
       "id": "docs_onboarding_chat_zh_4",
-      "community": 17,
+      "community": 19,
       "norm_label": "\u7b2c 4 \u6b65:\u628a\u8fd9\u4e9b\u4eba\u751f\u6210\u51fa\u6765"
     },
     {
@@ -2880,7 +2988,7 @@
       "source_file": "docs/ONBOARDING-CHAT.zh.md",
       "source_location": "L70",
       "id": "docs_onboarding_chat_zh_5",
-      "community": 17,
+      "community": 19,
       "norm_label": "\u7b2c 5 \u6b65:\u8dd1\u4f60\u7684\u4efb\u52a1,\u4e0d\u662f\u6211\u7684"
     },
     {
@@ -2889,7 +2997,7 @@
       "source_file": "docs/ONBOARDING-CHAT.zh.md",
       "source_location": "L83",
       "id": "docs_onboarding_chat_zh_6",
-      "community": 17,
+      "community": 19,
       "norm_label": "\u7b2c 6 \u6b65:\u7ed9\u4f60\u770b\u7ed3\u679c,\u4e5f\u7ed9\u4f60\u770b\u6570\u636e\u8fb9\u754c"
     },
     {
@@ -2898,7 +3006,7 @@
       "source_file": "docs/ONBOARDING-CHAT.zh.md",
       "source_location": "L93",
       "id": "docs_onboarding_chat_zh_codeblock_1",
-      "community": 17,
+      "community": 19,
       "norm_label": "code:bash (uv run python -m mantoz.viewer render --report runs/first.js)"
     },
     {
@@ -2907,7 +3015,7 @@
       "source_file": "docs/CONTEXT.md",
       "source_location": "L1",
       "id": "docs_context_md",
-      "community": 30,
+      "community": 32,
       "norm_label": "context.md"
     },
     {
@@ -2916,7 +3024,7 @@
       "source_file": "docs/CONTEXT.md",
       "source_location": "L1",
       "id": "docs_context_mantoz",
-      "community": 30,
+      "community": 32,
       "norm_label": "\u0441\u043b\u043e\u0432\u0430\u0440\u044c \u0442\u0435\u0440\u043c\u0438\u043d\u043e\u0432 - mantoz"
     },
     {
@@ -2925,7 +3033,7 @@
       "source_file": "docs/CONTEXT.md",
       "source_location": "L11",
       "id": "docs_context",
-      "community": 30,
+      "community": 32,
       "norm_label": "\u0438\u0441\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u0430\u0433\u0435\u043d\u0442\u043e\u0432"
     },
     {
@@ -2934,7 +3042,7 @@
       "source_file": "docs/CONTEXT.md",
       "source_location": "L25",
       "id": "docs_context_25",
-      "community": 30,
+      "community": 32,
       "norm_label": "\u0432\u0435\u0440\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u044f"
     },
     {
@@ -2943,7 +3051,7 @@
       "source_file": "docs/CONTEXT.md",
       "source_location": "L39",
       "id": "docs_context_39",
-      "community": 30,
+      "community": 32,
       "norm_label": "\u043f\u0435\u0440\u0441\u043e\u043d\u044b \u0438 \u0433\u0440\u0430\u0443\u043d\u0434"
     },
     {
@@ -2952,7 +3060,7 @@
       "source_file": "docs/CONTEXT.md",
       "source_location": "L55",
       "id": "docs_context_55",
-      "community": 30,
+      "community": 32,
       "norm_label": "\u043f\u0440\u0438\u0435\u043c\u043a\u0430"
     },
     {
@@ -2961,17 +3069,44 @@
       "source_file": "docs/PARITY.md",
       "source_location": "L1",
       "id": "docs_parity_md",
-      "community": 35,
+      "community": 34,
       "norm_label": "parity.md"
     },
     {
-      "label": "\u0427\u0435\u043a-\u043b\u0438\u0441\u0442 \u043f\u0430\u0440\u0438\u0442\u0435\u0442\u0430 Mantoz \u2194 MatrAIx",
+      "label": "\u0414\u043e\u0433\u043d\u0430\u0442\u044c \u0438\u043b\u0438 \u043f\u0440\u0435\u0432\u0437\u043e\u0439\u0442\u0438: Mantoz \u043f\u0440\u043e\u0442\u0438\u0432 MatrAIx",
       "file_type": "document",
       "source_file": "docs/PARITY.md",
       "source_location": "L1",
       "id": "docs_parity_mantoz_matraix",
-      "community": 35,
-      "norm_label": "\u0447\u0435\u043a-\u043b\u0438\u0441\u0442 \u043f\u0430\u0440\u0438\u0442\u0435\u0442\u0430 mantoz \u2194 matraix"
+      "community": 34,
+      "norm_label": "\u0434\u043e\u0433\u043d\u0430\u0442\u044c \u0438\u043b\u0438 \u043f\u0440\u0435\u0432\u0437\u043e\u0438\u0442\u0438: mantoz \u043f\u0440\u043e\u0442\u0438\u0432 matraix"
+    },
+    {
+      "label": "\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438",
+      "file_type": "document",
+      "source_file": "docs/PARITY.md",
+      "source_location": "L14",
+      "id": "docs_parity",
+      "community": 34,
+      "norm_label": "\u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438"
+    },
+    {
+      "label": "\u041c\u0430\u0442\u0440\u0438\u0446\u0430 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0435\u0439",
+      "file_type": "document",
+      "source_file": "docs/PARITY.md",
+      "source_location": "L21",
+      "id": "docs_parity_21",
+      "community": 34,
+      "norm_label": "\u043c\u0430\u0442\u0440\u0438\u0446\u0430 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0435\u0438"
+    },
+    {
+      "label": "\u0413\u0434\u0435 \u043c\u044b \u043e\u0442\u0441\u0442\u0430\u0435\u043c \u0438 \u0447\u0442\u043e \u0441 \u044d\u0442\u0438\u043c \u0434\u0435\u043b\u0430\u0435\u043c",
+      "file_type": "document",
+      "source_file": "docs/PARITY.md",
+      "source_location": "L63",
+      "id": "docs_parity_63",
+      "community": 34,
+      "norm_label": "\u0433\u0434\u0435 \u043c\u044b \u043e\u0442\u0441\u0442\u0430\u0435\u043c \u0438 \u0447\u0442\u043e \u0441 \u044d\u0442\u0438\u043c \u0434\u0435\u043b\u0430\u0435\u043c"
     },
     {
       "label": "ONBOARDING-CHAT.md",
@@ -2979,7 +3114,7 @@
       "source_file": "docs/ONBOARDING-CHAT.md",
       "source_location": "L1",
       "id": "docs_onboarding_chat_md",
-      "community": 18,
+      "community": 20,
       "norm_label": "onboarding-chat.md"
     },
     {
@@ -2988,7 +3123,7 @@
       "source_file": "docs/ONBOARDING-CHAT.md",
       "source_location": "L1",
       "id": "docs_onboarding_chat_installing_mantoz_as_a_conversation",
-      "community": 18,
+      "community": 20,
       "norm_label": "installing mantoz as a conversation"
     },
     {
@@ -2997,7 +3132,7 @@
       "source_file": "docs/ONBOARDING-CHAT.md",
       "source_location": "L29",
       "id": "docs_onboarding_chat_step_1_i_look_at_what_you_already_have",
-      "community": 18,
+      "community": 20,
       "norm_label": "step 1: i look at what you already have"
     },
     {
@@ -3006,7 +3141,7 @@
       "source_file": "docs/ONBOARDING-CHAT.md",
       "source_location": "L47",
       "id": "docs_onboarding_chat_step_2_i_put_the_project_on_disk",
-      "community": 18,
+      "community": 20,
       "norm_label": "step 2: i put the project on disk"
     },
     {
@@ -3015,7 +3150,7 @@
       "source_file": "docs/ONBOARDING-CHAT.md",
       "source_location": "L65",
       "id": "docs_onboarding_chat_step_3_i_set_up_the_environment",
-      "community": 18,
+      "community": 20,
       "norm_label": "step 3: i set up the environment"
     },
     {
@@ -3024,7 +3159,7 @@
       "source_file": "docs/ONBOARDING-CHAT.md",
       "source_location": "L79",
       "id": "docs_onboarding_chat_step_4_i_build_the_people",
-      "community": 18,
+      "community": 20,
       "norm_label": "step 4: i build the people"
     },
     {
@@ -3033,7 +3168,7 @@
       "source_file": "docs/ONBOARDING-CHAT.md",
       "source_location": "L97",
       "id": "docs_onboarding_chat_step_5_i_run_your_task_not_mine",
-      "community": 18,
+      "community": 20,
       "norm_label": "step 5: i run your task, not mine"
     },
     {
@@ -3042,7 +3177,7 @@
       "source_file": "docs/ONBOARDING-CHAT.md",
       "source_location": "L116",
       "id": "docs_onboarding_chat_step_6_i_show_the_result_and_the_data_boundary",
-      "community": 18,
+      "community": 20,
       "norm_label": "step 6: i show the result and the data boundary"
     },
     {
@@ -3051,7 +3186,7 @@
       "source_file": "docs/ONBOARDING-CHAT.md",
       "source_location": "L130",
       "id": "docs_onboarding_chat_codeblock_1",
-      "community": 18,
+      "community": 20,
       "norm_label": "code:bash (uv run python -m mantoz.viewer render --report runs/first.js)"
     },
     {
@@ -3060,7 +3195,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L1",
       "id": "docs_onboarding_md",
-      "community": 2,
+      "community": 1,
       "norm_label": "onboarding.md"
     },
     {
@@ -3069,7 +3204,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L1",
       "id": "docs_onboarding_onboarding_your_first_mantoz_run",
-      "community": 2,
+      "community": 1,
       "norm_label": "onboarding: your first mantoz run"
     },
     {
@@ -3078,7 +3213,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L13",
       "id": "docs_onboarding_step_1_open_the_terminal",
-      "community": 2,
+      "community": 1,
       "norm_label": "step 1. open the terminal"
     },
     {
@@ -3087,7 +3222,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L19",
       "id": "docs_onboarding_step_2_check_that_python_is_there",
-      "community": 2,
+      "community": 1,
       "norm_label": "step 2. check that python is there"
     },
     {
@@ -3096,7 +3231,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L21",
       "id": "docs_onboarding_codeblock_1",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (python3 --version)"
     },
     {
@@ -3105,7 +3240,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L29",
       "id": "docs_onboarding_step_3_get_the_code",
-      "community": 2,
+      "community": 1,
       "norm_label": "step 3. get the code"
     },
     {
@@ -3114,7 +3249,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L31",
       "id": "docs_onboarding_codeblock_2",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (git clone https://github.com/zarubinvibe/mantoz.git ~/mantoz)"
     },
     {
@@ -3123,7 +3258,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L43",
       "id": "docs_onboarding_step_4_install_uv",
-      "community": 2,
+      "community": 1,
       "norm_label": "step 4. install uv"
     },
     {
@@ -3132,7 +3267,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L47",
       "id": "docs_onboarding_codeblock_3",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (curl -lssf https://astral.sh/uv/install.sh | sh)"
     },
     {
@@ -3141,7 +3276,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L54",
       "id": "docs_onboarding_step_5_run_the_installer",
-      "community": 2,
+      "community": 1,
       "norm_label": "step 5. run the installer"
     },
     {
@@ -3150,7 +3285,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L56",
       "id": "docs_onboarding_codeblock_4",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (bash install.sh)"
     },
     {
@@ -3159,7 +3294,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L66",
       "id": "docs_onboarding_step_6_build_the_people_and_look_at_them",
-      "community": 2,
+      "community": 1,
       "norm_label": "step 6. build the people and look at them"
     },
     {
@@ -3168,7 +3303,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L68",
       "id": "docs_onboarding_codeblock_5",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (uv run python -m mantoz.persona sample --n 200 --seed 7 --da)"
     },
     {
@@ -3177,7 +3312,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L75",
       "id": "docs_onboarding_codeblock_6",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (python3 -c \"import json;print(len(json.load(open('runs/peopl)"
     },
     {
@@ -3186,7 +3321,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L84",
       "id": "docs_onboarding_step_7_send_them_through_a_survey",
-      "community": 2,
+      "community": 1,
       "norm_label": "step 7. send them through a survey"
     },
     {
@@ -3195,7 +3330,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L86",
       "id": "docs_onboarding_codeblock_7",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (uv run python -m mantoz.population run --n-runs 3 --seed 7 -)"
     },
     {
@@ -3204,7 +3339,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L98",
       "id": "docs_onboarding_step_8_turn_the_report_into_a_page",
-      "community": 2,
+      "community": 1,
       "norm_label": "step 8. turn the report into a page"
     },
     {
@@ -3213,7 +3348,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L100",
       "id": "docs_onboarding_codeblock_8",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (uv run python -m mantoz.viewer render --report runs/first.js)"
     },
     {
@@ -3222,7 +3357,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L110",
       "id": "docs_onboarding_step_9_check_the_license_boundary_before_you_commit_anything",
-      "community": 2,
+      "community": 1,
       "norm_label": "step 9. check the license boundary before you commit anything"
     },
     {
@@ -3231,7 +3366,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L112",
       "id": "docs_onboarding_codeblock_9",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (sh evals/licence_boundary_gate.sh)"
     },
     {
@@ -3240,7 +3375,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L120",
       "id": "docs_onboarding_step_10_try_another_environment",
-      "community": 2,
+      "community": 1,
       "norm_label": "step 10. try another environment"
     },
     {
@@ -3249,7 +3384,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L125",
       "id": "docs_onboarding_codeblock_10",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (uv run python -m mantoz.population run --n-runs 3 --seed 7 -)"
     },
     {
@@ -3258,7 +3393,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L133",
       "id": "docs_onboarding_keeping_it_current",
-      "community": 2,
+      "community": 1,
       "norm_label": "keeping it current"
     },
     {
@@ -3267,7 +3402,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L139",
       "id": "docs_onboarding_codeblock_11",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (cd ~/mantoz)"
     },
     {
@@ -3276,7 +3411,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L148",
       "id": "docs_onboarding_where_to_go_next",
-      "community": 2,
+      "community": 1,
       "norm_label": "where to go next"
     },
     {
@@ -3285,7 +3420,7 @@
       "source_file": "docs/ONBOARDING.md",
       "source_location": "L155",
       "id": "docs_onboarding_if_it_was_useful",
-      "community": 2,
+      "community": 1,
       "norm_label": "if it was useful"
     },
     {
@@ -3294,7 +3429,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L1",
       "id": "docs_onboarding_ru_md",
-      "community": 3,
+      "community": 2,
       "norm_label": "onboarding.ru.md"
     },
     {
@@ -3303,7 +3438,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L1",
       "id": "docs_onboarding_ru_mantoz",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u043e\u043d\u0431\u043e\u0440\u0434\u0438\u043d\u0433: \u043f\u0435\u0440\u0432\u044b\u0438 \u043f\u0440\u043e\u0433\u043e\u043d mantoz"
     },
     {
@@ -3312,7 +3447,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L13",
       "id": "docs_onboarding_ru_1",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0448\u0430\u0433 1. \u043e\u0442\u043a\u0440\u043e\u0438\u0442\u0435 \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b"
     },
     {
@@ -3321,7 +3456,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L20",
       "id": "docs_onboarding_ru_2_python",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0448\u0430\u0433 2. \u043f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435, \u0435\u0441\u0442\u044c \u043b\u0438 python"
     },
     {
@@ -3330,7 +3465,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L22",
       "id": "docs_onboarding_ru_codeblock_1",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (python3 --version)"
     },
     {
@@ -3339,7 +3474,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L30",
       "id": "docs_onboarding_ru_3",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0448\u0430\u0433 3. \u0437\u0430\u0431\u0435\u0440\u0438\u0442\u0435 \u043a\u043e\u0434"
     },
     {
@@ -3348,7 +3483,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L32",
       "id": "docs_onboarding_ru_codeblock_2",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (git clone https://github.com/zarubinvibe/mantoz.git ~/mantoz)"
     },
     {
@@ -3357,7 +3492,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L44",
       "id": "docs_onboarding_ru_4_uv",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0448\u0430\u0433 4. \u043f\u043e\u0441\u0442\u0430\u0432\u044c\u0442\u0435 uv"
     },
     {
@@ -3366,7 +3501,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L48",
       "id": "docs_onboarding_ru_codeblock_3",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (curl -lssf https://astral.sh/uv/install.sh | sh)"
     },
     {
@@ -3375,7 +3510,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L55",
       "id": "docs_onboarding_ru_5",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0448\u0430\u0433 5. \u0437\u0430\u043f\u0443\u0441\u0442\u0438\u0442\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0449\u0438\u043a"
     },
     {
@@ -3384,7 +3519,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L57",
       "id": "docs_onboarding_ru_codeblock_4",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (bash install.sh)"
     },
     {
@@ -3393,7 +3528,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L67",
       "id": "docs_onboarding_ru_6",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0448\u0430\u0433 6. \u0441\u043e\u0431\u0435\u0440\u0438 \u043b\u044e\u0434\u0435\u0438 \u0438 \u043f\u043e\u0441\u043c\u043e\u0442\u0440\u0438 \u043d\u0430 \u043d\u0438\u0445"
     },
     {
@@ -3402,7 +3537,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L69",
       "id": "docs_onboarding_ru_codeblock_5",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (uv run python -m mantoz.persona sample --n 200 --seed 7 --da)"
     },
     {
@@ -3411,7 +3546,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L76",
       "id": "docs_onboarding_ru_codeblock_6",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (python3 -c \"import json;print(len(json.load(open('runs/peopl)"
     },
     {
@@ -3420,7 +3555,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L85",
       "id": "docs_onboarding_ru_7",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0448\u0430\u0433 7. \u043f\u0440\u043e\u0433\u043e\u043d\u0438 \u0438\u0445 \u0447\u0435\u0440\u0435\u0437 \u0430\u043d\u043a\u0435\u0442\u0443"
     },
     {
@@ -3429,7 +3564,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L87",
       "id": "docs_onboarding_ru_codeblock_7",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (uv run python -m mantoz.population run --n-runs 3 --seed 7 -)"
     },
     {
@@ -3438,7 +3573,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L99",
       "id": "docs_onboarding_ru_8",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0448\u0430\u0433 8. \u043f\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u0435 \u043e\u0442\u0447\u0435\u0442 \u0432 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443"
     },
     {
@@ -3447,7 +3582,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L101",
       "id": "docs_onboarding_ru_codeblock_8",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (uv run python -m mantoz.viewer render --report runs/first.js)"
     },
     {
@@ -3456,7 +3591,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L111",
       "id": "docs_onboarding_ru_9",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0448\u0430\u0433 9. \u043f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u043e\u043d\u043d\u0443\u044e \u0433\u0440\u0430\u043d\u0438\u0446\u0443 \u0434\u043e \u043b\u044e\u0431\u043e\u0433\u043e \u043a\u043e\u043c\u043c\u0438\u0442\u0430"
     },
     {
@@ -3465,7 +3600,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L113",
       "id": "docs_onboarding_ru_codeblock_9",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (sh evals/licence_boundary_gate.sh)"
     },
     {
@@ -3474,7 +3609,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L121",
       "id": "docs_onboarding_ru_10",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0448\u0430\u0433 10. \u043f\u043e\u043f\u0440\u043e\u0431\u0443\u0438\u0442\u0435 \u0434\u0440\u0443\u0433\u0443\u044e \u0441\u0440\u0435\u0434\u0443"
     },
     {
@@ -3483,7 +3618,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L126",
       "id": "docs_onboarding_ru_codeblock_10",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (uv run python -m mantoz.population run --n-runs 3 --seed 7 -)"
     },
     {
@@ -3492,7 +3627,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L134",
       "id": "docs_onboarding_ru",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u043a\u0430\u043a \u043e\u0431\u043d\u043e\u0432\u043b\u044f\u0442\u044c\u0441\u044f"
     },
     {
@@ -3501,7 +3636,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L140",
       "id": "docs_onboarding_ru_codeblock_11",
-      "community": 3,
+      "community": 2,
       "norm_label": "code:bash (cd ~/mantoz)"
     },
     {
@@ -3510,7 +3645,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L149",
       "id": "docs_onboarding_ru_149",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u043a\u0443\u0434\u0430 \u0434\u0430\u043b\u044c\u0448\u0435"
     },
     {
@@ -3519,7 +3654,7 @@
       "source_file": "docs/ONBOARDING.ru.md",
       "source_location": "L156",
       "id": "docs_onboarding_ru_156",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u0435\u0441\u043b\u0438 \u043f\u0440\u0438\u0433\u043e\u0434\u0438\u043b\u043e\u0441\u044c"
     },
     {
@@ -3528,7 +3663,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L1",
       "id": "docs_decisions_md",
-      "community": 11,
+      "community": 13,
       "norm_label": "decisions.md"
     },
     {
@@ -3537,7 +3672,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L1",
       "id": "docs_decisions_mantoz",
-      "community": 11,
+      "community": 13,
       "norm_label": "\u0440\u0435\u0448\u0435\u043d\u0438\u044f \u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u00abmantoz\u00bb"
     },
     {
@@ -3546,7 +3681,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L5",
       "id": "docs_decisions_d_01_harbor",
-      "community": 11,
+      "community": 13,
       "norm_label": "d-01 \u00b7 harbor - \u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u044c, \u0430 \u043d\u0435 \u0444\u043e\u0440\u043a \u0438 \u043d\u0435 \u0441\u0432\u043e\u044f \u043e\u0431\u0432\u044f\u0437\u043a\u0430"
     },
     {
@@ -3555,7 +3690,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L13",
       "id": "docs_decisions_d_02_sandbox_pluggable",
-      "community": 11,
+      "community": 13,
       "norm_label": "d-02 \u00b7 sandbox-\u0431\u044d\u043a\u0435\u043d\u0434\u044b - pluggable, \u043c\u0438\u043d\u0438\u043c\u0443\u043c \u0434\u0432\u0430 \u0441 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u0434\u043d\u044f"
     },
     {
@@ -3564,7 +3699,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L21",
       "id": "docs_decisions_d_03_population_scale",
-      "community": 11,
+      "community": 13,
       "norm_label": "d-03 \u00b7 \u0432\u0435\u0440\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u044f - population-scale \u0441\u0442\u043e\u043b\u043f, \u0430 \u043d\u0435 \u043f\u0430\u0440\u0430 \u0430\u0433\u0435\u043d\u0442\u043e\u0432-\u043f\u0440\u043e\u0432\u0435\u0440\u044f\u044e\u0449\u0438\u0445"
     },
     {
@@ -3573,7 +3708,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L29",
       "id": "docs_decisions_d_04_persona1m_matraix_bootstrap",
-      "community": 11,
+      "community": 13,
       "norm_label": "d-04 \u00b7 \u0441\u0432\u043e\u044f \u0441\u0445\u0435\u043c\u0430 \u043f\u0435\u0440\u0441\u043e\u043d \u0438 \u0441\u0432\u043e\u0438 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440, persona1m matraix \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u043b\u044f bootstrap"
     },
     {
@@ -3582,7 +3717,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L37",
       "id": "docs_decisions_d_05",
-      "community": 11,
+      "community": 13,
       "norm_label": "d-05 \u00b7 \u0433\u0440\u0430\u0443\u043d\u0434 \u043f\u0435\u0440\u0441\u043e\u043d - \u0442\u043e\u043b\u044c\u043a\u043e \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438 \u0441 \u044f\u0432\u043d\u044b\u043c \u043a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u0438\u043c \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u0435\u043c"
     },
     {
@@ -3591,7 +3726,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L45",
       "id": "docs_decisions_d_06_spa",
-      "community": 11,
+      "community": 13,
       "norm_label": "d-06 \u00b7 \u0442\u043e\u043d\u043a\u0438\u0438 \u0432\u044c\u044e\u0432\u0435\u0440 \u0441\u0440\u0430\u0437\u0443, \u043d\u0435 \u0434\u0432\u0430 \u043f\u0430\u0440\u0430\u043b\u043b\u0435\u043b\u044c\u043d\u044b\u0445 spa"
     },
     {
@@ -3600,7 +3735,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L53",
       "id": "docs_decisions_d_07_10_cli_helioz",
-      "community": 11,
+      "community": 13,
       "norm_label": "d-07 \u00b7 \u0440\u0435\u0435\u0441\u0442\u0440 \u0430\u0433\u0435\u043d\u0442\u043e\u0432 - 10+ cli, \u043d\u0435 \u0442\u0440\u043e\u0438\u043a\u0430 helioz"
     },
     {
@@ -3609,7 +3744,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L61",
       "id": "docs_decisions_d_08_helioz_gsd",
-      "community": 11,
+      "community": 13,
       "norm_label": "d-08 \u00b7 \u043f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 - \u0441\u0445\u0435\u043c\u0430 helioz, \u043d\u0435 gsd"
     },
     {
@@ -3618,7 +3753,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L69",
       "id": "docs_decisions_d_09_harbor_matraix",
-      "community": 11,
+      "community": 13,
       "norm_label": "d-09 \u00b7 \u0430\u0442\u0440\u0438\u0431\u0443\u0446\u0438\u044f \u0440\u0430\u0437\u0434\u0432\u043e\u0435\u043d\u0430 - harbor \u043a\u043e\u0434\u043e\u043c, \u043c\u0435\u0442\u043e\u0434\u043e\u043b\u043e\u0433\u0438\u044f matraix \u0446\u0438\u0442\u0430\u0442\u043e\u0438"
     },
     {
@@ -3627,7 +3762,7 @@
       "source_file": "docs/DECISIONS.md",
       "source_location": "L77",
       "id": "docs_decisions_d_10",
-      "community": 11,
+      "community": 13,
       "norm_label": "d-10 \u00b7 \u0440\u043c\u044d\u0437-\u0432\u0448\u044d \u0432\u044b\u0432\u0435\u0434\u0435\u043d \u0438\u0437 \u043f\u0440\u043e\u0434\u0430\u043a\u0448\u043d-\u0433\u0440\u0430\u0443\u043d\u0434\u0430: \u0443\u0441\u043b\u043e\u0432\u0438\u044f \u0432\u0438\u0434\u043d\u044b \u0442\u043e\u043b\u044c\u043a\u043e \u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435 \u0432\u044b\u0434\u0430\u0447\u0438 \u0444\u0430\u0438\u043b\u0430"
     },
     {
@@ -3636,7 +3771,7 @@
       "source_file": "docs/ONBOARDING-CHAT.ru.md",
       "source_location": "L1",
       "id": "docs_onboarding_chat_ru_md",
-      "community": 19,
+      "community": 21,
       "norm_label": "onboarding-chat.ru.md"
     },
     {
@@ -3645,7 +3780,7 @@
       "source_file": "docs/ONBOARDING-CHAT.ru.md",
       "source_location": "L1",
       "id": "docs_onboarding_chat_ru_mantoz",
-      "community": 19,
+      "community": 21,
       "norm_label": "\u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 mantoz \u0440\u0430\u0437\u0433\u043e\u0432\u043e\u0440\u043e\u043c"
     },
     {
@@ -3654,7 +3789,7 @@
       "source_file": "docs/ONBOARDING-CHAT.ru.md",
       "source_location": "L29",
       "id": "docs_onboarding_chat_ru_1",
-      "community": 19,
+      "community": 21,
       "norm_label": "\u0448\u0430\u0433 1: \u0441\u043c\u043e\u0442\u0440\u044e, \u0447\u0442\u043e \u0443 \u0442\u0435\u0431\u044f \u0443\u0436\u0435 \u0441\u0442\u043e\u0438\u0442"
     },
     {
@@ -3663,7 +3798,7 @@
       "source_file": "docs/ONBOARDING-CHAT.ru.md",
       "source_location": "L47",
       "id": "docs_onboarding_chat_ru_2",
-      "community": 19,
+      "community": 21,
       "norm_label": "\u0448\u0430\u0433 2: \u043a\u043b\u0430\u0434\u0443 \u043f\u0440\u043e\u0435\u043a\u0442 \u043d\u0430 \u0434\u0438\u0441\u043a"
     },
     {
@@ -3672,7 +3807,7 @@
       "source_file": "docs/ONBOARDING-CHAT.ru.md",
       "source_location": "L64",
       "id": "docs_onboarding_chat_ru_3",
-      "community": 19,
+      "community": 21,
       "norm_label": "\u0448\u0430\u0433 3: \u0441\u0442\u0430\u0432\u043b\u044e \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u0435"
     },
     {
@@ -3681,7 +3816,7 @@
       "source_file": "docs/ONBOARDING-CHAT.ru.md",
       "source_location": "L78",
       "id": "docs_onboarding_chat_ru_4",
-      "community": 19,
+      "community": 21,
       "norm_label": "\u0448\u0430\u0433 4: \u0441\u043e\u0431\u0438\u0440\u0430\u044e \u043b\u044e\u0434\u0435\u0438"
     },
     {
@@ -3690,7 +3825,7 @@
       "source_file": "docs/ONBOARDING-CHAT.ru.md",
       "source_location": "L96",
       "id": "docs_onboarding_chat_ru_5",
-      "community": 19,
+      "community": 21,
       "norm_label": "\u0448\u0430\u0433 5: \u043f\u0440\u043e\u0433\u043e\u043d\u044f\u044e \u0442\u0432\u043e\u044e \u0437\u0430\u0434\u0430\u0447\u0443, \u0430 \u043d\u0435 \u043c\u043e\u044e"
     },
     {
@@ -3699,7 +3834,7 @@
       "source_file": "docs/ONBOARDING-CHAT.ru.md",
       "source_location": "L114",
       "id": "docs_onboarding_chat_ru_6",
-      "community": 19,
+      "community": 21,
       "norm_label": "\u0448\u0430\u0433 6: \u043f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u044e \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u0438 \u0433\u0440\u0430\u043d\u0438\u0446\u0443 \u0434\u0430\u043d\u043d\u044b\u0445"
     },
     {
@@ -3708,7 +3843,7 @@
       "source_file": "docs/ONBOARDING-CHAT.ru.md",
       "source_location": "L127",
       "id": "docs_onboarding_chat_ru_codeblock_1",
-      "community": 19,
+      "community": 21,
       "norm_label": "code:bash (uv run python -m mantoz.viewer render --report runs/first.js)"
     },
     {
@@ -3717,7 +3852,7 @@
       "source_file": "queue/GOAL.md",
       "source_location": "L1",
       "id": "queue_goal_md",
-      "community": 27,
+      "community": 29,
       "norm_label": "goal.md"
     },
     {
@@ -3726,7 +3861,7 @@
       "source_file": "queue/GOAL.md",
       "source_location": "L1",
       "id": "queue_goal",
-      "community": 27,
+      "community": 29,
       "norm_label": "\u043a\u043e\u043d\u0435\u0447\u043d\u0430\u044f \u0446\u0435\u043b\u044c \u0432\u043b\u0430\u0434\u0435\u043b\u044c\u0446\u0430"
     },
     {
@@ -3735,7 +3870,7 @@
       "source_file": "queue/GOAL.md",
       "source_location": "L4",
       "id": "queue_goal_4",
-      "community": 27,
+      "community": 29,
       "norm_label": "\u0447\u0442\u043e \u0441\u0442\u0430\u043d\u0435\u0442 \u0438\u0441\u0442\u0438\u043d\u043d\u044b\u043c"
     },
     {
@@ -3744,7 +3879,7 @@
       "source_file": "queue/GOAL.md",
       "source_location": "L7",
       "id": "queue_goal_7",
-      "community": 27,
+      "community": 29,
       "norm_label": "\u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u044f"
     },
     {
@@ -3753,7 +3888,7 @@
       "source_file": "queue/GOAL.md",
       "source_location": "L22",
       "id": "queue_goal_22",
-      "community": 27,
+      "community": 29,
       "norm_label": "\u043d\u0435\u043b\u044c\u0437\u044f"
     },
     {
@@ -3762,7 +3897,7 @@
       "source_file": "queue/GOAL.md",
       "source_location": "L35",
       "id": "queue_goal_35",
-      "community": 27,
+      "community": 29,
       "norm_label": "\u043f\u0440\u0438\u043d\u044f\u0442\u043e \u043f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e"
     },
     {
@@ -3771,7 +3906,7 @@
       "source_file": "queue/GOAL.md",
       "source_location": "L38",
       "id": "queue_goal_38",
-      "community": 27,
+      "community": 29,
       "norm_label": "\u0432\u043d\u0435 \u0446\u0435\u043b\u0438"
     },
     {
@@ -3780,7 +3915,7 @@
       "source_file": "application/tasks/chat-support/instruction.md",
       "source_location": "L1",
       "id": "application_tasks_chat_support_instruction_md",
-      "community": 36,
+      "community": 38,
       "norm_label": "instruction.md"
     },
     {
@@ -3789,7 +3924,7 @@
       "source_file": "application/tasks/chat-support/instruction.md",
       "source_location": "L5",
       "id": "chat_support_instruction_codeblock_1",
-      "community": 36,
+      "community": 38,
       "norm_label": "code:json ({)"
     },
     {
@@ -3798,7 +3933,7 @@
       "source_file": "application/tasks/smoke-choice/instruction.md",
       "source_location": "L1",
       "id": "application_tasks_smoke_choice_instruction_md",
-      "community": 38,
+      "community": 40,
       "norm_label": "instruction.md"
     },
     {
@@ -3807,7 +3942,7 @@
       "source_file": "application/tasks/open-answer/instruction.md",
       "source_location": "L1",
       "id": "application_tasks_open_answer_instruction_md",
-      "community": 39,
+      "community": 41,
       "norm_label": "instruction.md"
     },
     {
@@ -3816,7 +3951,7 @@
       "source_file": "application/tasks/web-choice/instruction.md",
       "source_location": "L1",
       "id": "application_tasks_web_choice_instruction_md",
-      "community": 32,
+      "community": 35,
       "norm_label": "instruction.md"
     },
     {
@@ -3825,7 +3960,7 @@
       "source_file": "application/tasks/web-choice/instruction.md",
       "source_location": "L4",
       "id": "web_choice_instruction_codeblock_1",
-      "community": 32,
+      "community": 35,
       "norm_label": "code:json ({\"inspect\": [\"base\", \"standart\"], \"choose\": \"standart\"})"
     },
     {
@@ -3834,7 +3969,7 @@
       "source_file": "application/tasks/web-choice/instruction.md",
       "source_location": "L12",
       "id": "web_choice_instruction_codeblock_2",
-      "community": 32,
+      "community": 35,
       "norm_label": "code:json ({)"
     },
     {
@@ -3843,7 +3978,7 @@
       "source_file": "application/tasks/app-decision/instruction.md",
       "source_location": "L1",
       "id": "application_tasks_app_decision_instruction_md",
-      "community": 40,
+      "community": 42,
       "norm_label": "instruction.md"
     },
     {
@@ -3852,11 +3987,156 @@
       "source_file": "application/tasks/survey-feedback/instruction.md",
       "source_location": "L1",
       "id": "application_tasks_survey_feedback_instruction_md",
-      "community": 41,
+      "community": 43,
       "norm_label": "instruction.md"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_py",
+      "target": "scripts_persona_taxonomy_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_py",
+      "target": "scripts_persona_taxonomy_build_dimensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_py",
+      "target": "scripts_persona_taxonomy_boost_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_py",
+      "target": "scripts_persona_taxonomy_build_edges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_py",
+      "target": "scripts_persona_taxonomy_acyclic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_py",
+      "target": "scripts_persona_taxonomy_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_main",
+      "target": "scripts_persona_taxonomy_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_main",
+      "target": "scripts_persona_taxonomy_build_dimensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_rationale_39",
+      "target": "scripts_persona_taxonomy_build_dimensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_build_edges",
+      "target": "scripts_persona_taxonomy_boost_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_rationale_62",
+      "target": "scripts_persona_taxonomy_boost_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_main",
+      "target": "scripts_persona_taxonomy_build_edges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_rationale_85",
+      "target": "scripts_persona_taxonomy_build_edges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/persona-taxonomy.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "scripts_persona_taxonomy_main",
+      "target": "scripts_persona_taxonomy_acyclic",
+      "confidence_score": 1.0
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -3894,6 +4174,16 @@
       "source_location": "L60",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_py",
+      "target": "scripts_mantoz_selfcheck_check_taxonomy_matches_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/mantoz-selfcheck.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "scripts_mantoz_selfcheck_py",
       "target": "scripts_mantoz_selfcheck_check_persona_dag",
       "confidence_score": 1.0
     },
@@ -3901,7 +4191,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L96",
+      "source_location": "L109",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_py",
       "target": "scripts_mantoz_selfcheck_check_grounding_registry",
@@ -3911,7 +4201,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L116",
+      "source_location": "L129",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_py",
       "target": "scripts_mantoz_selfcheck_check_agent_registry",
@@ -3921,7 +4211,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L126",
+      "source_location": "L139",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_py",
       "target": "scripts_mantoz_selfcheck_check_task_contracts",
@@ -3931,7 +4221,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L137",
+      "source_location": "L150",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_py",
       "target": "scripts_mantoz_selfcheck_check_parity_checklist",
@@ -3941,7 +4231,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L155",
+      "source_location": "L168",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_py",
       "target": "scripts_mantoz_selfcheck_check_attribution",
@@ -3951,7 +4241,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L164",
+      "source_location": "L177",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_py",
       "target": "scripts_mantoz_selfcheck_check_data_boundary",
@@ -3961,7 +4251,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L173",
+      "source_location": "L186",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_py",
       "target": "scripts_mantoz_selfcheck_main",
@@ -3983,7 +4273,18 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L75",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "scripts_mantoz_selfcheck_check_taxonomy_matches_source",
+      "target": "scripts_mantoz_selfcheck_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/mantoz-selfcheck.py",
+      "source_location": "L88",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_check_persona_dag",
       "target": "scripts_mantoz_selfcheck_check",
@@ -3994,7 +4295,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L101",
+      "source_location": "L114",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_check_grounding_registry",
       "target": "scripts_mantoz_selfcheck_check",
@@ -4005,7 +4306,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L121",
+      "source_location": "L134",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_check_agent_registry",
       "target": "scripts_mantoz_selfcheck_check",
@@ -4016,7 +4317,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L128",
+      "source_location": "L141",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_check_task_contracts",
       "target": "scripts_mantoz_selfcheck_check",
@@ -4027,7 +4328,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L151",
+      "source_location": "L164",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_check_parity_checklist",
       "target": "scripts_mantoz_selfcheck_check",
@@ -4038,7 +4339,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L157",
+      "source_location": "L170",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_check_attribution",
       "target": "scripts_mantoz_selfcheck_check",
@@ -4049,7 +4350,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L166",
+      "source_location": "L179",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_check_data_boundary",
       "target": "scripts_mantoz_selfcheck_check",
@@ -4071,7 +4372,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L61",
+      "source_location": "L74",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_check_persona_dag",
       "target": "scripts_mantoz_selfcheck_load_json",
@@ -4082,7 +4383,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L97",
+      "source_location": "L110",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_check_grounding_registry",
       "target": "scripts_mantoz_selfcheck_load_json",
@@ -4093,7 +4394,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L117",
+      "source_location": "L130",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_check_agent_registry",
       "target": "scripts_mantoz_selfcheck_load_json",
@@ -4104,7 +4405,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L174",
+      "source_location": "L187",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_main",
       "target": "scripts_mantoz_selfcheck_check_persona_schema",
@@ -4115,7 +4416,28 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L175",
+      "source_location": "L188",
+      "weight": 1.0,
+      "source": "scripts_mantoz_selfcheck_main",
+      "target": "scripts_mantoz_selfcheck_check_taxonomy_matches_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/mantoz-selfcheck.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "scripts_mantoz_selfcheck_rationale_61",
+      "target": "scripts_mantoz_selfcheck_check_taxonomy_matches_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/mantoz-selfcheck.py",
+      "source_location": "L189",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_main",
       "target": "scripts_mantoz_selfcheck_check_persona_dag",
@@ -4126,7 +4448,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L176",
+      "source_location": "L190",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_main",
       "target": "scripts_mantoz_selfcheck_check_grounding_registry",
@@ -4137,7 +4459,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L177",
+      "source_location": "L191",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_main",
       "target": "scripts_mantoz_selfcheck_check_agent_registry",
@@ -4148,7 +4470,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L178",
+      "source_location": "L192",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_main",
       "target": "scripts_mantoz_selfcheck_check_task_contracts",
@@ -4159,7 +4481,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L179",
+      "source_location": "L193",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_main",
       "target": "scripts_mantoz_selfcheck_check_parity_checklist",
@@ -4170,7 +4492,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L180",
+      "source_location": "L194",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_main",
       "target": "scripts_mantoz_selfcheck_check_attribution",
@@ -4181,7 +4503,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/mantoz-selfcheck.py",
-      "source_location": "L181",
+      "source_location": "L195",
       "weight": 1.0,
       "source": "scripts_mantoz_selfcheck_main",
       "target": "scripts_mantoz_selfcheck_check_data_boundary",
@@ -6049,7 +6371,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L89",
+      "source_location": "L90",
       "weight": 1.0,
       "source": "src_mantoz_parity_gate_py",
       "target": "mantoz_parity_gate_load_out_scopes",
@@ -6059,7 +6381,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L113",
+      "source_location": "L114",
       "weight": 1.0,
       "source": "src_mantoz_parity_gate_py",
       "target": "mantoz_parity_gate_honest_justification",
@@ -6069,7 +6391,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L120",
+      "source_location": "L121",
       "weight": 1.0,
       "source": "src_mantoz_parity_gate_py",
       "target": "mantoz_parity_gate_evaluate",
@@ -6079,7 +6401,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L153",
+      "source_location": "L177",
       "weight": 1.0,
       "source": "src_mantoz_parity_gate_py",
       "target": "mantoz_parity_gate_selftest",
@@ -6089,7 +6411,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L180",
+      "source_location": "L204",
       "weight": 1.0,
       "source": "src_mantoz_parity_gate_py",
       "target": "mantoz_parity_gate_main",
@@ -6110,7 +6432,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L122",
+      "source_location": "L123",
       "weight": 1.0,
       "source": "mantoz_parity_gate_evaluate",
       "target": "mantoz_parity_gate_load_out_scopes",
@@ -6120,9 +6442,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L90",
+      "source_location": "L91",
       "weight": 1.0,
-      "source": "mantoz_parity_gate_rationale_90",
+      "source": "mantoz_parity_gate_rationale_91",
       "target": "mantoz_parity_gate_load_out_scopes",
       "confidence_score": 1.0
     },
@@ -6131,7 +6453,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L141",
+      "source_location": "L159",
       "weight": 1.0,
       "source": "mantoz_parity_gate_evaluate",
       "target": "mantoz_parity_gate_honest_justification",
@@ -6141,9 +6463,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L114",
+      "source_location": "L115",
       "weight": 1.0,
-      "source": "mantoz_parity_gate_rationale_114",
+      "source": "mantoz_parity_gate_rationale_115",
       "target": "mantoz_parity_gate_honest_justification",
       "confidence_score": 1.0
     },
@@ -6152,7 +6474,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L170",
+      "source_location": "L194",
       "weight": 1.0,
       "source": "mantoz_parity_gate_selftest",
       "target": "mantoz_parity_gate_evaluate",
@@ -6163,7 +6485,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L187",
+      "source_location": "L211",
       "weight": 1.0,
       "source": "mantoz_parity_gate_main",
       "target": "mantoz_parity_gate_evaluate",
@@ -6173,9 +6495,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L121",
+      "source_location": "L122",
       "weight": 1.0,
-      "source": "mantoz_parity_gate_rationale_121",
+      "source": "mantoz_parity_gate_rationale_122",
       "target": "mantoz_parity_gate_evaluate",
       "confidence_score": 1.0
     },
@@ -6184,7 +6506,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/mantoz/parity_gate.py",
-      "source_location": "L186",
+      "source_location": "L210",
       "weight": 1.0,
       "source": "mantoz_parity_gate_main",
       "target": "mantoz_parity_gate_selftest",
@@ -8350,6 +8672,36 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/PARITY.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "docs_parity_mantoz_matraix",
+      "target": "docs_parity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PARITY.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "docs_parity_mantoz_matraix",
+      "target": "docs_parity_21",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PARITY.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "docs_parity_mantoz_matraix",
+      "target": "docs_parity_63",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/ONBOARDING-CHAT.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -9209,5 +9561,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "91562730d6da2f60d2daeb37e1b6dc665541a8f9"
+  "built_at_commit": "87eaa64625436495890146ba2a9e31705aed318a"
 }

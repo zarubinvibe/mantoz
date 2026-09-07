@@ -21,6 +21,7 @@ import sys
 import tempfile
 from pathlib import Path
 
+CANON_STATUSES = {"есть", "лучше", "нет"}
 ROOT = Path(__file__).resolve().parents[2]
 PARITY_PATH = ROOT / "docs" / "PARITY.md"
 GOAL_PATH = ROOT / "queue" / "GOAL.md"
@@ -29,60 +30,60 @@ OUT_ID_RE = re.compile(r"\bOUT-\d{2}\b")
 SCOPE_RE = re.compile(r"\[покрывает:\s*([^\]]+)\]")
 
 CLOSED_FIXTURE = """\
-| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |
-|---|---|---|---|
-| persona | Схема персоны | есть эквивалент | REQ-01 |
-| persona | Persona 1M как продакшн-граунд | отсутствует обоснованно | OUT-03 |
-| harbor | 15 sandbox-бэкендов | отсутствует обоснованно | OUT-02 |
-| playground | apps/viewer — второй SPA | отсутствует обоснованно | OUT-04 |
+| Подсистема | Возможность | У них | У нас | Статус | Чем доказано |
+|---|---|---|---|---|---|
+| persona | Схема персоны | 1 | 1 | есть | REQ-01 |
+| persona | Persona 1M как продакшн-граунд | 1 | 0 | не берём: обосновано пунктом OUT-03 | OUT-03 |
+| harbor | 15 sandbox-бэкендов | 1 | 0 | не берём: обосновано пунктом OUT-02 | OUT-02 |
+| playground | apps/viewer — второй SPA | 1 | 0 | не берём: обосновано пунктом OUT-04 | OUT-04 |
 """
 
 OPEN_FIXTURE = """\
-| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |
-|---|---|---|---|
-| persona | Схема персоны | отсутствует | docs/tickets/06-persona-taxonomy.md |
+| Подсистема | Возможность | У них | У нас | Статус | Чем доказано |
+|---|---|---|---|---|---|
+| persona | Схема персоны | 1 | 0 | нет | docs/tickets/06-persona-taxonomy.md |
 """
 
 REQ_REF_FIXTURE = """\
-| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |
-|---|---|---|---|
-| persona | Выдумка | отсутствует обоснованно | REQ-99 |
+| Подсистема | Возможность | У них | У нас | Статус | Чем доказано |
+|---|---|---|---|---|---|
+| persona | Выдумка | 1 | 0 | не берём: обосновано пунктом REQ-99 | REQ-99 |
 """
 
 PROSE_FIXTURE = """\
-| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |
-|---|---|---|---|
-| persona | Выдумка | отсутствует обоснованно | платной основе выдуманный сервис |
+| Подсистема | Возможность | У них | У нас | Статус | Чем доказано |
+|---|---|---|---|---|---|
+| persona | Выдумка | 1 | 0 | не берём: обосновано пунктом платной основе выдуманный сервис | платной основе выдуманный сервис |
 """
 
 GHOST_ID_FIXTURE = """\
-| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |
-|---|---|---|---|
-| persona | Выдумка | отсутствует обоснованно | OUT-99 |
+| Подсистема | Возможность | У них | У нас | Статус | Чем доказано |
+|---|---|---|---|---|---|
+| persona | Выдумка | 1 | 0 | не берём: обосновано пунктом OUT-99 | OUT-99 |
 """
 
 SHORT_ID_FIXTURE = """\
-| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |
-|---|---|---|---|
-| persona | Выдумка | отсутствует обоснованно | OUT-1 |
+| Подсистема | Возможность | У них | У нас | Статус | Чем доказано |
+|---|---|---|---|---|---|
+| persona | Выдумка | 1 | 0 | не берём: обосновано пунктом OUT-1 | OUT-1 |
 """
 
 LONG_ID_FIXTURE = """\
-| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |
-|---|---|---|---|
-| persona | Выдумка | отсутствует обоснованно | OUT-001 |
+| Подсистема | Возможность | У них | У нас | Статус | Чем доказано |
+|---|---|---|---|---|---|
+| persona | Выдумка | 1 | 0 | не берём: обосновано пунктом OUT-001 | OUT-001 |
 """
 
 WRONG_SCOPE_FIXTURE = """\
-| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |
-|---|---|---|---|
-| persona | Выдумка | отсутствует обоснованно | OUT-04 |
+| Подсистема | Возможность | У них | У нас | Статус | Чем доказано |
+|---|---|---|---|---|---|
+| persona | Выдумка | 1 | 0 | не берём: обосновано пунктом OUT-04 | OUT-04 |
 """
 
 RIGHT_SCOPE_FIXTURE = """\
-| Подсистема | Возможность MatrAIx | Статус Mantoz | Ссылка |
-|---|---|---|---|
-| playground | Выдумка | отсутствует обоснованно | OUT-04 |
+| Подсистема | Возможность | У них | У нас | Статус | Чем доказано |
+|---|---|---|---|---|---|
+| playground | Выдумка | 1 | 0 | не берём: обосновано пунктом OUT-04 | OUT-04 |
 """
 
 
@@ -121,32 +122,55 @@ def evaluate(path: Path, goal_path: Path = GOAL_PATH) -> list[str]:
     """Вернуть список незакрытых строк таблицы паритета."""
     out_scopes = load_out_scopes(goal_path)
     open_rows: list[str] = []
+    status_column: int | None = None
     for line in path.read_text(encoding="utf-8").splitlines():
         if not line.startswith("|"):
             continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
         if len(cells) < 3:
             continue
-        cells += [""] * (4 - len(cells))
-        subsystem, capability, status, link = cells[:4]
+        cells += [""] * (6 - len(cells))
+        subsystem, capability = cells[0], cells[1]
         if set(subsystem) <= set("-: "):
             continue  # строка-разделитель
-        if subsystem == "Подсистема":
+        if subsystem in {"Подсистема", "Источник"}:
+            if subsystem == "Подсистема":
+                status_column = next((i for i, c in enumerate(cells) if c.lower() == "статус"), None)
             continue  # заголовок
-        if not all(cells[:4]):
-            open_rows.append(f"{capability or subsystem or '?'} (пустая ячейка)")
+        if "github.com/" in " ".join(cells):
+            continue  # строка таблицы источников, у неё свои правила
+        # Канон семьи: ровно четыре статуса. Номер столбца берётся из ЗАГОЛОВКА таблицы, а не
+        # угадывается по значению: в колонках масштаба честно стоит слово «нет», и поиск по
+        # значению принимал его за статус строки.
+        idx = status_column if status_column is not None else next(
+            (i for i, c in enumerate(cells)
+             if c.lower().startswith("не берем") or c.lower().startswith("не берём")
+             or c.lower() in CANON_STATUSES), -1)
+        if idx >= len(cells) or idx < 0:
+            open_rows.append(f"{capability or subsystem or '?'} (нет статуса из канона)")
             continue
+        status = cells[idx]
+        proof = " ".join(cells[idx + 1:]).strip()
         normalized = status.lower()
-        if normalized.startswith("отсутствует обоснованно"):
-            if not _honest_justification(link, subsystem, out_scopes):
+        if normalized.startswith("не берем") or normalized.startswith("не берём"):
+            reason = status.split(":", 1)[1].strip() if ":" in status else ""
+            if len(reason) < 10:
+                open_rows.append(f"{capability} (отказ без названной причины)")
+            elif not _honest_justification(reason, subsystem, out_scopes):
                 open_rows.append(
-                    f"{capability} (обоснование не является точным ID «Вне цели» queue/GOAL.md "
-                    f"в области действия подсистемы «{subsystem}»)"
+                    f"{capability} (причина отказа не ссылается на точный ID «Вне цели» "
+                    f"queue/GOAL.md в области действия подсистемы «{subsystem}»)"
                 )
             continue
-        if normalized.startswith("есть эквивалент"):
+        if normalized == "нет":
+            open_rows.append(f"{capability} (возможности нет и отказ не заявлен)")
             continue
-        open_rows.append(capability)
+        if not proof.strip("-–— "):
+            open_rows.append(f"{capability} (статус «{status}» без улики)")
+            continue
+        if normalized == "лучше" and not any(ch.isdigit() for ch in proof):
+            open_rows.append(f"{capability} («лучше» без числа: в чём именно сильнее)")
+            continue
     return open_rows
 
 

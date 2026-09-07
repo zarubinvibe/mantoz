@@ -1,248 +1,1842 @@
 {
   "schema_version": 1,
+  "note": "Собрано прибором scripts/persona-taxonomy.py из core.json и domains.json. Руками не править.",
   "dimensions": [
     {
       "id": "age_group",
       "category": "background_demographics",
       "description": "Возрастная группа",
-      "values": ["18–24", "25–34", "35–44", "45–54", "55–64", "65+"]
+      "values": [
+        "18–24",
+        "25–34",
+        "35–44",
+        "45–54",
+        "55–64",
+        "65+"
+      ]
     },
     {
       "id": "settlement_type",
       "category": "background_demographics",
       "description": "Тип населённого пункта",
-      "values": ["сельская местность", "малый город", "средний город", "крупный город"]
+      "values": [
+        "сельская местность",
+        "малый город",
+        "средний город",
+        "крупный город"
+      ]
     },
     {
       "id": "household_size",
       "category": "background_demographics",
       "description": "Размер домохозяйства",
-      "values": ["один человек", "два человека", "три человека", "четыре и более"]
+      "values": [
+        "один человек",
+        "два человека",
+        "три человека",
+        "четыре и более"
+      ]
     },
     {
       "id": "living_arrangement",
       "category": "background_demographics",
       "description": "Форма совместного проживания",
-      "values": ["один", "с партнёром", "с семьёй", "с соседями"]
+      "values": [
+        "один",
+        "с партнёром",
+        "с семьёй",
+        "с соседями"
+      ]
     },
     {
       "id": "education_level",
       "category": "background_demographics",
       "description": "Наивысший завершённый уровень образования",
-      "values": ["основное общее", "среднее общее", "среднее профессиональное", "высшее", "послевузовское"]
+      "values": [
+        "основное общее",
+        "среднее общее",
+        "среднее профессиональное",
+        "высшее",
+        "послевузовское"
+      ]
     },
     {
       "id": "employment_status",
       "category": "background_demographics",
       "description": "Текущая занятость",
-      "values": ["учится", "работает по найму", "работает на себя", "не работает", "на пенсии"]
+      "values": [
+        "учится",
+        "работает по найму",
+        "работает на себя",
+        "не работает",
+        "на пенсии"
+      ]
     },
     {
       "id": "income_stability",
       "category": "background_demographics",
       "description": "Стабильность дохода",
-      "values": ["нестабильный", "переменный", "стабильный"]
+      "values": [
+        "нестабильный",
+        "переменный",
+        "стабильный"
+      ]
     },
     {
       "id": "caregiving_role",
       "category": "background_demographics",
       "description": "Регулярная забота о других",
-      "values": ["нет", "забота о детях", "забота о взрослых", "несколько ролей"]
+      "values": [
+        "нет",
+        "забота о детях",
+        "забота о взрослых",
+        "несколько ролей"
+      ]
     },
     {
       "id": "language_context",
       "category": "background_demographics",
       "description": "Языковая среда повседневной жизни",
-      "values": ["один язык", "два языка", "многоязычная среда"]
+      "values": [
+        "один язык",
+        "два языка",
+        "многоязычная среда"
+      ]
     },
     {
       "id": "mobility_pattern",
       "category": "background_demographics",
       "description": "Частота смены места жизни",
-      "values": ["оседлый", "периодически переезжает", "часто переезжает"]
+      "values": [
+        "оседлый",
+        "периодически переезжает",
+        "часто переезжает"
+      ]
     },
-
     {
       "id": "openness_to_experience",
       "category": "psychology_values",
       "description": "Открытость новому опыту",
-      "values": ["низкая", "средняя", "высокая"]
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
     },
     {
       "id": "conscientiousness",
       "category": "psychology_values",
       "description": "Склонность к организованности и самодисциплине",
-      "values": ["низкая", "средняя", "высокая"]
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
     },
     {
       "id": "extraversion",
       "category": "psychology_values",
       "description": "Потребность в социальном взаимодействии",
-      "values": ["низкая", "средняя", "высокая"]
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
     },
     {
       "id": "agreeableness",
       "category": "psychology_values",
       "description": "Склонность к сотрудничеству и компромиссу",
-      "values": ["низкая", "средняя", "высокая"]
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
     },
     {
       "id": "emotional_stability",
       "category": "psychology_values",
       "description": "Устойчивость эмоциональных реакций",
-      "values": ["низкая", "средняя", "высокая"]
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
     },
     {
       "id": "risk_tolerance",
       "category": "psychology_values",
       "description": "Готовность принимать неопределённость и риск",
-      "values": ["избегает", "принимает после оценки", "легко принимает"]
+      "values": [
+        "избегает",
+        "принимает после оценки",
+        "легко принимает"
+      ]
     },
     {
       "id": "decision_style",
       "category": "psychology_values",
       "description": "Преобладающий стиль принятия решений",
-      "values": ["интуитивный", "сбалансированный", "аналитический"]
+      "values": [
+        "интуитивный",
+        "сбалансированный",
+        "аналитический"
+      ]
     },
     {
       "id": "time_orientation",
       "category": "psychology_values",
       "description": "Временной горизонт при выборе",
-      "values": ["текущие потребности", "баланс настоящего и будущего", "долгосрочная перспектива"]
+      "values": [
+        "текущие потребности",
+        "баланс настоящего и будущего",
+        "долгосрочная перспектива"
+      ]
     },
     {
       "id": "value_priority",
       "category": "psychology_values",
       "description": "Ведущий личный приоритет",
-      "values": ["безопасность", "достижение", "самостоятельность", "забота", "традиция", "новизна"]
+      "values": [
+        "безопасность",
+        "достижение",
+        "самостоятельность",
+        "забота",
+        "традиция",
+        "новизна"
+      ]
     },
     {
       "id": "ambiguity_tolerance",
       "category": "psychology_values",
       "description": "Способность действовать без полной ясности",
-      "values": ["низкая", "средняя", "высокая"]
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
     },
-
     {
       "id": "literacy",
       "category": "capabilities_skills",
       "description": "Уровень работы с письменным текстом",
-      "values": ["базовый", "уверенный", "продвинутый"]
+      "values": [
+        "базовый",
+        "уверенный",
+        "продвинутый"
+      ]
     },
     {
       "id": "numeracy",
       "category": "capabilities_skills",
       "description": "Уровень работы с числами и расчётами",
-      "values": ["базовый", "уверенный", "продвинутый"]
+      "values": [
+        "базовый",
+        "уверенный",
+        "продвинутый"
+      ]
     },
     {
       "id": "digital_literacy",
       "category": "capabilities_skills",
       "description": "Уверенность в работе с цифровыми устройствами и сервисами",
-      "values": ["базовая", "уверенная", "продвинутая"]
+      "values": [
+        "базовая",
+        "уверенная",
+        "продвинутая"
+      ]
     },
     {
       "id": "information_search",
       "category": "capabilities_skills",
       "description": "Умение находить нужную информацию",
-      "values": ["базовое", "уверенное", "продвинутое"]
+      "values": [
+        "базовое",
+        "уверенное",
+        "продвинутое"
+      ]
     },
     {
       "id": "critical_evaluation",
       "category": "capabilities_skills",
       "description": "Умение проверять доводы и источники",
-      "values": ["базовое", "уверенное", "продвинутое"]
+      "values": [
+        "базовое",
+        "уверенное",
+        "продвинутое"
+      ]
     },
     {
       "id": "written_communication",
       "category": "capabilities_skills",
       "description": "Умение ясно излагать мысли письменно",
-      "values": ["базовое", "уверенное", "продвинутое"]
+      "values": [
+        "базовое",
+        "уверенное",
+        "продвинутое"
+      ]
     },
     {
       "id": "spoken_communication",
       "category": "capabilities_skills",
       "description": "Умение ясно излагать мысли устно",
-      "values": ["базовое", "уверенное", "продвинутое"]
+      "values": [
+        "базовое",
+        "уверенное",
+        "продвинутое"
+      ]
     },
     {
       "id": "planning_skill",
       "category": "capabilities_skills",
       "description": "Умение разбивать цель на шаги",
-      "values": ["базовое", "уверенное", "продвинутое"]
+      "values": [
+        "базовое",
+        "уверенное",
+        "продвинутое"
+      ]
     },
     {
       "id": "learning_speed",
       "category": "capabilities_skills",
       "description": "Темп освоения новых задач",
-      "values": ["постепенный", "средний", "быстрый"]
+      "values": [
+        "постепенный",
+        "средний",
+        "быстрый"
+      ]
     },
     {
       "id": "domain_familiarity",
       "category": "capabilities_skills",
       "description": "Знакомство с предметной областью текущего сценария",
-      "values": ["нет", "начальное", "рабочее", "глубокое"]
+      "values": [
+        "нет",
+        "начальное",
+        "рабочее",
+        "глубокое"
+      ]
     },
-
     {
       "id": "information_source_preference",
       "category": "behavior_habits",
       "description": "Предпочитаемый источник информации",
-      "values": ["знакомые", "поиск", "специалисты", "сообщества", "смешанный подход"]
+      "values": [
+        "знакомые",
+        "поиск",
+        "специалисты",
+        "сообщества",
+        "смешанный подход"
+      ]
     },
     {
       "id": "content_format_preference",
       "category": "behavior_habits",
       "description": "Предпочитаемый формат информации",
-      "values": ["текст", "аудио", "видео", "интерактивный"]
+      "values": [
+        "текст",
+        "аудио",
+        "видео",
+        "интерактивный"
+      ]
     },
     {
       "id": "response_detail_preference",
       "category": "behavior_habits",
       "description": "Предпочитаемая подробность ответа",
-      "values": ["краткая", "средняя", "подробная"]
+      "values": [
+        "краткая",
+        "средняя",
+        "подробная"
+      ]
     },
     {
       "id": "routine_consistency",
       "category": "behavior_habits",
       "description": "Устойчивость повседневного распорядка",
-      "values": ["низкая", "средняя", "высокая"]
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
     },
     {
       "id": "technology_adoption",
       "category": "behavior_habits",
       "description": "Скорость перехода на новые технологии",
-      "values": ["сразу", "после проверки другими", "после широкого распространения", "избегает"]
+      "values": [
+        "сразу",
+        "после проверки другими",
+        "после широкого распространения",
+        "избегает"
+      ]
     },
     {
       "id": "help_seeking",
       "category": "behavior_habits",
       "description": "Первый шаг при затруднении",
-      "values": ["разбирается сам", "спрашивает знакомых", "обращается к специалисту"]
+      "values": [
+        "разбирается сам",
+        "спрашивает знакомых",
+        "обращается к специалисту"
+      ]
     },
     {
       "id": "feedback_style",
       "category": "behavior_habits",
       "description": "Обычный стиль обратной связи",
-      "values": ["прямой", "дипломатичный", "сдержанный"]
+      "values": [
+        "прямой",
+        "дипломатичный",
+        "сдержанный"
+      ]
     },
     {
       "id": "privacy_sensitivity",
       "category": "behavior_habits",
       "description": "Осторожность при передаче личных данных",
-      "values": ["низкая", "средняя", "высокая"]
+      "values": [
+        "низкая",
+        "средняя",
+        "высокая"
+      ]
     },
     {
       "id": "planning_habit",
       "category": "behavior_habits",
       "description": "Привычная степень планирования действий",
-      "values": ["действует спонтанно", "планирует главные шаги", "планирует подробно"]
+      "values": [
+        "действует спонтанно",
+        "планирует главные шаги",
+        "планирует подробно"
+      ]
     },
     {
       "id": "follow_through",
       "category": "behavior_habits",
       "description": "Привычка доводить начатое до конца",
-      "values": ["часто бросает", "завершает важное", "обычно завершает"]
+      "values": [
+        "часто бросает",
+        "завершает важное",
+        "обычно завершает"
+      ]
+    },
+    {
+      "id": "groceries_frequency",
+      "category": "behavior_habits",
+      "description": "покупка продуктов: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "groceries_channel",
+      "category": "behavior_habits",
+      "description": "покупка продуктов: через что делает",
+      "values": [
+        "вживую",
+        "по телефону",
+        "в приложении",
+        "на сайте",
+        "через знакомых"
+      ]
+    },
+    {
+      "id": "groceries_spend_share",
+      "category": "behavior_habits",
+      "description": "покупка продуктов: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "clothing_frequency",
+      "category": "behavior_habits",
+      "description": "покупка одежды: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "clothing_channel",
+      "category": "behavior_habits",
+      "description": "покупка одежды: через что делает",
+      "values": [
+        "вживую",
+        "по телефону",
+        "в приложении",
+        "на сайте",
+        "через знакомых"
+      ]
+    },
+    {
+      "id": "clothing_spend_share",
+      "category": "behavior_habits",
+      "description": "покупка одежды: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "delivery_frequency",
+      "category": "behavior_habits",
+      "description": "доставка на дом: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "delivery_channel",
+      "category": "behavior_habits",
+      "description": "доставка на дом: через что делает",
+      "values": [
+        "вживую",
+        "по телефону",
+        "в приложении",
+        "на сайте",
+        "через знакомых"
+      ]
+    },
+    {
+      "id": "delivery_trust",
+      "category": "behavior_habits",
+      "description": "доставка на дом: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "marketplace_frequency",
+      "category": "behavior_habits",
+      "description": "маркетплейсы: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "marketplace_trust",
+      "category": "behavior_habits",
+      "description": "маркетплейсы: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "marketplace_spend_share",
+      "category": "behavior_habits",
+      "description": "маркетплейсы: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "cafes_frequency",
+      "category": "behavior_habits",
+      "description": "кафе и рестораны: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "cafes_spend_share",
+      "category": "behavior_habits",
+      "description": "кафе и рестораны: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "cooking_frequency",
+      "category": "behavior_habits",
+      "description": "готовка дома: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "cooking_confidence",
+      "category": "behavior_habits",
+      "description": "готовка дома: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "public_transport_frequency",
+      "category": "behavior_habits",
+      "description": "общественный транспорт: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "public_transport_attitude",
+      "category": "behavior_habits",
+      "description": "общественный транспорт: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "own_car_frequency",
+      "category": "behavior_habits",
+      "description": "личный автомобиль: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "own_car_spend_share",
+      "category": "behavior_habits",
+      "description": "личный автомобиль: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "taxi_frequency",
+      "category": "behavior_habits",
+      "description": "такси: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "taxi_spend_share",
+      "category": "behavior_habits",
+      "description": "такси: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "travel_domestic_frequency",
+      "category": "behavior_habits",
+      "description": "поездки по стране: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "travel_domestic_spend_share",
+      "category": "behavior_habits",
+      "description": "поездки по стране: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "travel_abroad_frequency",
+      "category": "behavior_habits",
+      "description": "поездки за границу: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "travel_abroad_spend_share",
+      "category": "behavior_habits",
+      "description": "поездки за границу: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "sport_frequency",
+      "category": "behavior_habits",
+      "description": "спорт и движение: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "sport_priority",
+      "category": "behavior_habits",
+      "description": "спорт и движение: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "doctor_visits_frequency",
+      "category": "behavior_habits",
+      "description": "визиты к врачу: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "doctor_visits_trust",
+      "category": "behavior_habits",
+      "description": "визиты к врачу: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "doctor_visits_channel",
+      "category": "behavior_habits",
+      "description": "визиты к врачу: через что делает",
+      "values": [
+        "вживую",
+        "по телефону",
+        "в приложении",
+        "на сайте",
+        "через знакомых"
+      ]
+    },
+    {
+      "id": "pharmacy_frequency",
+      "category": "behavior_habits",
+      "description": "аптека: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "pharmacy_spend_share",
+      "category": "behavior_habits",
+      "description": "аптека: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "banking_frequency",
+      "category": "behavior_habits",
+      "description": "банковские операции: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "banking_channel",
+      "category": "behavior_habits",
+      "description": "банковские операции: через что делает",
+      "values": [
+        "вживую",
+        "по телефону",
+        "в приложении",
+        "на сайте",
+        "через знакомых"
+      ]
+    },
+    {
+      "id": "banking_trust",
+      "category": "behavior_habits",
+      "description": "банковские операции: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "credit_frequency",
+      "category": "behavior_habits",
+      "description": "кредиты и рассрочка: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "credit_attitude",
+      "category": "behavior_habits",
+      "description": "кредиты и рассрочка: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "savings_frequency",
+      "category": "behavior_habits",
+      "description": "сбережения: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "savings_priority",
+      "category": "behavior_habits",
+      "description": "сбережения: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "investing_frequency",
+      "category": "behavior_habits",
+      "description": "инвестиции: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "investing_confidence",
+      "category": "behavior_habits",
+      "description": "инвестиции: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "investing_trust",
+      "category": "behavior_habits",
+      "description": "инвестиции: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "insurance_frequency",
+      "category": "behavior_habits",
+      "description": "страхование: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "insurance_attitude",
+      "category": "behavior_habits",
+      "description": "страхование: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "insurance_trust",
+      "category": "behavior_habits",
+      "description": "страхование: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "government_services_frequency",
+      "category": "behavior_habits",
+      "description": "госуслуги: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "government_services_channel",
+      "category": "behavior_habits",
+      "description": "госуслуги: через что делает",
+      "values": [
+        "вживую",
+        "по телефону",
+        "в приложении",
+        "на сайте",
+        "через знакомых"
+      ]
+    },
+    {
+      "id": "government_services_trust",
+      "category": "behavior_habits",
+      "description": "госуслуги: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "charity_frequency",
+      "category": "behavior_habits",
+      "description": "благотворительность: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "charity_spend_share",
+      "category": "behavior_habits",
+      "description": "благотворительность: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "news_frequency",
+      "category": "behavior_habits",
+      "description": "новости: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "news_channel",
+      "category": "behavior_habits",
+      "description": "новости: через что делает",
+      "values": [
+        "вживую",
+        "по телефону",
+        "в приложении",
+        "на сайте",
+        "через знакомых"
+      ]
+    },
+    {
+      "id": "news_trust",
+      "category": "behavior_habits",
+      "description": "новости: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "social_media_frequency",
+      "category": "behavior_habits",
+      "description": "соцсети: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "social_media_trust",
+      "category": "behavior_habits",
+      "description": "соцсети: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "video_streaming_frequency",
+      "category": "behavior_habits",
+      "description": "видео и стриминг: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "video_streaming_spend_share",
+      "category": "behavior_habits",
+      "description": "видео и стриминг: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "gaming_frequency",
+      "category": "behavior_habits",
+      "description": "игры: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "gaming_spend_share",
+      "category": "behavior_habits",
+      "description": "игры: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "reading_frequency",
+      "category": "behavior_habits",
+      "description": "чтение: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "reading_priority",
+      "category": "behavior_habits",
+      "description": "чтение: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "courses_frequency",
+      "category": "behavior_habits",
+      "description": "обучение и курсы: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "courses_spend_share",
+      "category": "behavior_habits",
+      "description": "обучение и курсы: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "courses_priority",
+      "category": "behavior_habits",
+      "description": "обучение и курсы: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "volunteering_frequency",
+      "category": "behavior_habits",
+      "description": "волонтёрство: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "volunteering_priority",
+      "category": "behavior_habits",
+      "description": "волонтёрство: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "religion_frequency",
+      "category": "behavior_habits",
+      "description": "религиозная практика: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "religion_priority",
+      "category": "behavior_habits",
+      "description": "религиозная практика: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "pets_frequency",
+      "category": "behavior_habits",
+      "description": "домашние животные: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "pets_spend_share",
+      "category": "behavior_habits",
+      "description": "домашние животные: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "smartphone_confidence",
+      "category": "capabilities_skills",
+      "description": "смартфон: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "smartphone_frequency",
+      "category": "capabilities_skills",
+      "description": "смартфон: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "computer_confidence",
+      "category": "capabilities_skills",
+      "description": "компьютер: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "computer_frequency",
+      "category": "capabilities_skills",
+      "description": "компьютер: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "online_payments_confidence",
+      "category": "capabilities_skills",
+      "description": "онлайн-платежи: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "online_payments_trust",
+      "category": "capabilities_skills",
+      "description": "онлайн-платежи: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "spreadsheets_confidence",
+      "category": "capabilities_skills",
+      "description": "таблицы и расчёты: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "foreign_language_confidence",
+      "category": "capabilities_skills",
+      "description": "иностранный язык: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "foreign_language_frequency",
+      "category": "capabilities_skills",
+      "description": "иностранный язык: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "driving_confidence",
+      "category": "capabilities_skills",
+      "description": "вождение: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "driving_frequency",
+      "category": "capabilities_skills",
+      "description": "вождение: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "repairs_confidence",
+      "category": "capabilities_skills",
+      "description": "мелкий ремонт: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "repairs_frequency",
+      "category": "capabilities_skills",
+      "description": "мелкий ремонт: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "public_speaking_confidence",
+      "category": "capabilities_skills",
+      "description": "публичные выступления: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "public_speaking_frequency",
+      "category": "capabilities_skills",
+      "description": "публичные выступления: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "negotiation_confidence",
+      "category": "capabilities_skills",
+      "description": "переговоры: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "ai_tools_confidence",
+      "category": "capabilities_skills",
+      "description": "нейросети и AI-инструменты: насколько уверен",
+      "values": [
+        "не умею",
+        "с трудом",
+        "средне",
+        "уверенно",
+        "учу других"
+      ]
+    },
+    {
+      "id": "ai_tools_frequency",
+      "category": "capabilities_skills",
+      "description": "нейросети и AI-инструменты: как часто",
+      "values": [
+        "никогда",
+        "реже раза в месяц",
+        "раз в месяц",
+        "раз в неделю",
+        "несколько раз в неделю",
+        "каждый день"
+      ]
+    },
+    {
+      "id": "ai_tools_trust",
+      "category": "capabilities_skills",
+      "description": "нейросети и AI-инструменты: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "privacy_priority",
+      "category": "psychology_values",
+      "description": "приватность данных: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "privacy_trust",
+      "category": "psychology_values",
+      "description": "приватность данных: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "new_products_attitude",
+      "category": "psychology_values",
+      "description": "новые продукты: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "new_products_trust",
+      "category": "psychology_values",
+      "description": "новые продукты: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "price_vs_quality_priority",
+      "category": "psychology_values",
+      "description": "цена против качества: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "brand_loyalty_priority",
+      "category": "psychology_values",
+      "description": "верность бренду: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "brand_loyalty_attitude",
+      "category": "psychology_values",
+      "description": "верность бренду: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "advertising_attitude",
+      "category": "psychology_values",
+      "description": "реклама: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "advertising_trust",
+      "category": "psychology_values",
+      "description": "реклама: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "reviews_trust",
+      "category": "psychology_values",
+      "description": "чужие отзывы: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "reviews_priority",
+      "category": "psychology_values",
+      "description": "чужие отзывы: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "subscriptions_attitude",
+      "category": "psychology_values",
+      "description": "подписки: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "subscriptions_spend_share",
+      "category": "psychology_values",
+      "description": "подписки: доля расходов",
+      "values": [
+        "почти ничего",
+        "до 5%",
+        "5-15%",
+        "15-30%",
+        "больше 30%"
+      ]
+    },
+    {
+      "id": "environment_priority",
+      "category": "psychology_values",
+      "description": "экология: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "environment_attitude",
+      "category": "psychology_values",
+      "description": "экология: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "work_life_balance_priority",
+      "category": "psychology_values",
+      "description": "баланс работы и жизни: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "risk_taking_attitude",
+      "category": "psychology_values",
+      "description": "готовность рисковать: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "risk_taking_priority",
+      "category": "psychology_values",
+      "description": "готовность рисковать: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "planning_horizon_priority",
+      "category": "psychology_values",
+      "description": "горизонт планирования: насколько важно",
+      "values": [
+        "неважно",
+        "скорее неважно",
+        "средне",
+        "важно",
+        "решающее"
+      ]
+    },
+    {
+      "id": "authority_attitude",
+      "category": "psychology_values",
+      "description": "отношение к начальству: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "authority_trust",
+      "category": "psychology_values",
+      "description": "отношение к начальству: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
+    },
+    {
+      "id": "crowds_attitude",
+      "category": "psychology_values",
+      "description": "отношение к толпе и очередям: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "change_attitude",
+      "category": "psychology_values",
+      "description": "отношение к переменам: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "data_sharing_attitude",
+      "category": "psychology_values",
+      "description": "готовность делиться данными: как относится",
+      "values": [
+        "резко против",
+        "скорее против",
+        "нейтрально",
+        "скорее за",
+        "решительно за"
+      ]
+    },
+    {
+      "id": "data_sharing_trust",
+      "category": "psychology_values",
+      "description": "готовность делиться данными: насколько доверяет",
+      "values": [
+        "не доверяю совсем",
+        "скорее не доверяю",
+        "когда как",
+        "скорее доверяю",
+        "полностью доверяю"
+      ]
     }
   ]
 }
